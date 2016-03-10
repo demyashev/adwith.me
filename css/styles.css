@@ -1,0 +1,260 @@
+@import url("normalize.css");
+@import url("fonts.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+
+/***  ***/
+.wrapper {
+    box-sizing: border-box;
+    position: relative;
+    width: 1600px;
+    margin: 0 auto;
+    padding: 0 210px;
+}
+
+.row {
+    /* hack */
+    font-size: 0;
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.col-2 {
+    width: 50%;
+    float: left;
+}
+
+.button {
+    font-family: "Bliss Pro Bold";
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    padding: 22px;
+    border-radius: 50px;
+    border: 3px solid #4d4845;
+    box-sizing: border-box;
+}
+
+.button .fa {
+    margin: 0 15px;
+}
+
+.clearfix::after {
+    display: block;
+    width: 0;
+    height: 0;
+    content: ".";
+    visibility: hidden;
+    overflow: hidden;
+    font-size: 0;
+    clear: both;
+}
+
+body {
+    background-color: #fff;
+}
+
+
+/*** intro section ***/
+.header {
+    padding: 32px 0;
+}
+    .header.page-index {
+        position: absolute;
+        top: 35px;
+        left: 0;
+        right: 0;
+        width: 1600px;
+        padding: 0 210px;
+        box-sizing: border-box;
+        z-index: 1;
+    }
+    .logo-link {
+        text-decoration: none;
+    }
+        .logo-img {
+            float: left;
+        }
+    .nav {
+        float: right;
+    }
+        .nav ul {}
+        .nav ul li {
+            display: inline-block;
+        }
+        .nav li.language {
+            display: none;
+        }
+        .nav a {
+            font-family: "Bliss Pro Regular";
+            padding: 18px 0;
+            margin: 0 28px;
+            font-size: 16px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        .nav a.active,
+        .nav a:active,
+        .nav a:hover {
+            color: #fff344;
+            border-bottom: 2px solid #fff344;
+        }
+
+#slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    /*background-color: red;*/
+}
+    #slider .arrow {
+        position: absolute;
+        width: 210px;
+        height: 100%;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        z-index: 1;
+        padding: 25% 0;
+    }
+        #slider .arrow.left { left: 0; }
+        #slider .arrow.right { right: 0; }
+        #slider .arrow .fa {
+            font-size: 28px;
+            line-height: 28px;
+        }
+    #slider .mouse-scroll-down {
+        position: absolute;
+        bottom: 45px;
+        left: 50%;
+        margin-left: -12px;
+        z-index: 1;
+    }
+        #slider-container {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+            .slide {
+                display: inline-block;
+                float: left;
+                height: 100%;
+                box-sizing: border-box;
+                padding: 240px 0 220px 0;
+                position: relative;
+                overflow: hidden;
+            }
+                .slide .row {
+                    padding: 0 490px 0 90px;
+                    box-sizing: border-box;
+                }
+                .slide .background {
+                    z-index: -1;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: auto;
+                }
+
+                .slide .select-link {}
+                    .slide .select-link:first-child {
+                        padding: 22px 35px 22px 15px;
+                        border-top-right-radius: 0;
+                        border-bottom-right-radius: 0;
+                    }
+                    .slide .select-link:last-child {
+                        padding: 22px 50px 22px 15px;
+                        border-top-left-radius: 0;
+                        border-bottom-left-radius: 0;
+                    }
+                    .slide .select-link.active,
+                    .slide .select-link:active,
+                    .slide .select-link:hover {
+                        border-color: #fff444;
+                        background-color: #fff444;
+                        color: #000;
+                    }
+
+                .slide h2 {
+                    margin: 80px 0 55px 0;
+                    color: #fff;
+                    font-family: "Bliss Pro Extra Light";
+                    font-size: 50px;
+                    letter-spacing: 1px;
+                }
+                    .slide .selected {
+                        color: #70bffa;
+                    }
+
+                .slide ul {
+                    padding: 0;
+                    margin-bottom: 75px;
+                }
+                    .slide li {
+                        font-size: 24px;
+                        font-family: "Bliss Pro Light";
+                        line-height: 1.5em;
+                        color: #fff;
+                        list-style-type: none;
+                        padding-left: 30px;
+                        position: relative;
+                    }
+                        .slide li::before {
+                            position: absolute;
+                            left: 0;
+                            top: 1.5em;
+                            font-family: "FontAwesome";
+                            font-size: 8px;
+                            line-height: 1.5em;
+                            vertical-align: middle;
+                            content: "\f111"; 
+                            color: #fff345;
+                        }
+                .slide .button.login {
+                   background-color: #52c9a1;
+                   border: 0;
+                   padding: 22px 42px 22px 20px;
+                }
+
+/*** about section  ***/
+#about {
+    padding: 100px 0;
+    background: url("/img/user-bg.png") no-repeat left bottom;
+}
+    #about h3 {
+        color: #707070;
+        font-size: 26px;
+        line-height: 26px;
+        font-family: "Bliss Pro Extra Light";
+        margin: 50px 0 15px 0;
+    }
+    #about h2 {
+        margin: 0;
+        font-family: "Bliss Pro Bold";
+        font-size: 60px;
+        line-height: 55px;
+        text-transform: uppercase;
+        color: #181818;
+    }
+        #about h2 .selected {
+            color: #488bbf;
+        }
+    #about p {
+        font-size: 19px;
+        font-family: "Bliss Pro Light";
+        line-height: 1.5em;
+    }
+        #about p:last-child {
+            color: #545454;
+        }
+            #about p:last-child::after {
+                display: block;
+                margin-top: 50px;
+                content: "";
+                width: 131px;
+                height: 2px;
+                background-color: #44a584;
+            }
