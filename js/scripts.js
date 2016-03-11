@@ -17,24 +17,67 @@ r(function(){
     slider_container  = document.getElementById('slider-container');
     slides            = document.getElementsByClassName("slide");
     slides_backgrounds= document.getElementsByClassName("background");
+    mouse             = document.getElementById('mouse-scroll');
+
+    tab_links         = document.getElementsByClassName('select-link');
+
+    reg_link          = document.getElementById('account-isset');
+    create_link       = document.getElementById('account-reg');
 
     
     sliderPlay();
     sliderResize();
-    sliderArrowEvent();
     iconMouseStart();
+
+    // listeners
+    toggleTabs();
+    sliderArrowEvent();
+
+    reg_link.addEventListener('click', showRegForm, false);
+    create_link.addEventListener('click', showCreateForm, false);
 });
 
+function showRegForm() {
+    // event.classList.add('hidden');
+    document.getElementById('form-create-account').classList.add('hidden');
+    document.getElementById('form-reg-account').classList.remove('hidden');
+}
+
+function showCreateForm() {
+    document.getElementById('form-reg-account').classList.add('hidden');
+    document.getElementById('form-create-account').classList.remove('hidden');
+}
+
+function toggleTabs() {
+    for (var i = window.tab_links.length - 1; i >= 0; i--) {
+        window.tab_links[i].addEventListener('click', toggleTabsSwitch, false);
+    }
+}
+
+function toggleTabsSwitch() {
+    for (var i = window.tab_links.length - 1; i >= 0; i--) {
+        window.tab_links[i].classList.remove('active');
+    }
+    event.target.classList.add('active');
+
+    if (event.target.classList.contains('reklamodatel')) {
+        document.getElementById('im-reklamodatel').classList.remove('hidden');
+        document.getElementById('im-instagrammer').classList.add('hidden');
+    } else {
+        document.getElementById('im-reklamodatel').classList.add('hidden');
+        document.getElementById('im-instagrammer').classList.remove('hidden');
+    }
+}
+
 function iconMouseStart() {
-    var i = 2;
+    var i = 20;
     setInterval(function() {
         
-        document.getElementById('mouse-scroll').style.bottom = 45 * i + 'px';
-        i++;
-        
-        if (i >= 3 ) {i = 1;}
+        window.mouse.style.top = i + 'px';
+        window.mouse.style.height = i/2 + 'px';
+        window.mouse.style.opacity = (i/20 - 1)*(-1);
 
-        
+        if (i==20) {i=10;} else {i = 20;}
         
     }, 1500);
 }
@@ -43,11 +86,11 @@ function sliderPlay() {
 
     setTimeout(function() {
         sliderRotate();
-    }, 1000);
+    }, 3000);
 }
 
 function sliderStop() {
-    setTimeout(function(){}, 2000);
+    // setTimeout(function(){}, 2000);
     // clearInterval(player);
 }
 

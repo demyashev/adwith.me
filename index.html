@@ -45,85 +45,60 @@
     <a href="#" class="arrow right">
         <i class="fa fa-chevron-right right"></i>
     </a>
-    <a href="#about" data-scroll>
-        <img src="img/mouse-scroll-down.png" alt="" id="mouse-scroll" class="mouse-scroll-down">
+    <a href="#about" data-scroll class="mouse-scroll-down">
+        <div id="mouse-scroll" class="mouse-scroll"></div>
     </a>
+    <div class="intro">
+        <div class="row wrapper">
+            <a href="#" class="button select-link reklamodatel">
+                <i class="fa fa-briefcase"></i>
+                Я рекламодатель
+            </a>
+            <a href="#" class="button select-link active instagramer">
+                <i class="fa fa-camera"></i>
+                Я инстаграммер
+            </a>
+        </div>
+        <div class="row wrapper" id="im-instagrammer">
+            <h2>Зарабатывать с нами <span class="selected">легко</span></h2>
+            <ul>
+                <li>Полная автоматизация по приему заказов на размещение рекламы в вашем Instagram.</li>
+                <li>Прием любых способов оплаты.</li>
+                <li>Выплаты по запросу.</li>
+            </ul>
+            <a href="#" class="button login">
+                <i class="fa fa-instagram"></i>
+                Войти с Instagram
+            </a>
+        </div>
+        <div class="row wrapper hidden" id="im-reklamodatel">
+            <h2>Реклама в Instagram еще<br>никогда не была такой <span class="selected green">простой</span></h2>
+            <ul>
+                <li>Получайте максимум клиентов за минимальные деньги</li>
+                <li>Продвигайте свои товары социально</li>
+                <li>Работайте по всему миру</li>
+            </ul>
+            <form action="#" method="post" id="form-create-account">
+                <div>
+                    <input type="text" name="email" placeholder="Введите ваш email">
+                    <input type="submit" value="Создать аккаунт" class="button">
+                </div>
+                <a href="#" id="account-isset">Уже есть аккаунт?</a>
+            </form>
+            <form action="#" method="post" id="form-reg-account" class="hidden">
+                <div>
+                    <input type="text" name="login" placeholder="Ваш логин">
+                    <input type="password" name="password" placeholder="Ваш пароль">
+                    <input type="submit" value="Войти" class="button">
+                </div>
+                <a href="#" id="account-reg">Регистрация нового аккаунта</a>
+            </form>
+        </div>
+    </div>
     <div id="slider-container" class="row clearfix" style="left: 0px;">
-
-        <div class="slide slide-1">
-            <div class="row wrapper">
-                <a href="#" class="button select-link">
-                    <i class="fa fa-briefcase"></i>
-                    Я рекламодатель
-                </a>
-                <a href="#" class="button select-link active">
-                    <i class="fa fa-camera"></i>
-                    Я инстаграммер
-                </a>
-            </div>
-            <div class="row wrapper">
-                <h2>Зарабатывать с нами <span class="selected">легко</span></h2>
-                <ul>
-                    <li>Полная автоматизация по приему заказов на размещение рекламы в вашем Instagram.</li>
-                    <li>Прием любых способов оплаты.</li>
-                    <li>Выплаты по запросу.</li>
-                </ul>
-                <a href="#" class="button login">
-                    <i class="fa fa-instagram"></i>
-                    Войти с Instagram
-                </a>
-            </div>
-        </div>
-
-        <div class="slide slide-2">
-            <div class="row wrapper">
-                <a href="#" class="button select-link">
-                    <i class="fa fa-briefcase"></i>
-                    Я рекламодатель
-                </a>
-                <a href="#" class="button select-link active">
-                    <i class="fa fa-camera"></i>
-                    Я инстаграммер
-                </a>
-            </div>
-            <div class="row wrapper">
-                <h2>Зарабатывать с нами <span class="selected">легко</span></h2>
-                <ul>
-                    <li>Полная автоматизация по приему заказов на размещение рекламы в вашем Instagram.</li>
-                    <li>Прием любых способов оплаты.</li>
-                    <li>Выплаты по запросу.</li>
-                </ul>
-                <a href="#" class="button login">
-                    <i class="fa fa-instagram"></i>
-                    Войти с Instagram
-                </a>
-            </div>
-        </div>
-
-        <div class="slide slide-3">
-            <div class="row wrapper">
-                <a href="#" class="button select-link">
-                    <i class="fa fa-briefcase"></i>
-                    Я рекламодатель
-                </a>
-                <a href="#" class="button select-link active">
-                    <i class="fa fa-camera"></i>
-                    Я инстаграммер
-                </a>
-            </div>
-            <div class="row wrapper">
-                <h2>Зарабатывать с нами <span class="selected">легко</span></h2>
-                <ul>
-                    <li>Полная автоматизация по приему заказов на размещение рекламы в вашем Instagram.</li>
-                    <li>Прием любых способов оплаты.</li>
-                    <li>Выплаты по запросу.</li>
-                </ul>
-                <a href="#" class="button login">
-                    <i class="fa fa-instagram"></i>
-                    Войти с Instagram
-                </a>
-            </div>
-        </div>
+        <div class="slide slide-1"></div>
+        <div class="slide slide-2"></div>
+        <div class="slide slide-3"></div>
     </div>
     
 </div><!-- /slider -->
@@ -168,7 +143,7 @@
 <div id="start">
     <div class="row wrapper clearfix">
         <div class="phone">
-            <div class="preview">ss</div>
+            <div class="preview">Место под медиа</div>
             <!-- <img src="img/mobilephone.jpg" alt=""> -->
         </div>
         <div class="description">
@@ -260,36 +235,36 @@
                 <ul>
                     <h3 class="title">Рекламодателям</h3>
                     <li>
-                        <a href="#">Наши функции</a>
+                        <a href="#">Топ инстаграмеров</a>
                     </li>
                     <li>
-                        <a href="#">Условия</a>
+                        <a href="#">Войти с Instagram</a>
                     </li>
                     <li>
-                        <a href="#">Вопрос - Ответ</a>
+                        <a href="#">Регистрация</a>
                     </li>
                 </ul>
                 <ul>
                     <h3 class="title">Дополнительно</h3>
                     <li>
-                        <a href="#">Наши функции</a>
+                        <a href="#">VERIFIED СТАТУС</a>
                     </li>
                     <li>
-                        <a href="#">Условия</a>
+                        <a href="#">Подарки</a>
                     </li>
                 </ul>
                 <ul>
                     <h3 class="title">ADWITHME</h3>
                     <li>
-                        <a href="#">Наши функции</a>
+                        <a href="#">Пишите нам</a>
                     </li>
                     <li>
-                        <a href="#">Условия</a>
+                        <a href="#">О нас</a>
                     </li>
                 </ul>
             </div>
             <div class="site">
-                <img src="img/logo.png" alt="">
+                <img src="./img/logo.png" alt="">
                 <p class="copyright">Copyright &copy; 2015. All rights reserved.</p>
                 <a href="#" class="download-link">
                     <i class="fa fa-apple"></i>
@@ -303,7 +278,7 @@
         </div>
         <div class="row bottom clearfix">
             <div class="about">
-                <img src="//placehold.it/75x20" alt="">
+                <img src="img/designed.jpg" alt="">
                 Продвижение в инстаграм
             </div>
             <div class="design">

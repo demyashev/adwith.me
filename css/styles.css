@@ -55,6 +55,10 @@
     clear: both;
 }
 
+.hidden {
+    display: none;
+}
+
 body {
     background-color: #fff;
 }
@@ -76,7 +80,7 @@ p {
         left: 0;
         right: 0;
         box-sizing: border-box;
-        z-index: 1;
+        z-index: 3;
     }
     .logo-link {
         text-decoration: none;
@@ -141,8 +145,10 @@ p {
                 border-bottom: 3px solid rgba(255,255,255,0.25);
                 border-right: 3px solid rgba(255,255,255,0.25);
             }
-            .nav .language:hover a {
+            .nav .language:hover > a {
                 border-color: #fff344;
+                color: #fff344;
+                border-width: 3px;
             }
         .nav .language ul li {
             display: block;
@@ -186,7 +192,7 @@ p {
         text-align: center;
         color: #fff;
         text-decoration: none;
-        z-index: 1;
+        z-index: 3;
         padding-top: 25%;
     }
         #slider .arrow.left { left: 0; }
@@ -200,17 +206,193 @@ p {
         position: absolute;
         bottom: 45px;
         left: 50%;
-        margin-left: -12px;
-        z-index: 1;
+        margin-left: -15px;
+        z-index: 3;
         transition: all 1.5s;
+
+        width: 30px;
+        height: 47px;
+        border: 2px solid #fff;
+        border-radius: 14px;
+
     }
+
+        #slider .mouse-scroll {
+            width: 4px;
+            height: 4px;
+            border-radius: 2px;
+            background: #fff444;
+            position: relative;
+            top: 10px;
+            left: 13px;
+            -webkit-animation: scrolls 1.3s ease-out infinite;
+            transition: all 1.5s;
+        }
+
         #slider-container {
             position: absolute;
             left: 0;
             top: 0;
             transition: all 1s;
         }
+            
+            .intro {
+                font-size: 16px;
+                font-family: 'Arial';
+                z-index: 2;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;    
+                padding-top: 160px;          
+            }
+                .intro .row {
+                    padding: 0 490px 0 90px;
+                    box-sizing: border-box;
+                    text-align: center;
+                }
 
+                    .intro .select-link {
+                        width: 50%;
+                        display: inline-block;
+                    }
+                        .intro .select-link:first-child {
+                            padding: 22px 35px 22px 15px;
+                            border-top-right-radius: 0;
+                            border-bottom-right-radius: 0;
+                        }
+                        .intro .select-link:last-child {
+                            padding: 22px 50px 22px 15px;
+                            border-top-left-radius: 0;
+                            border-bottom-left-radius: 0;
+                        }
+                        .intro .select-link.active,
+                        .intro .select-link:active,
+                        .intro .select-link:hover {
+                            border-color: #fff444;
+                            background-color: #fff444;
+                            color: #000;
+                        }
+
+                    .intro h2 {
+                        margin: 60px 0 35px 0;
+                        color: #fff;
+                        font-family: "Bliss Pro Extra Light";
+                        font-size: 50px;
+                        letter-spacing: 1px;
+                        text-align: left;
+                    }
+                        .intro .selected {
+                            color: #70bffa;
+                        }
+                        .intro .selected.green {
+                            color: #50b190;
+                        }
+
+                    .intro form {
+                        padding: 0;
+                        margin: 0;
+                    }
+                        .intro input[type=text],
+                        .intro input[type=password] {
+                            font-family: "Bliss Pro Light";
+                            text-transform: uppercase;
+                            font-size: 16px;
+                            color: #777;
+                            background-color: #f5f5f5;
+                            text-decoration: none;
+                            padding: 22px 35px 22px 40px;
+                            border-top-left-radius: 50px;
+                            border-bottom-left-radius: 50px;
+                            border: 0;
+                            box-sizing: border-box;
+                        }
+                            .intro input {
+                                outline: none;
+                            }
+
+                            .intro input[type=text]:active,
+                            .intro input[type=text]:focus,
+                            .intro input[type=password]:active,
+                            .intro input[type=password]:focus {
+                                background-color: #fff;
+                            }
+
+                        .intro input[type=submit] {
+                            background-color: #63b4eb;
+                            border-top-left-radius: 0;
+                            border-bottom-left-radius: 0;
+                            border: 0;
+                            font-size: 16px;
+                            padding: 22px 40px 22px 35px;
+                        }
+                            .intro input[type=submit]:hover {
+                                background-color: #2E83BC;
+                            }
+                    .intro #account-isset,
+                    .intro #account-reg {
+                        display: inline-block;
+                        color: #50b190;
+                        font-size: 16px;
+                        font-family: "Bliss Pro Medium";
+                        text-decoration: none;
+                        border-bottom: 1px dotted #50b190;
+                        padding: 15px 0 2px 0;
+                    }
+                        .intro #account-isset:hover{
+                            color: #2B8466;
+                        }
+                    .intro #account-reg {
+                        color: #75b5ff;
+                    }
+                        .intro #account-reg:hover {
+                            color: #5295E2;
+                        }
+
+                    #form-reg-account input {
+                        width: 33.33333333%;
+                        font-size: 16px;
+                    }
+                        #form-reg-account input[type=password] {
+                            border-radius: 0;
+                            padding-right: 35px;
+                        }
+
+
+                    .intro ul {
+                        padding: 0;
+                        margin-bottom: 55px;
+                        text-align: left;
+                    }
+                        .intro li {
+                            font-size: 24px;
+                            font-family: "Bliss Pro Light";
+                            line-height: 1.5em;
+                            color: #fff;
+                            list-style-type: none;
+                            padding-left: 30px;
+                            position: relative;
+                        }
+                            .intro li::before {
+                                position: absolute;
+                                left: 0;
+                                top: 1.5em;
+                                font-family: "FontAwesome";
+                                font-size: 8px;
+                                line-height: 1.5em;
+                                vertical-align: middle;
+                                content: "\f111"; 
+                                color: #fff345;
+                            }
+                    .intro .button.login {
+                       background-color: #52c9a1;
+                       border: 0;
+                       padding: 22px 42px 22px 20px;
+                    }
+                        .intro .button.login:hover {
+                            background-color: #3AAC86;
+                        }
             .slide {
                 display: inline-block;
                 float: left;
@@ -223,11 +405,10 @@ p {
                 background-repeat: no-repeat;
                 background-position: center center;
                 background-size: cover;
+
+                z-index: 0;
             }
-                .slide .row {
-                    padding: 0 490px 0 90px;
-                    box-sizing: border-box;
-                }
+                
 
                 .slide-1 {
                     background-image: url("../img/slider/slide-1.jpg");  
@@ -239,68 +420,7 @@ p {
                     background-image: url("../img/slider/slide-3.jpg");  
                 }
 
-                .slide .select-link {
-                    width: 50%;
-                    display: inline-block;
-                }
-                    .slide .select-link:first-child {
-                        padding: 22px 35px 22px 15px;
-                        border-top-right-radius: 0;
-                        border-bottom-right-radius: 0;
-                    }
-                    .slide .select-link:last-child {
-                        padding: 22px 50px 22px 15px;
-                        border-top-left-radius: 0;
-                        border-bottom-left-radius: 0;
-                    }
-                    .slide .select-link.active,
-                    .slide .select-link:active,
-                    .slide .select-link:hover {
-                        border-color: #fff444;
-                        background-color: #fff444;
-                        color: #000;
-                    }
-
-                .slide h2 {
-                    margin: 80px 0 55px 0;
-                    color: #fff;
-                    font-family: "Bliss Pro Extra Light";
-                    font-size: 50px;
-                    letter-spacing: 1px;
-                }
-                    .slide .selected {
-                        color: #70bffa;
-                    }
-
-                .slide ul {
-                    padding: 0;
-                    margin-bottom: 75px;
-                }
-                    .slide li {
-                        font-size: 24px;
-                        font-family: "Bliss Pro Light";
-                        line-height: 1.5em;
-                        color: #fff;
-                        list-style-type: none;
-                        padding-left: 30px;
-                        position: relative;
-                    }
-                        .slide li::before {
-                            position: absolute;
-                            left: 0;
-                            top: 1.5em;
-                            font-family: "FontAwesome";
-                            font-size: 8px;
-                            line-height: 1.5em;
-                            vertical-align: middle;
-                            content: "\f111"; 
-                            color: #fff345;
-                        }
-                .slide .button.login {
-                   background-color: #52c9a1;
-                   border: 0;
-                   padding: 22px 42px 22px 20px;
-                }
+                
 
 /*** about section  ***/
 #about {
@@ -611,6 +731,9 @@ p {
             display: block;
             padding: 10px 0;
         }
+            #footer .download-link:hover {
+                color: #fff;
+            }
             #footer .download-link .fa {
                 margin-right: 8px;
             }
@@ -642,28 +765,50 @@ p {
             #footer .menues li {
                 list-style-type: none;
                 padding-bottom: 14px;
+                position: relative;
+                padding-left: 12px;
             }
+                #footer .menues li::before {
+                    display: block;
+                    position: absolute;
+                    left: -2px;
+                    top: 9px;
+                    font-family: "FontAwesome";
+                    font-size: 3px;
+                    line-height: 1.5em;
+                    vertical-align: middle;
+                    content: "\f111"; 
+                    color: #868686;
+                }
                 #footer li a {
                     color: #868686;
                     font-size: 18px;
                     font-family: "Bliss Pro Extra Light";
                     text-decoration: none;
                 }
+                    #footer li a:hover {
+                        color: #fff;
+                    }
+
 #footer .bottom {
     padding: 40px 0 60px 0;
     color: #868686;
     font-size: 14px;
     font-family: "Bliss Pro Extra Light";
+    vertical-align: middle;
 }
     #footer .about {
         float: left;
+        line-height: 21px;
     }
         #footer .about img {
             float: left;
             margin-right: 10px;
+            margin-top: -4px;
         }
     #footer .design {
         float: right;
+        line-height: 21px;
     }
 
 
@@ -674,34 +819,34 @@ p {
         display: none;
     }
 
-    .slide .row {
+    .intro .row {
         padding: 0 30px;
         text-align: center;
     }
 
-    .slide {
+    .intro {
         padding-top: 190px;
     }
 
-    .slide h2 {
+    .intro h2 {
         margin: 70px 0 35px 0;
         font-size: 42px;
         text-align: left;
     }
     
-    .slide .select-link {
+    .intro .select-link {
         font-size: 18px;
     }
 
-    .slide ul {
+    .intro ul {
         text-align: left;
         margin-bottom: 75px;
     }
-        .slide li {
+        .intro li {
             font-size: 22px;
         }
 
-    .slide .button.login {
+    .intro .button.login {
         font-size: 16px;
     }
 
