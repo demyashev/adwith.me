@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <title>index</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script type="text/javascript" src="/js/scripts.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
 </head>
 <body>
 
-<div class="wrapper">
 
-    <header class="row header page-index clearfix">
-        <a href="/" class="logo-link">
-            <img src="/img/logo.png" alt="" class="logo-img">
+
+<header class="row header page-index clearfix">
+    <div class="wrapper">
+        <a href="index.html" class="logo-link">
+            <img src="./img/logo.png" alt="" class="logo-img">
         </a>
         <nav class="nav">
             <ul>
@@ -20,32 +21,37 @@
                 <li><a href="#" class="active">Рекламодателям</a></li>
                 <li><a href="#">Контакты</a></li>
                 <li class="language">
-                    <a href="#">Язык</a>
+                    <a href="#">
+                        <img src="./img/flags/eng.jpg" alt="">
+                        Eng
+                        <i class="fa fa-chevron-down"></i>
+                    </a>
                     <ul>
-                        <li><a href="#">Eng</a></li>
-                        <li><a href="#">Rus</a></li>
+                        <li><a href="#"><img src="./img/flags/eng.jpg" alt="">Eng</a></li>
+                        <li><a href="#"><img src="//placehold.it/14x11" alt="">Rus</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
-    </header>
+    </div>
+</header>
 
-</div>
+
 
 <div id="slider" class="row">
     <a href="#" class="arrow left">
-        <i class="fa fa-chevron-left"></i>
+        <i class="fa fa-chevron-left left"></i>
     </a>
     <a href="#" class="arrow right">
-        <i class="fa fa-chevron-right"></i>
+        <i class="fa fa-chevron-right right"></i>
     </a>
     <a href="#about" data-scroll>
-        <img src="/img/mouse-scroll-down.png" alt="" class="mouse-scroll-down">
+        <img src="img/mouse-scroll-down.png" alt="" id="mouse-scroll" class="mouse-scroll-down">
     </a>
-    <div id="slider-container" class="row clearfix">
+    <div id="slider-container" class="row clearfix" style="left: 0px;">
 
-        <div class="slide">
-            <div class="row">
+        <div class="slide slide-1">
+            <div class="row wrapper">
                 <a href="#" class="button select-link">
                     <i class="fa fa-briefcase"></i>
                     Я рекламодатель
@@ -55,7 +61,7 @@
                     Я инстаграммер
                 </a>
             </div>
-            <div class="row">
+            <div class="row wrapper">
                 <h2>Зарабатывать с нами <span class="selected">легко</span></h2>
                 <ul>
                     <li>Полная автоматизация по приему заказов на размещение рекламы в вашем Instagram.</li>
@@ -67,11 +73,10 @@
                     Войти с Instagram
                 </a>
             </div>
-            <img src="/img/slider/slide-1.jpg" alt="" class="background">
         </div>
 
-        <div class="slide">
-            <div class="row">
+        <div class="slide slide-2">
+            <div class="row wrapper">
                 <a href="#" class="button select-link">
                     <i class="fa fa-briefcase"></i>
                     Я рекламодатель
@@ -81,7 +86,7 @@
                     Я инстаграммер
                 </a>
             </div>
-            <div class="row">
+            <div class="row wrapper">
                 <h2>Зарабатывать с нами <span class="selected">легко</span></h2>
                 <ul>
                     <li>Полная автоматизация по приему заказов на размещение рекламы в вашем Instagram.</li>
@@ -93,11 +98,10 @@
                     Войти с Instagram
                 </a>
             </div>
-            <img src="/img/slider/slide-2.jpg" alt="" class="background">
         </div>
 
-        <div class="slide">
-            <div class="row">
+        <div class="slide slide-3">
+            <div class="row wrapper">
                 <a href="#" class="button select-link">
                     <i class="fa fa-briefcase"></i>
                     Я рекламодатель
@@ -107,7 +111,7 @@
                     Я инстаграммер
                 </a>
             </div>
-            <div class="row">
+            <div class="row wrapper">
                 <h2>Зарабатывать с нами <span class="selected">легко</span></h2>
                 <ul>
                     <li>Полная автоматизация по приему заказов на размещение рекламы в вашем Instagram.</li>
@@ -119,14 +123,13 @@
                     Войти с Instagram
                 </a>
             </div>
-            <img src="/img/slider/slide-3.jpg" alt="" class="background">
         </div>
     </div>
     
 </div><!-- /slider -->
 
 <div id="about">
-    <div class="row clearfix">
+    <div class="row wrapper clearfix">
         <div class="col-2">
             <h3>Кто мы?</h3>
             <h2>Ваш<br><span class="selected">персональный</span><br>менеджер</h2>
@@ -138,12 +141,184 @@
         </div> 
     </div>
 </div>
+
+<div id="pluses">
+    <div class="row wrapper clearfix">
+        <div class="col-3">
+            <img src="//placehold.it/90x90" alt="">
+            <h2>Мультикасса</h2>
+            <p>Принимаем платежи от рекламодателей с помощью множества платежных систем, а выплачиваем - в которой удобно Вам.</p>
+            <p>Выплаты по запросу из личного кабинета каждый час.</p>
+        </div>
+        <div class="col-3">
+            <img src="//placehold.it/90x90" alt="">
+            <h2>Прием заказов</h2>
+            <p>В личном кабинете вы с легкостью можете обрабатывать заказы - принять, отклонить либо обсудить заказ в пару кликов.</p>
+            <p>Средства за размещение рекламы замораживаются до самого размещения.</p>
+        </div>
+        <div class="col-3">
+            <img src="//placehold.it/90x90" alt="">
+            <h2>Уведомления</h2>
+            <p>Получайте смс уведомления о поступлении и проверке заказа где бы вы не находились.</p>
+            <p>Вы не пропустите ни одного клиента.</p>
+        </div>
+    </div>
+</div>
+
+<div id="start">
+    <div class="row wrapper clearfix">
+        <div class="phone">
+            <div class="preview">ss</div>
+            <!-- <img src="img/mobilephone.jpg" alt=""> -->
+        </div>
+        <div class="description">
+            <span class="subtitle">Это займет не более 10 минут вашего времени.</span>
+            <h2>Для начала работы<br>с нами есть всего<br><span class="selected">3 простых шага</span>:</h2>
+            <div class="list">
+                <div class="arrows">
+                    <img src="img/arrows.jpg" alt="">
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <div class="counter">1</div>
+                        <div class="text">
+                            <h3>Войдите</h3>
+                            <p>С помощью кнопки "Войти" вверху сайта, пройдите авторизацию через сайт Instagram.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="counter">2</div>
+                        <div class="text">
+                            <h3>Заполните</h3>
+                            <p>Номер телефона для смс уведомлений, ваши платежные реквизиты, стоимость рекламы.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="counter">3</div>
+                        <div class="text">
+                            <h3>Установите</h3>
+                            <p>В вашем личном профиле Instagram укажите ссылку на вашего персонального менеджера из личного кабинета.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="complete">Теперь вы готовы принимать заказы на рекламу и зарабатывать!</p>
+        </div>
+    </div>
+</div>
+
+<div id="multicassa">
+    <div class="row wrapper">
+        <h3>Мультикасса</h3>
+        <h2>Платежные системы<br>которые <span class="selected">мы принимаем</span></h2>
+        <ul>
+            <li><img src="//placehold.it/100x85" alt=""></li>
+            <li><img src="//placehold.it/100x85" alt=""></li>
+            <li><img src="//placehold.it/100x85" alt=""></li>
+            <li><img src="//placehold.it/100x85" alt=""></li>
+            <li><img src="//placehold.it/100x85" alt=""></li>
+            <li><img src="//placehold.it/100x85" alt=""></li>
+            <li><img src="//placehold.it/100x85" alt=""></li>
+            <li><img src="//placehold.it/100x85" alt=""></li>
+        </ul>
+    </div>
+</div>
+
+<div id="download">
+    <div class="row wrapper">
+        <h2>Скачать версию</h2>
+        <div class="buttons">
+            <a href="#" class="button">
+                <i class="fa fa-apple"></i>
+                App Store
+            </a>
+            <a href="#" class="button">
+                <i class="fa fa-google"></i>
+                Google Play
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+<footer id="footer">
+    <div class="wrapper">
+        <div class="body row clearfix">
+            <div class="menues clearfix">
+                <ul>
+                    <h3 class="title">Инстаграммерам</h3>
+                    <li>
+                        <a href="#">Наши функции</a>
+                    </li>
+                    <li>
+                        <a href="#">Условия</a>
+                    </li>
+                    <li>
+                        <a href="#">Вопрос - Ответ</a>
+                    </li>
+                </ul>
+                <ul>
+                    <h3 class="title">Рекламодателям</h3>
+                    <li>
+                        <a href="#">Наши функции</a>
+                    </li>
+                    <li>
+                        <a href="#">Условия</a>
+                    </li>
+                    <li>
+                        <a href="#">Вопрос - Ответ</a>
+                    </li>
+                </ul>
+                <ul>
+                    <h3 class="title">Дополнительно</h3>
+                    <li>
+                        <a href="#">Наши функции</a>
+                    </li>
+                    <li>
+                        <a href="#">Условия</a>
+                    </li>
+                </ul>
+                <ul>
+                    <h3 class="title">ADWITHME</h3>
+                    <li>
+                        <a href="#">Наши функции</a>
+                    </li>
+                    <li>
+                        <a href="#">Условия</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="site">
+                <img src="img/logo.png" alt="">
+                <p class="copyright">Copyright &copy; 2015. All rights reserved.</p>
+                <a href="#" class="download-link">
+                    <i class="fa fa-apple"></i>
+                    App Store
+                </a>
+                <a href="#" class="download-link">
+                    <i class="fa fa-google"></i>
+                    Google Play
+                </a>
+            </div>
+        </div>
+        <div class="row bottom clearfix">
+            <div class="about">
+                <img src="//placehold.it/75x20" alt="">
+                Продвижение в инстаграм
+            </div>
+            <div class="design">
+                Разработка дизайна - Вадим Прусаков
+            </div>
+        </div>
+    </div>
+    
+</footer>
     
 
 
 
 
-    <script src="/js/smooth-scroll.js"></script>
+    <script src="js/smooth-scroll.js"></script>
     <script>smoothScroll.init();</script>
     
 </body>
