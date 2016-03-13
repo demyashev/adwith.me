@@ -11,6 +11,8 @@ r(function(){
     
     
     //console.log(x + ' - ' + y);
+    //
+    header            = document.getElementById('header');
 
     slider            = document.getElementById('slider');
     slider_arrows     = document.getElementsByClassName("arrow");
@@ -35,17 +37,28 @@ r(function(){
 
     reg_link.addEventListener('click', showRegForm, false);
     create_link.addEventListener('click', showCreateForm, false);
+
+    document.getElementById('close-menu').addEventListener('click', hideMobileMenu, false);
+    document.getElementById('show-menu-icon').addEventListener('click', showMobileMenu, false);
 });
 
+function showMobileMenu() {
+    window.header.classList.add('mobile-menu-showed');
+}
+function hideMobileMenu() {
+    window.header.classList.remove('mobile-menu-showed');
+}
 function showRegForm() {
     // event.classList.add('hidden');
     document.getElementById('form-create-account').classList.add('hidden');
     document.getElementById('form-reg-account').classList.remove('hidden');
+    event.preventDefault();
 }
 
 function showCreateForm() {
     document.getElementById('form-reg-account').classList.add('hidden');
     document.getElementById('form-create-account').classList.remove('hidden');
+    event.preventDefault();
 }
 
 function toggleTabs() {
@@ -67,6 +80,9 @@ function toggleTabsSwitch() {
         document.getElementById('im-reklamodatel').classList.add('hidden');
         document.getElementById('im-instagrammer').classList.remove('hidden');
     }
+
+    event.preventDefault();
+
 }
 
 function iconMouseStart() {
@@ -107,7 +123,7 @@ function sliderRotate() {
             i = 0;
         }
   
-    }, 3000);
+    }, 5000);
 }
 
 function sliderArrowEvent() {

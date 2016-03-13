@@ -3,20 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>index</title>
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=yes">
     <link rel="stylesheet" href="css/styles.css">
     <script type="text/javascript" src="js/scripts.js"></script>
 </head>
 <body>
 
-
-
-<header class="row header page-index clearfix">
+<header class="row header page-index clearfix" id="header">
     <div class="wrapper">
         <a href="index.html" class="logo-link">
             <img src="./img/logo.png" alt="" class="logo-img">
         </a>
+        <a href="#" class="mobile-menu-icon" id="show-menu-icon">
+            <div class="icon-line"></div>
+            <div class="icon-line selected"></div>
+            <div class="icon-line"></div>
+        </a>
         <nav class="nav">
+            <a href="#" id="close-menu">
+                <img src="./img/close-menu.png" alt="">
+            </a>
             <ul>
+                <a href="index.html" class="logo-link">
+                    <img src="./img/logo.png" alt="" class="logo-img">
+                </a>
                 <li><a href="#">Главная</a></li>
                 <li><a href="#" class="active">Рекламодателям</a></li>
                 <li><a href="#">Контакты</a></li>
@@ -27,12 +37,13 @@
                         <i class="fa fa-chevron-down"></i>
                     </a>
                     <ul>
-                        <li><a href="#"><img src="./img/flags/eng.jpg" alt="">Eng</a></li>
+                        <li><a href="#" class="active"><img src="./img/flags/eng.jpg" alt="">Eng</a></li>
                         <li><a href="#"><img src="//placehold.it/14x11" alt="">Rus</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
+
     </div>
 </header>
 
@@ -80,15 +91,15 @@
             </ul>
             <form action="#" method="post" id="form-create-account">
                 <div>
-                    <input type="text" name="email" placeholder="Введите ваш email">
+                    <input type="text" name="email" placeholder="Ваш email">
                     <input type="submit" value="Создать аккаунт" class="button">
                 </div>
                 <a href="#" id="account-isset">Уже есть аккаунт?</a>
             </form>
             <form action="#" method="post" id="form-reg-account" class="hidden">
                 <div>
-                    <input type="text" name="login" placeholder="Ваш логин">
-                    <input type="password" name="password" placeholder="Ваш пароль">
+                    <input type="text" name="login" placeholder="Логин">
+                    <input type="password" name="password" placeholder="Пароль">
                     <input type="submit" value="Войти" class="button">
                 </div>
                 <a href="#" id="account-reg">Регистрация нового аккаунта</a>
@@ -217,8 +228,9 @@
 </div>
 
 <footer id="footer">
-    <div class="wrapper">
-        <div class="body row clearfix">
+    
+    <div class="body row clearfix">
+        <div class="wrapper">
             <div class="menues clearfix">
                 <ul>
                     <h3 class="title">Инстаграммерам</h3>
@@ -263,6 +275,8 @@
                     </li>
                 </ul>
             </div>
+        </div>
+        <div class="wrapper">
             <div class="site">
                 <img src="./img/logo.png" alt="">
                 <p class="copyright">Copyright &copy; 2015. All rights reserved.</p>
@@ -276,6 +290,8 @@
                 </a>
             </div>
         </div>
+    </div>
+    <div class="row wrapper">
         <div class="row bottom clearfix">
             <div class="about">
                 <img src="img/designed.jpg" alt="">
