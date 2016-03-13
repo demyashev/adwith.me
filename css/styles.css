@@ -73,13 +73,24 @@ p {
 /*** intro section ***/
 #header {
     position: absolute;
-    top: 20px;
+    top: 0;
     left: 0;
     right: 0;
-    padding: 35px 0;
+    padding: 26px 0;
     width: 100%;
     box-sizing: border-box;
 }
+
+#header-background {
+    width: 100%;
+    height: 130px;
+
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-image: url("../img/header-bg.jpg");
+}
+
     #header.page-index {
         position: absolute;
         top: 46px;
@@ -89,10 +100,18 @@ p {
     .logo-link {
         text-decoration: none;
     }
-        .logo-img {
-            float: left;
+        #header.page-index .logo-link {
             margin-top: -8px;
         }
+        .logo-img {
+            float: left;
+            padding-top: 24px;
+            display: inline-block;
+        }
+            #header.page-index .logo-img {
+                padding-top: 0;
+            }
+        
     .nav {
         float: right;
         position: relative;
@@ -221,6 +240,98 @@ p {
             border-radius: 50px;
             margin-left: 5px;
         }
+
+    .nav .userprofile {
+        font-family: "Bliss Pro Regular";
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #fff;
+        position: relative;
+        padding: 30px 35px 35px 90px;
+        /*background-color: rgba(240,240,240,0.95);*/
+        z-index: 1;
+        letter-spacing: 1px;
+    }
+        .nav .userprofile:hover {
+            color: #52c99f;
+            cursor: default;
+        }
+        .nav .userprofile img {
+            border-radius: 50%;
+            position: absolute;
+            left: 8px;
+            top: 8px;
+        }
+        .nav .userprofile i {
+            position: absolute;
+            top: 35px;
+            right: 10px;
+            font-size: 10px;
+        }
+            .nav .userprofile:hover .fa::before {
+                content: "\f077";
+            }
+        .nav .userprofile ul {
+            display: none;
+            background-color: rgba(240,240,240,0.95);
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 90px 10px 15px 10px;
+            margin: 0;
+            list-style-type: none;
+            width: 100%;
+            box-sizing: border-box;
+            z-index: -1;
+        }
+            .nav .userprofile:hover ul {
+                display: block;
+            }
+            .nav .userprofile hr {
+                display: none;
+                border: 0;
+                padding: 0 22px 0 0;
+                margin: 26px 0 0 0;
+                width: 100%;
+                height: 1px;
+                background-color: #dcd8d5;
+            }
+                .nav .userprofile:hover hr {
+                    display: block;
+                }
+            .nav .userprofile ul li {
+                padding: 4px 23px 4px 10px;
+                display: block;
+            }
+            .nav .userprofile ul a {
+                letter-spacing: normal;
+                font-family: "Bliss Pro Light";
+                font-size: 16px;
+                box-sizing: border-box;
+                padding: 5px 0;
+                position: relative;
+                display: block;
+                float: right;
+                clear: both;
+                text-decoration: none;
+                color: #30302d;
+                border-bottom: 1px solid transparent;
+                text-transform: none;
+            }
+                .nav .userprofile ul a:hover {
+                    color: #70bff8;
+                    border-bottom: 1px solid #70bffa;
+                }
+                .nav .userprofile ul a:hover::after {
+                    display: block;
+                    position: absolute;
+                    right: -14px;
+                    top: 15px;
+                    font-family: "FontAwesome";
+                    content: "\f111";
+                    font-size: 4px;
+                    color: #70bffa;
+                }
         
 
 #slider {
@@ -531,6 +642,8 @@ p {
     background-size: cover;
 }
     #pluses img {
+        width: 90px;
+        height: auto;
         margin-top: 26px;
         margin-bottom: 15px;
     }
@@ -874,36 +987,136 @@ p {
             }
 
 #advertise-top-list {
-    padding: 65px 0;
+    padding: 42px 0 62px 0;
 }
     #advertise-top-list .header {}  
-        #advertise-top-list .sep {
+        #advertise-top-list .sep,
+        #balance .sep {
             display: block;
             width: 535px;
             height: 1px;
-            margin-top: 40px;
-            margin-bottom: 60px;
+            margin-top: 16px;
+            margin-bottom: 30px;
             background-color: #e2e6e9;
         }
-        #advertise-top-list h2 {
+        #advertise-top-list h2,
+        #balance h2 {
             display: inline-block;
             float: left;
             color: #181818;
             font-family: "Bliss Pro Medium";
-            font-size: 24px;
+            font-size: 35px;
             line-height: 20px;
             text-transform: uppercase;
-            margin: 0 0 23px 0;
+            margin: 20px 0 0 0;
         }
-        #advertise-top-list .filter {
+        #advertise-top-list .filter,
+        #balance .filter {
+            display: block;
             float: right;
+            list-style-type: none;
+            position: relative;
+            padding: 0;
+            margin: 0;
+            background-color: #fff;
         }
-            #advertise-top-list .filter li {}
-                #advertise-top-list .filter a {}
+
+            #advertise-top-list .filter .title,
+            #balance .filter .title {
+                letter-spacing: 1px;
+                display: inline-block;
+                border-radius: 50px;
+                border-width: 3px;
+                border-color: #f0f0f0;
+                border-style: solid;
+                padding: 19px 30px;
+                color: #8d8b8c;
+                position: relative;
+                z-index: 1;
+                font-size: 20px;
+                font-family: "Bliss Pro Light";
+            }
+
+                #advertise-top-list .filter .title .fa,
+                #balance .filter .title .fa {
+                    margin-left: 65px;
+                    font-size: 12px;
+                }
+
+            #advertise-top-list .filter ul,
+            #balance .filter ul {
+                background-color: #fff;
+                position: absolute;
+                top: 35px;
+                left: 0;
+
+                display: none;
+                list-style-type: none;
+                padding: 50px 30px 10px 30px;
+
+                border-bottom-left-radius: 25px;
+                border-bottom-right-radius: 25px;
+                border-width: 3px;
+                border-color: #f0f0f0;
+                border-style: solid;
+
+                border-top: 0;
+                box-sizing: border-box;
+                width: 100%;
+            }
+                #advertise-top-list .filter li:hover ul,
+                #balance .filter li:hover ul {
+                    display: block;
+                }
+                #advertise-top-list .filter li {
+                    display: block;
+                }
+                    #advertise-top-list .filter li:hover,
+                    #balance .filter li:hover {
+                        cursor: pointer;
+                    }
+                    #advertise-top-list .filter ul li {}
+                        #advertise-top-list .filter a,
+                        #balance .filter a {
+                            display: block;
+                            padding: 12px 0;
+                            text-decoration: none;
+                            color: #8d8b8c;
+                        }
+                            #advertise-top-list .filter a:hover,
+                            #balance .filter a:hover {
+                                color: #30a588;
+                            }
+                            #advertise-top-list .filter a img {
+                                border-radius: 0;
+                                margin-right: 11px;
+                            }
 
     #advertise-top-list table {
         width: 100%;
     }
+
+        
+        #advertise-top-list table th:nth-child(1) {
+            width: 82px;
+        }
+
+        #advertise-top-list table th:nth-child(2) {
+            width: 323px;
+        }
+
+        #advertise-top-list table th:nth-child(3) {
+            width: 187px;
+        }
+
+        #advertise-top-list table th:nth-child(4) {
+            width: 172px;
+        }
+
+        #advertise-top-list table th:nth-child(5) {
+            width: 166px;
+        }
+
         #advertise-top-list thead {
             
             text-align: left;
@@ -911,6 +1124,8 @@ p {
             text-transform: uppercase;
             font-size: 18px;
             font-family: "Bliss Pro Bold";
+            line-height: 18px;
+            vertical-align: middle;
         }   
             #advertise-top-list th {
                 padding: 25px 0;
@@ -922,30 +1137,48 @@ p {
                 #advertise-top-list thead a.sorted {
                     color: #70bff8;
                 }
+                    #advertise-top-list thead a > .fa {
+                        margin-left: 8px;
+                        margin-top: -3px;
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
         #advertise-top-list tbody {
             color: #1e1e1e;
             font-size: 18px;
             font-family: "Bliss Pro Regular";
         }
             #advertise-top-list td {
-                padding: 19px 0;
+                padding: 15px 0;
+
                 border-top: 1px solid #e2e6e9;
             }
-                #advertise-top-list a {
+                #advertise-top-list tbody a {
                     text-decoration: none;
                     color: #30a588;
-                    margin-right: 10px;
+                    margin-right: 8px;
+                    font-size: 18px;
+                    font-family: "Bliss Pro Bold";
+                }
+
+                #advertise-top-list .fa {
+                    margin-right: 5px;
                 }
 
                 #advertise-top-list img {
                     border-radius: 50%;
                 }
+                    #advertise-top-list .flag {
+                        width: 30px;
+                        height: 30px;
+                        margin-top: 8px;
+                    }
 
                 #advertise-top-list .lable {
                     display: inline-block;
                     background-color: #fff444;
                     color: #181818;
-                    padding: 15px 20px;
+                    padding: 10px 20px;
                     text-transform: uppercase;
                     font-size: 16px;
                     font-family: "Bliss Pro Regular";
@@ -978,13 +1211,171 @@ p {
         background-color: #fff444;
         border-width: 0;
     }
+        #advertise-wish .button:hover {
+            background-color: #EADF33;
+        }
         #advertise-wish .button .fa {
             font-size: 24px;
             margin: 0 9px 0 0;
         }
 
+/*** breadcrumbs section ***/
+.breadcrumbs {
+    padding: 26px 0;
+    background-color: #f0f0f0;
+}
+    .breadcrumbs .route {
+        position: absolute;
+        font-family: "Bliss Pro Regular";
+        font-size: 20px;
+        line-height: 38px;
+    }
+        .breadcrumbs .route .fa {
+            margin-right: 20px;
+        }
+    .breadcrumbs h2 {
+        text-align: center;
+        font-size: 37px;
+        line-height: 37px;
+        margin: 0;
+        font-family: "Bliss Pro Bold";
+        text-transform: uppercase;
+        color: #1e1e1e;
+    }
 
+/*** balance section ***/
+#balance {
+    padding-top: 30px;
+    padding-bottom: 45px;
+}
+    #balance .summa {
+        width: 230px;
+        float: left;
+        text-align: center;
+        padding-top: 18px;
+    }
+        #balance .circle {
+            position: relative;
+            display: block;
+            width: 100%;
+            padding: 50% 0;
+            margin-bottom: 22px;
+            border-radius: 50%;
+            text-align: center;
 
+            background: #51c8a2;
+            background: -moz-linear-gradient(-45deg,  #51c8a2 0%, #4d9fcf 100%);
+            background: -webkit-linear-gradient(-45deg,  #51c8a2 0%,#4d9fcf 100%);
+            background: linear-gradient(135deg,  #51c8a2 0%,#4d9fcf 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#51c8a2', endColorstr='#4d9fcf',GradientType=1 );
+
+        } 
+            #balance .current {
+                display: inline-block;
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                margin: auto auto;
+                text-align: center;
+                color: #fff;
+                font-size: 32px;
+                vertical-align: middle;
+                line-height: 50px;
+            }
+                #balance .current .fa {
+
+                }
+            #balance .onbalance {
+                font-family: "Bliss Pro Light";
+                font-size: 21px;
+                color: #1e1e1e;
+            }
+
+            #balance a.button {
+                letter-spacing: 1px;
+                margin-top: 18px;
+                background-color: #fff444;
+                font-size: 17px;
+                color: #1b1f20;
+                border: 0;
+                padding: 22px 25px;
+                display: inline-block;
+            }
+    #balance .sep {
+        width: 52px;
+        height: 2px;
+        background-color: #319ad1;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    #balance h2 {
+        font-size: 28px;
+        margin: 23px 0 0 0;
+    }
+    #balance .schedule {
+        float: right;
+        width: 880px;
+    }
+        #balance table {
+            width: 100%;
+        }
+            #balance th {
+                text-align: left;
+                text-transform: uppercase;
+                padding: 30px 0 23px 0;
+                border-bottom: 1px solid #e8e8e8;
+            }
+            #balance th:first-child {
+                width: 292px;
+            }
+            #balance th:nth-child(2) {
+                width: 80px;
+            }
+            #balance td {
+                border-bottom: 1px solid #e8e8e8;
+                padding: 24px 0;
+                font-size: 20px;
+                line-height: 32px;
+                font-family: "Bliss Pro Regular";
+                vertical-align: middle;
+            }
+            #balance td:nth-child(2) {
+                color: #a9a9a9;
+                font-size: 20px;
+            }
+
+            
+            #balance th:last-child,
+            #balance td:last-child {
+                text-align: right;
+            }
+
+            
+
+                #balance td .fa:first-child {
+                    margin-right: 16px;
+                    margin-left: 3px;
+                    font-size: 32px;
+                    float: left;
+                }
+                #balance td a {
+                    color: #3683bb;
+                    text-decoration: none;
+                }
+                    #balance td a:hover {
+                        text-decoration: underline;
+                    }
+
+                #balance .positive {
+                    color: #30a980;
+                }
+                #balance .negative {
+                    color: #d75557;
+                }
 
 /*** footer section ***/
 #footer {
@@ -1331,8 +1722,7 @@ p {
         }
             .nav .language a.active {
                 background-color: #52c9a1;
-            }
-        
+            }        
 
 
     .mobile-menu-icon {
