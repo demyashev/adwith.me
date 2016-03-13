@@ -249,7 +249,7 @@ p {
         position: relative;
         padding: 30px 35px 35px 90px;
         /*background-color: rgba(240,240,240,0.95);*/
-        z-index: 1;
+        z-index: 2;
         letter-spacing: 1px;
     }
         .nav .userprofile:hover {
@@ -1039,7 +1039,7 @@ p {
 
                 #advertise-top-list .filter .title .fa,
                 #balance .filter .title .fa {
-                    margin-left: 65px;
+                    margin-left: 14px;
                     font-size: 12px;
                 }
 
@@ -1273,7 +1273,7 @@ p {
             #balance .current {
                 display: inline-block;
                 position: absolute;
-                width: 100px;
+                width: 130px;
                 height: 100px;
                 top: 0;
                 right: 0;
@@ -1282,12 +1282,13 @@ p {
                 margin: auto auto;
                 text-align: center;
                 color: #fff;
-                font-size: 32px;
+                font-family: "Bliss Pro Regular";
+                font-size: 43px;
                 vertical-align: middle;
                 line-height: 50px;
             }
                 #balance .current .fa {
-
+                    font-size: 38px;
                 }
             #balance .onbalance {
                 font-family: "Bliss Pro Light";
