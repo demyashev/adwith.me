@@ -1498,7 +1498,7 @@ p {
                         display: block;
                         margin-bottom: 7px;
                     }
-                        #account-stats .user-social a i {
+                        #account-stats .user-social li > a > i {
                             width: 60px;
                             height: 60px; 
                             color: #fff;
@@ -1550,6 +1550,18 @@ p {
                             #account-stats .user-social a.button:last-child:hover {
                                 background-color: #BA2433;
                             }
+
+                    #account-stats .user-social a.balance {
+                        background-color: #fff444 !important;
+                        color: #1e1c1d;
+                    }
+                    #account-stats .user-social a.balance i {
+                        margin: 0;
+                        font-size: 16px;
+                    }
+                        #account-stats .user-social a.balance:hover {
+                            background-color: #F0E312 !important;
+                        }
 
         #account-stats .stats-title {
             display: block;
@@ -1615,13 +1627,88 @@ p {
                         font-family: "Bliss Pro Medium";
                     }
 
+#account-price {
+    background-image: url("../img/pluses-bg.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    padding: 35px 0;
+}
+    #account-price h2 {
+        color: #fff;
+        font-family: "Bliss Pro Medium";
+        font-size: 34px;
+        margin: 0 0 32px 0;
+        line-height: 40px;
+        text-transform: uppercase;
+    }
+    #account-price .price::before {
+        display: block;
+        content: "";
+        width: 500px;
+        height: 1px;
+        background-color: #4f423c;
+        margin-bottom: 23px;
+    }
+    #account-price .price {
+        color: #fff;
+    }
+    #account-price .price-num {
+        color: #51c8a0;
+        font-family: "Bliss Pro Medium";
+        font-size: 34px;
+    }
+        #account-price .price-num .fa {
+            font-size: 30px;
+        }
+    #account-price a {
+        background-color: #fff444;
+        border: 0;
+        font-family: "Bliss Pro Medium";
+        color: #161a19;
+        font-size: 16px;
+        padding: 18px 35px;
+        margin-left: 27px;
+    }
+
+     #account-price .price-list {
+        padding-top: 6px;
+     }
+    #account-price .price-item {
+        color: #fff;
+        font-family: "Bliss Pro Medium";
+        font-size: 20px;
+        margin-left: 35px;
+        padding: 12px 0;
+        border-bottom: 1px solid #544741;
+    }
+        #account-price .price-item:last-child {
+            border-bottom: 0;
+        }
+        #account-price .price-item .title {}
+        #account-price .price-item .cost {
+            color: #4cba95;
+            float: right;
+        }
+            #account-price .price-item .cost .fa {
+                font-size: 18px;
+            }
+
+
+    
+
 #account-activate {
     background-color: #fff444;
     padding: 39px 0 0 0;
+    height: 176px;
+    box-sizing: border-box;
 }
+    #account-activate.activated {
+        background-color: #32a588;
+    }
     #account-activate .profile-img {
         position: absolute;
-        bottom: 0;
+        top: 14px;
         left: -96px;
     }
     #account-activate h2 {
@@ -1631,14 +1718,27 @@ p {
         font-family: "Bliss Pro Medium";
         margin: 0 0 -4px 0;
     }
+    #account-activate.activated h2 {
+        color: #fff;
+    }
     #account-activate .form {
         padding: 0 0 39px 0;
     }
         #account-activate .form span {
+            float: left;
             font-family: "Bliss Pro Regular";
             font-size: 18px;
+            line-height: 24px;
+            padding-top: 20px;
+            width: 470px;
         }
-        #account-activate .form .url {
+
+        #account-activate.activated .form span {
+            width: 620px;
+            color: #fff;
+        }
+        #account-activate .form #url {
+            float: left;
             display: inline-block;
             padding: 20px 40px 20px 54px;
             background-color: #fff;
@@ -1650,22 +1750,35 @@ p {
             font-family: "Bliss Pro Medium";
             font-size: 18px;
         }
-            #account-activate .form .url i {
+        #account-activate.activated #url {
+            display: none;
+        }
+            #account-activate .form #url i {
                 position: absolute;
                 left: 22px;
                 top: 22px;
             }
+        #account-activate .form .buttons {
+            float: right;
+            margin-top: 20px;
+        }
+        #account-activate.activated .form .buttons {
+            margin-top: 4px;
+        }
         #account-activate .form a.button {
+
             font-family: "Bliss Pro Medium";
             font-size: 16px;
             border: 0;
             padding: 18px 34px;
         }
-            #account-activate .form a.check {
+            #account-activate .form a.check,
+            #account-activate .form a.edit {
                 margin-right: 3px;
                 background-color: #2fa7c9;
             }
-                #account-activate .form a.check:hover {
+                #account-activate .form a.check:hover,
+                #account-activate .form a.edit:hover {
                     background-color: #2295B5;
                 }
             #account-activate .form a.profile {
@@ -1674,6 +1787,23 @@ p {
                 #account-activate .form a.profile:hover {
                     background-color: #279076;
                 }
+
+            #account-activate .form a.edit {
+                display: none;
+            }
+            #account-activate.activated .form a.edit {
+                display: inline-block;
+            }
+            #account-activate.activated .form a.check {
+                display: none;
+            }
+            #account-activate.activated .form a.profile {
+                background-color: #fff444;
+                color: #181816;
+            }
+
+            
+
 
 #account-menu {
     padding: 36px 0 34px 0;
