@@ -1378,6 +1378,458 @@ p {
                     color: #d75557;
                 }
 
+/*** instagramer info section ***/
+#account-stats {}
+    #account-stats .left {}
+    #account-stats .right {
+        padding-left: 54px;
+        box-sizing: border-box;
+    }
+    #account-stats .bg {
+        position: absolute;
+        background-image: url("../img/user-circle-bg.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 500px;
+        height: 583px;
+        width: 100%;
+    }
+        #account-stats .bg .gradient {
+            height: 331px;
+            background: -moz-linear-gradient(-45deg,  rgba(64,144,179,1) 0%, rgba(0,137,98,0.74) 100%);
+            background: -webkit-linear-gradient(-45deg,  rgba(64,144,179,1) 0%,rgba(0,137,98,0.74) 100%);
+            background: linear-gradient(135deg,  rgba(64,144,179,1) 0%,rgba(0,137,98,0.74) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4090b3', endColorstr='#bd008962',GradientType=1 );
+        }
+        #account-stats .bg .solid-color {
+            height: 252px;
+            background-color: rgba(200,200,200,0.25);
+        }
+    #account-stats .content {
+        height: 583px;
+    }
+        #account-stats .user-info {
+            padding-top: 51px;
+            padding-right: 72px;
+            padding-bottom: 43px;
+        }
+            #account-stats .user-info .avatar {
+                padding-right: 28px;
+                box-sizing: border-box;
+            }
+
+                #account-stats .user-info img {
+                    border-radius: 50%;
+                }
+                #account-stats .avatar img {
+                    width: 100%;
+                    height: auto;
+                }
+            #account-stats .user-info h3 {
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 30px;
+                line-height: 32px;
+                font-family: "Bliss Pro Extra Light";
+                color: #fff344;
+                margin: 0;
+                letter-spacing: 1px;
+            }
+            #account-stats .user-info h4 {
+                text-align: center;
+                font-size: 26px;
+                line-height: 32px;
+                font-family: "Bliss Pro Extra Light";
+                color: #fff;
+                margin: 15px;
+            }
+            #account-stats .country {
+                border-bottom: 1px solid #86c5bd;
+                text-align: center;
+                padding: 3px 0 23px 0;
+            }
+                #account-stats .country img {
+                    display: inline-block;
+                    margin-bottom: -8px;
+                    margin-right: 12px;
+                }
+                #account-stats .country span {
+                    display: inline-block;
+                    margin-top: -4px;
+                    font-size: 20px;
+                    line-height: 32px;
+                    font-family: "Bliss Pro Extra Light";
+                    color: #fff;
+                }
+
+            #account-stats .user-info .counter-num {
+                    font-size: 28px;
+                    line-height: 32px;
+                    font-family: "Bliss Pro Extra Light";
+                    color: #fff;
+                    text-align: center;
+                    padding-top: 19px;
+            }
+                #account-stats .user-info .counter-num i {
+                    margin-right: 6px;
+                }
+            #account-stats .user-info .counter-views {
+                display: inline-block;
+                font-size: 18px;
+                line-height: 32px;
+                font-family: "Bliss Pro Extra Light";
+                color: #e1e1e1;
+                text-align: center;
+                width: 100%;
+            }
+        #account-stats .user-social {
+            padding: 32px 27px 0 27px;
+        }
+            #account-stats .user-social ul {
+                padding: 0;
+                margin: 0;
+                text-align: center;
+            }
+                #account-stats .user-social li {
+                    display: inline-block;
+                    margin: 0 17px;
+                }
+                    #account-stats .user-social a {
+                        display: block;
+                        margin-bottom: 7px;
+                    }
+                        #account-stats .user-social a i {
+                            width: 60px;
+                            height: 60px; 
+                            color: #fff;
+                            font-size: 15px;
+                            line-height: 60px;
+                            vertical-align: middle;
+                            text-align: center;
+                            border-radius: 50%;
+                        }
+                        #account-stats .user-social a i.fa-vk { background-color: #417195; }
+                        #account-stats .user-social a:hover i.fa-vk { background-color: #34678E; }
+                        #account-stats .user-social a i.fa-facebook { background-color: #296d9c; }   
+                        #account-stats .user-social a:hover i.fa-facebook { background-color: #246694; }
+                        #account-stats .user-social a i.fa-twitter { background-color: #57a9e5; }
+                        #account-stats .user-social a:hover i.fa-twitter { background-color: #499DDA; }
+                        #account-stats .user-social a i.fa-youtube { background-color: #ca2f3f; }
+                        #account-stats .user-social a:hover i.fa-youtube { background-color: #BA1E2E; }
+                        #account-stats .user-social a i.fa-map-marker { background-color: #40a4c4; }
+                        #account-stats .user-social a:hover i.fa-map-marker { background-color: #3798B7; }
+
+                    #account-stats .user-social span {
+                        font-size: 16px;
+                        line-height: 32px;
+                        font-family: "Bliss Pro Regular";
+                        color: #1e1e1e;
+                    }
+                        #account-stats .user-social span i {
+                            margin-right: 5px;
+                        }
+                    #account-stats .user-social a.button {
+                        width: auto;
+                        display: inline-block;
+                        margin-top: 21px;
+                        border: 0;
+                        padding: 22px 43px;
+                        font-size: 18px;
+                        font-family: "Bliss Pro Regular"
+                    }
+                        #account-stats .user-social a.button:first-child {
+                            background-color: #2fa7c9;
+                            margin-right: 18px;
+                        }
+                            #account-stats .user-social a.button:first-child:hover {
+                                background-color: #1C92B4;
+                            }
+                        #account-stats .user-social a.button:last-child {
+                            background-color: #ca2f3f;
+                        }
+                            #account-stats .user-social a.button:last-child:hover {
+                                background-color: #BA2433;
+                            }
+
+        #account-stats .stats-title {
+            display: block;
+            font-size: 37px;
+            line-height: 32px;
+            font-family: "Bliss Pro Light";
+            color: #1e1e1e;
+            margin: 40px 0;
+            text-transform: uppercase;
+        }
+            #account-stats .stats-title::after {
+                display: block;
+                content: "";
+                width: 536px;
+                height: 1px;
+                background-color: #dee2e5;
+                position: absolute;
+                margin-top: 40px;
+            }
+
+        #account-stats .stats-list {
+            padding: 60px 0 0 0;
+        }
+            #account-stats .stats-item {
+                display: inline-block;
+                float: left;
+                width: 33.33333333%;
+                text-align: center;
+                margin-bottom: 37px;
+            }
+                #account-stats .stats-item img {
+                    
+                }
+                    #account-stats .stats-item .counter::before {
+                        width: 90px;
+                        height: 2px;
+                        position: absolute;
+                        top: 10px;
+                        left: 50%;
+                        margin-left: -45px;
+
+                        display: inline-block;
+                        background-color: #d2d3d5;
+                        content: "";
+                    }
+                #account-stats .stats-item .counter {
+                    position: relative;
+                    line-height: 32px;
+                    font-family: "Bliss Pro Light";
+                    color: #1e1e1e;
+                    padding-top: 25px;
+                    text-transform: uppercase;
+                }
+                    #account-stats .stats-item .counter-title {
+                        display: block;
+                        color: #1d1d1d;
+                        font-size: 17px;
+                        font-family: "Bliss Pro Medium";
+                    }
+                    #account-stats .stats-item  .counter-num {
+                        color: #31aa81;
+                        font-size: 29px;
+                        font-family: "Bliss Pro Medium";
+                    }
+
+#account-activate {
+    background-color: #fff444;
+    padding: 39px 0 0 0;
+}
+    #account-activate .profile-img {
+        position: absolute;
+        bottom: 0;
+        left: -96px;
+    }
+    #account-activate h2 {
+        color: #19171a;
+        font-size: 35px;
+        text-transform: uppercase;
+        font-family: "Bliss Pro Medium";
+        margin: 0 0 -4px 0;
+    }
+    #account-activate .form {
+        padding: 0 0 39px 0;
+    }
+        #account-activate .form span {
+            font-family: "Bliss Pro Regular";
+            font-size: 18px;
+        }
+        #account-activate .form .url {
+            display: inline-block;
+            padding: 20px 40px 20px 54px;
+            background-color: #fff;
+            border-radius: 50px;
+            position: relative;
+            
+            margin-left: 9px;
+            margin-right: 10px;
+            font-family: "Bliss Pro Medium";
+            font-size: 18px;
+        }
+            #account-activate .form .url i {
+                position: absolute;
+                left: 22px;
+                top: 22px;
+            }
+        #account-activate .form a.button {
+            font-family: "Bliss Pro Medium";
+            font-size: 16px;
+            border: 0;
+            padding: 18px 34px;
+        }
+            #account-activate .form a.check {
+                margin-right: 3px;
+                background-color: #2fa7c9;
+            }
+                #account-activate .form a.check:hover {
+                    background-color: #2295B5;
+                }
+            #account-activate .form a.profile {
+                background-color: #32a588;
+            }
+                #account-activate .form a.profile:hover {
+                    background-color: #279076;
+                }
+
+#account-menu {
+    padding: 36px 0 34px 0;
+    border-bottom: 1px solid #e2e6e9;
+}
+    #account-menu li {
+        display: inline-block;
+        margin-right: 50px;
+        float: left;
+    }
+        #account-menu li:last-child {
+            margin-right: 0;
+        }
+        #account-menu i {
+            position: absolute;
+            left: -41px;
+            width: 45px;
+
+            font-size: 33px;
+            color: #181818;
+            line-height: 38px;
+            vertical-align: middle;
+        }
+            #account-menu a.active i,
+            #account-menu a:hover i {
+                color: #3fadce;
+            }
+        #account-menu a {
+            position: relative;
+            margin-left: 45px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #181818;
+            font-size: 18px;
+            line-height: 38px;
+
+            font-family: "Bliss Pro Regular";
+            padding: 12px 0;
+        }
+            #account-menu a.active,
+            #account-menu a:hover {
+                color: #31a5ca;
+                border-bottom: 2px solid #2fa7ca;
+            }
+
+#account-offers {}
+    #account-offers table {
+        width: 100%;
+        margin: 20px 0;
+     
+
+    }
+    #account-offers thead {
+        text-align: left;
+        color: #181818;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-family: "Bliss Pro Regular";
+    }
+        #account-offers th {
+            padding: 25px 0;
+            border-bottom: 1px solid #e2e6e9;
+        }
+        #account-offers td {
+            position: relative;
+            padding: 37px 0;
+            border-bottom: 1px solid #e2e6e9;
+            font-size: 18px;
+            line-height: 23px;
+            vertical-align: top;
+            font-family: "Bliss Pro Regular";
+        }
+
+            #account-offers th:nth-child(1) {
+                width: 10px;
+            }
+            #account-offers th:nth-child(2) {
+                width: 110px;
+                padding-left: 17px;
+            }
+            #account-offers th:nth-child(3) {
+                width: 352px;
+            }
+            #account-offers th:nth-child(4) {
+                width: 170px;
+            }
+            #account-offers th:nth-child(5) {
+                width: 100px;
+            }
+            #account-offers th:nth-child(6) {
+                width: 140px;
+            }
+            #account-offers td:nth-child(1) {
+                width: 10px;
+                -webkit-box-shadow: inset 0px 3px 0px 0px rgba(255,255,255,1), inset 0px -3px 0px 0px rgba(255,255,255,1);
+                -moz-box-shadow: inset 0px 3px 0px 0px rgba(255,255,255,1), inset 0px -3px 0px 0px rgba(255,255,255,1);
+                box-shadow: inset 0px 3px 0px 0px rgba(255,255,255,1), inset 0px -3px 0px 0px rgba(255,255,255,1);
+                /*border-bottom: 0;*/
+            }
+            #account-offers td:nth-child(2) {
+                padding-left: 17px;
+            }
+            #account-offers td:nth-child(4) {
+                padding-left: 75px;
+            }
+            #account-offers td:nth-child(5) {
+                color: #32a584;
+            }
+            #account-offers td:nth-child(6) .fa {
+                color: #32a584;
+                margin-right: 8px;
+            }
+
+            #account-offers td img {
+                border-radius: 50%;
+                position: absolute;
+                top: 20px;
+                left: 0;
+            }
+
+    #account-offers tbody {
+        color: #181818;
+        font-size: 18px;
+        font-family: "Bliss Pro Regular";
+    }
+        #account-offers tr.finished td:first-child {
+            background-color: #44b28d;
+        } 
+            #account-offers tr.finished td.status {
+                color: #44b28d;
+            }
+        #account-offers tr.canseled td:first-child {
+            background-color: #e12929;
+        } 
+            #account-offers tr.canseled td.status {
+                color: #e12929;
+            }
+        #account-offers tr.waiting td:first-child {
+            background-color: #f5a325;
+        } 
+            #account-offers tr.waiting td.status {
+                color: #f5a325;
+            }
+
+        #account-offers a.button {
+            background-color: #fff;
+            border-color: #f2f2f2;
+            color: #181818;
+            font-size: 16px;
+            font-family: "Bliss Pro Regular";
+            padding: 16px 26px;
+        }
+            #account-offers a.button:hover {
+                border-color: #E8E8E8;
+            }
+
 /*** footer section ***/
 #footer {
     background-color: #161415;
