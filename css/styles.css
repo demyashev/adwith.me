@@ -1652,14 +1652,22 @@ p {
     }
     #account-price .price {
         color: #fff;
+        font-family: "Bliss Pro Light";
+        font-size: 20px;
     }
     #account-price .price-num {
         color: #51c8a0;
         font-family: "Bliss Pro Medium";
         font-size: 34px;
+        line-height: 46px;
+        vertical-align: middle;
     }
         #account-price .price-num .fa {
             font-size: 30px;
+        }
+        #account-price.no-price .price-num .fa {
+            font-size: 36px;
+            margin-right: 10px;
         }
     #account-price a {
         background-color: #fff444;
@@ -1668,12 +1676,36 @@ p {
         color: #161a19;
         font-size: 16px;
         padding: 18px 35px;
-        margin-left: 27px;
+        margin-left: 16px;
     }
 
-     #account-price .price-list {
+    #account-price .price-list {
         padding-top: 6px;
-     }
+    }
+
+    #account-price.no-price .price-list p::before,
+    #account-price.no-price .price-list p::after {
+        display: block;
+        width: 58px;
+        height: 3px;
+        background-color: #fff344;
+        content: "";
+    }
+    #account-price.no-price .price-list p::before {
+        margin-bottom: 24px;
+    }
+    #account-price.no-price .price-list p::after {
+        margin-top: 21px;
+    }
+    #account-price.no-price .price-list p {
+        color: #fff;
+        font-family: "Bliss Pro Regular";
+        font-size: 20px;
+        line-height: 30px;
+        margin: 15px 36px;
+        display: inline-block;
+        position: relative;
+    }
     #account-price .price-item {
         color: #fff;
         font-family: "Bliss Pro Medium";
@@ -1694,8 +1726,64 @@ p {
                 font-size: 18px;
             }
 
+#account-countries {
+    text-align: center;
+    padding-bottom: 69px;
+}
 
-    
+    #account-countries h2 {
+        color: #373737;
+        font-family: "Bliss Pro Light";
+        font-size: 20px;
+        margin: 34px 0 32px 0;
+        line-height: 30px;
+        padding: 0;
+    }  
+
+    #account-countries .countries-list {
+        padding-top: 8px;
+    }
+    #account-countries .sep {
+        width: 90px;
+        height: 2px;
+        background-color: #d6d7d9;
+        display: inline-block;
+    }
+    #account-countries .country-item {
+        text-align: left;
+        padding: 24px 0;
+        border-bottom: 1px solid #efebec;
+        line-height: 12px;
+        vertical-align: middle;
+    }
+        #account-countries .country-item::after {
+            display: block;
+            content: "";
+            clear: both;
+        }
+    #account-countries .col-3 {
+        padding-right: 16px;
+        box-sizing: border-box;
+    }
+    #account-countries .col-3:last-child {
+        padding-right: 0;
+    }
+        #account-countries img {
+            float: left;
+            margin-right: 14px;
+        }
+        #account-countries .country-name {
+            font-family: "Bliss Pro Medium";
+            font-size: 19px;
+            color: #1e1e1e;
+            float: left;
+        }
+        #account-countries .percent {
+            float: right;
+            font-family: "Bliss Pro Light";
+            font-size: 22px;
+            color: #31aa81;
+        }
 
 #account-activate {
     background-color: #fff444;
