@@ -26,21 +26,64 @@ r(function(){
     reg_link          = document.getElementById('account-isset');
     create_link       = document.getElementById('account-reg');
 
+    form_inputs       = document.getElementsByClassName('form-col');
+
+
+    if (slider != null) {
+        sliderPlay();
+        sliderResize();
+        iconMouseStart(); 
+    }
     
-    sliderPlay();
-    sliderResize();
-    iconMouseStart();
 
     // listeners
     toggleTabs();
     sliderArrowEvent();
 
-    reg_link.addEventListener('click', showRegForm, false);
-    create_link.addEventListener('click', showCreateForm, false);
+    if (reg_link != null) {
+        reg_link.addEventListener('click', showRegForm, false);
+    }
 
+    if (create_link != null) {
+        create_link.addEventListener('click', showCreateForm, false);
+    }
+
+
+
+    
+        
+    window.addEventListener('scroll', fps_increase, false);
     document.getElementById('close-menu').addEventListener('click', hideMobileMenu, false);
     document.getElementById('show-menu-icon').addEventListener('click', showMobileMenu, false);
+
+    for (var i = window.form_inputs.length - 1; i >= 0; i--) {
+        window.form_inputs[i].addEventListener('click', inputAnimate, false);
+    }
 });
+
+/*----------------------------------------------------------------------------*/
+var body = document.getElementsByTagName('body');
+var timer;
+var fps_increase = function() {
+    clearTimeout(timer);
+
+    if(body[0].className == '') {
+        body[0].className = 'disable-hover';
+    }
+
+    timer = setTimeout(function(){
+        body[0].className = '';
+    }, 250);
+}
+/*----------------------------------------------------------------------------*/
+
+function inputAnimate() {
+   
+    console.log(event.target.parentNode);
+
+
+   event.target.parentNode.classList.add('active');
+}
 
 function showMobileMenu() {
     window.header.classList.add('mobile-menu-showed');
