@@ -73,7 +73,7 @@ p {
 /*** intro section ***/
 #header {
     position: absolute;
-    top: 0;
+    top: 4px;
     left: 0;
     right: 0;
     padding: 26px 0;
@@ -888,7 +888,7 @@ p {
             }
 
 /*** advertise  ***/
-#advertise-title {
+#page-header {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -897,7 +897,7 @@ p {
     padding: 150px 0 89px;
     text-align: center;
 }
-    #advertise-title h2,
+    #page-header .title,
     #advertise-wish h2 {
         margin: 54px 0 42px 0;
         color: #fff;
@@ -907,8 +907,8 @@ p {
         text-transform: uppercase;
     }
 
-        #advertise-title .sep,
-        #advertise-wish .sep {
+        #page-header .separator,
+        #advertise-wish .separator {
             display: inline-block;
             width: 103px;
             height: 2px;
@@ -1091,12 +1091,42 @@ p {
                                 border-radius: 0;
                                 margin-right: 11px;
                             }
-
-    #advertise-top-list table {
+    table {
         width: 100%;
     }
 
-        
+    thead {
+        text-align: left;
+        color: #181818;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-family: "Bliss Pro Bold";
+        line-height: 18px;
+        vertical-align: middle;
+    } 
+
+    thead a {
+        color: #30a588;
+        text-decoration: none;
+    }
+        thead a.sorted {
+            color: #70bff8;
+        }
+            thead a > .fa {
+                margin-left: 8px;
+                margin-top: -3px;
+                font-size: 12px;
+                line-height: 18px;
+            } 
+
+    tbody {
+        color: #1e1e1e;
+        font-size: 18px;
+        font-family: "Bliss Pro Regular";
+    }
+
+    #advertise-top-list  {}
+
         #advertise-top-list table th:nth-child(1) {
             width: 82px;
         }
@@ -1117,43 +1147,18 @@ p {
             width: 166px;
         }
 
-        #advertise-top-list thead {
-            
-            text-align: left;
-            color: #181818;
-            text-transform: uppercase;
-            font-size: 18px;
-            font-family: "Bliss Pro Bold";
-            line-height: 18px;
-            vertical-align: middle;
-        }   
-            #advertise-top-list th {
+         
+            table th {
                 padding: 25px 0;
             }
-            #advertise-top-list thead a {
-                color: #30a588;
-                text-decoration: none;
-            }
-                #advertise-top-list thead a.sorted {
-                    color: #70bff8;
-                }
-                    #advertise-top-list thead a > .fa {
-                        margin-left: 8px;
-                        margin-top: -3px;
-                        font-size: 12px;
-                        line-height: 18px;
-                    }
-        #advertise-top-list tbody {
-            color: #1e1e1e;
-            font-size: 18px;
-            font-family: "Bliss Pro Regular";
-        }
-            #advertise-top-list td {
+            
+        
+            table td {
                 padding: 15px 0;
 
                 border-top: 1px solid #e2e6e9;
             }
-                #advertise-top-list tbody a {
+                table tbody a {
                     text-decoration: none;
                     color: #30a588;
                     margin-right: 8px;
@@ -1161,20 +1166,20 @@ p {
                     font-family: "Bliss Pro Bold";
                 }
 
-                #advertise-top-list .fa {
+                table .fa {
                     margin-right: 5px;
                 }
 
-                #advertise-top-list img {
+                table img {
                     border-radius: 50%;
                 }
-                    #advertise-top-list .flag {
+                    table .flag {
                         width: 30px;
                         height: 30px;
                         margin-top: 8px;
                     }
 
-                #advertise-top-list .lable {
+                table .lable {
                     display: inline-block;
                     background-color: #fff444;
                     color: #181818;
@@ -1229,7 +1234,13 @@ p {
         font-family: "Bliss Pro Regular";
         font-size: 20px;
         line-height: 38px;
+        text-decoration: none;
+        color: #1e1e1e;
     }
+        .breadcrumbs .route:hover {
+            color: #47BEA4;
+        }
+
         .breadcrumbs .route .fa {
             margin-right: 20px;
         }
@@ -1892,7 +1903,14 @@ p {
 
             
 
-
+#account-menu-title {
+    line-height: 35px;
+    font-family: "Bliss Pro Bold";
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #171717;
+    margin: 42px 0 -4px 0;
+}
 #account-menu {
     padding: 36px 0 34px 0;
     border-bottom: 1px solid #e2e6e9;
@@ -1940,17 +1958,15 @@ p {
 #account-offers {}
     #account-offers table {
         width: 100%;
-        margin: 20px 0;
-     
-
+        margin: 3px 0 40px 0;
     }
-    #account-offers thead {
+    /*#account-offers thead {
         text-align: left;
         color: #181818;
         text-transform: uppercase;
         font-size: 18px;
         font-family: "Bliss Pro Regular";
-    }
+    }*/
         #account-offers th {
             padding: 25px 0;
             border-bottom: 1px solid #e2e6e9;
@@ -1994,6 +2010,9 @@ p {
             #account-offers td:nth-child(2) {
                 padding-left: 17px;
             }
+            #account-offers td:nth-child(3) {
+                padding-right: 20px;
+            }
             #account-offers td:nth-child(4) {
                 padding-left: 75px;
             }
@@ -2010,6 +2029,21 @@ p {
                 position: absolute;
                 top: 20px;
                 left: 0;
+            }
+
+            #account-offers.list td:nth-child(4) {
+                padding-left: 0;
+            }
+
+            #account-offers.list th:nth-child(4) {
+                width: 120px;
+            }
+
+            #account-offers.list th:nth-child(5) {
+                width: 125px;
+            }
+            #account-offers.list th:nth-child(6) {
+                width: 162px;
             }
 
     #account-offers tbody {
@@ -2046,6 +2080,74 @@ p {
         }
             #account-offers a.button:hover {
                 border-color: #E8E8E8;
+            }
+
+#client-offers {
+    background-color: #f0f0f0;
+    position: relative;
+}
+#client-offers .wrapper {
+    padding: 37px 0 34px 0;
+    background: url("../img/user_client_offers.jpg") no-repeat bottom right;
+}
+
+    #client-offers .icon {
+        position: absolute;
+        top: 37px;
+        left: 0;
+        width: 74px;
+        height: 74px;
+        border-radius: 50%;
+        line-height: 80px;
+        text-align: center;
+
+        background: rgb(82,201,163);
+        background: -moz-linear-gradient(-45deg,  rgba(82,201,163,1) 0%, rgba(76,160,204,1) 100%);
+        background: -webkit-linear-gradient(-45deg,  rgba(82,201,163,1) 0%,rgba(76,160,204,1) 100%);
+        background: linear-gradient(135deg,  rgba(82,201,163,1) 0%,rgba(76,160,204,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52c9a3', endColorstr='#4ca0cc',GradientType=1 );
+    }
+        #client-offers .icon .fa {
+            color: #fff;
+            font-size: 24px;
+        }
+    #client-offers .text {
+        padding-left: 87px;
+    }
+        #client-offers .summa {
+            line-height: 46px;
+            padding-left: 9px;
+        }
+            #client-offers .summa .valuta {
+                color: #171717;
+                font-size: 37px;
+                margin-right: -8px;
+            }
+            #client-offers  .summa .count {
+                color: #3caf88;
+                font-family: "Bliss Pro Regular";
+                    font-size: 45px;
+            }
+        #client-offers .desc {
+            padding-left: 9px;
+            color: #171717;
+            font-size: 20px;
+            line-height: 13px;
+            font-family: "Bliss Pro Regular";
+        }
+        #client-offers a.button {
+            display: inline-block;
+            background-color: #3caf88;
+            padding: 10px 24px;;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #fff;
+            border: 0;
+            font-family: "Bliss Pro Light";
+            margin-top: 24px;
+        }
+            #client-offers a.button:hover {
+                background-color: #35C192;
             }
 
 /*** footer section ***/
@@ -2264,6 +2366,227 @@ p {
     }
 
 }
+
+/*** about ***/
+#about-desc {
+    text-align: center;
+    color: #181818;
+    padding: 70px 0 47px 0;
+}
+    #about-desc .title,
+    #about-question .title,
+    #about-pluses .title {
+        display: inline-block;
+        max-width: 1000px;
+        font-family: "Bliss Pro Regular";
+        text-transform: uppercase;
+        font-size: 36px;
+        margin: 0;
+        line-height: 56px;
+        position: relative;
+    }
+        #about-desc .sep,
+        #about-question .sep,
+        #about-pluses .sep {
+            display: inline-block;
+            width: 535px;
+            height: 1px;
+            background-color: #e2e6e9;
+            margin: 30px 0 13px 0;
+            content: "";
+        }
+    #about-desc p {
+        font-family: "Bliss Pro Light";
+        font-size: 19px;
+        line-height: 28px;
+        text-align: left;
+    }
+    #about-desc h3 {
+        font-family: "Bliss Pro Light";
+        font-size: 28px;
+        line-height: 46px;
+        text-align: left;
+        margin: 0 0 20px 0;
+    }
+    #about-desc ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+    }
+        #about-desc li {
+            font-family: "Bliss Pro Light";
+            font-size: 20px;
+            line-height: 40px;
+        }
+            #about-desc li::before {
+                content: "––";
+                margin-right: 20px;
+            }
+
+#about-question {
+    background-image: url("../img/pluses-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+    padding: 43px 0 50px 0;
+}
+    #about-question .title {
+        width: 100%;
+    }
+    #about-question .sep {
+        margin: 33px 0 48px 0;
+    }
+    #about-question .col-2:first-child {
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+    #about-question .col-2,
+    #about-question .col-3 {
+        
+        text-align: left;
+        font-family: "Bliss Pro Light";
+        font-size: 18px;
+        line-height: 28px;
+    }
+    #about-question .col-3 {
+        margin-top: 52px;
+    }
+
+        #about-question .col-3 .icon {
+            line-height: 70px;
+            text-align: center;
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            background-color: #3caf88;
+            color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 35px;
+        }
+        #about-question .col-3 .text {
+            padding-left: 90px;
+        }
+            #about-question .col-3 .title {
+                font-family: "Bliss Pro Bold";
+                font-size: 25px;
+                line-height: 38px;
+            }
+            #about-question .col-3 p {}
+
+#about-pluses {
+    margin-top: -27px;
+}
+#about-pluses .row {
+    padding-right: 221px;
+}
+    #about-pluses .text {
+        float: left;
+        width: 80%;
+        padding-top: 27px;
+    }
+        #about-pluses .title {
+            display: block;
+            max-width: 70%;
+            margin: 63px 0 0 0;
+            line-height: 45px;
+        }
+        #about-pluses .sep {
+            margin: 30px 0 0 0;
+        }
+    #about-pluses .phone {
+        float: right;
+        width: 20%;
+        position: relative;
+        font-size: 0;
+    }
+        #about-pluses .phone img {
+            margin-left: -154px;
+        }
+
+    #about-pluses h3 {
+        font-family: "Bliss Pro Light";
+        font-size: 26px;
+        line-height: 24px;
+        text-transform: uppercase;
+        margin: 28px 0 0 0;
+    }
+    #about-pluses ul {
+        padding: 0;
+        margin: 20px 0 55px 0;
+        list-style-type: none;
+    }
+        #about-pluses ul:last-child {
+            margin: 20px 0 0 0;
+        }
+        #about-pluses li {
+            font-family: "Bliss Pro Light";
+            font-size: 20px;
+            line-height: 40px;
+            position: relative;
+            padding-left: 28px;
+        }
+            #about-pluses li::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: "\f111";
+                font-family: "FontAwesome";
+                color: #38aae0;
+                font-size: 9px;
+                line-height: 42px;
+            }
+
+/*** referal section  ***/
+#referal-desc {
+background: rgb(82,201,163);
+background: -moz-linear-gradient(-45deg,  rgba(82,201,163,1) 0%, rgba(46,164,166,1) 24%, rgba(43,135,158,1) 51%, rgba(35,114,145,1) 75%, rgba(26,92,126,1) 100%);
+background: -webkit-linear-gradient(-45deg,  rgba(82,201,163,1) 0%,rgba(46,164,166,1) 24%,rgba(43,135,158,1) 51%,rgba(35,114,145,1) 75%,rgba(26,92,126,1) 100%);
+background: linear-gradient(135deg,  rgba(82,201,163,1) 0%,rgba(46,164,166,1) 24%,rgba(43,135,158,1) 51%,rgba(35,114,145,1) 75%,rgba(26,92,126,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52c9a3', endColorstr='#1a5c7e',GradientType=1 );
+
+    color: #fff;
+    font-family: "Bliss Pro Extra Light";
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+
+    padding: 70px 0 77px 0;
+}
+    #referal-desc .wrapper {
+        max-width: 1100px;
+    }
+    #referal-desc .select {
+        font-size: 30px;
+        line-height: 40px;
+        font-family: "Bliss Pro Regular";
+    }
+
+#referal-list {
+    padding: 24px 0 55px 0;
+}
+#referal-list th:first-child {
+    width: 83px;
+}
+#referal-list th:nth-child(2) {
+    width: 584px;
+}
+#referal-list th:nth-child(3) {
+    width: 185px;
+}
+#referal-list th:nth-child(4) {
+    width: 200px;
+}
+
+
+
+
 
 /*** mobile ***/
 @media screen and (max-width: 768px) {
