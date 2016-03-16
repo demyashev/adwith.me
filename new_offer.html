@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>referer</title>
+    <title>new offer</title>
     <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=yes">
     <link rel="stylesheet" href="css/styles.css">
     <script type="text/javascript" src="js/scripts.js"></script>
@@ -57,109 +57,98 @@
             <i class="fa fa-arrow-left"></i>
             Назад в профиль
         </a>
-        <h2>Рефералы</h2>
+        <h2>Создание предложения</h2>
     </div>
 </div>
 
-<div id="referal-desc">
-    <div class="wrapper">
-        <span class="select">Реферал (или реферрал, от англ. referral — &laquo;направление&raquo;) —</span><br>
-        участник партнерской программы, зарегистрировавшийся по рекомендациям другого участника. Такая схема маркетинга широко распространена в интернете и предполагает регистрацию на сайтах, предоставляющих некие услуги.
-    </div>
-</div>
+<div class="page-content new-offer">
+    <div class="wrapper clearfix">
+        <div class="sidebar">
+            <img src="./img/users/1.png" alt="">
+            <a href="#" class="usernick">@voodooslab</a>
+            <div class="username">Вадим Прусаков</div>
+            <div class="usercountry">
+                <img src="./img/flags/big/ukr.jpg" alt=""> 
+                <span>Украина</span>
+            </div>
+        </div>
+        <div class="schedule">
+            <div class="header clearfix">
+                <h2>Введите данные для нового предложения</h2>  
+            </div>
+            <div class="separator"></div>
+            <div class="body">
+                <form action="#" enctype="multipart/form-data" method="post" class="offer">
+                    <div class="row clearfix">
+                        <div class="form-col full select">
+                            <div class="header icon-bg type">Укажите тип рекламы<i class="fa fa-chevron-down"></i></div>
+                            <ul>
+                                <li><a href="#" data-type="1">Тип 1</a></li>
+                                <li><a href="#" data-type="2">Тип 2</a></li>
+                                <li><a href="#" data-type="3">Тип 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="row clearfix">
+                        <div class="form-col full">
+                            <label for="tags">Теги (через запятую)</label>
+                            <input type="text" id="tags" name="tags" placeholder="" value="" class="icon-bg tags">
+                        </div>
+                    </div>
 
-<div id="referal-list">
-    <div class="wrapper">
-        <table>
-                <thead>
-                    <tr>
-                        <th>&nbsp;</th>
-                        <th>Имя</th>
-                        <th>
-                            <a href="#" class="sorted">Подписчиков<i class="fa fa-chevron-up"></i></a>
-                        </th>
-                        <th>
-                            <a href="#">Сумма реферала</a>
-                        </th>
-                        <th>
-                            <a href="#">Страна</a>
-                        </th>
-                    </tr>
-                </thead>
+                    <div class="row clearfix">
+                        <div class="form-col full">
+                            <label for="text">Описание задачи</label>
+                            <textarea name="text" id="text" class="icon-bg text"></textarea>
+                        </div>
+                    </div>
 
-                <tbody>
-                    <tr>
-                        <td>
-                            <img src="./img/users/2.png" alt="">
-                        </td>
-                        <td>
-                            <a href="#">
-                                d_dashutka
-                            </a>
-                            <div class="lable">
-                                Verified
-                            </div>
-                        </td>
-                        <td>
-                            <i class="fa fa-user"></i>
-                            1 233
-                        </td>
-                        <td>
-                            <i class="fa fa-usd"></i>1223
-                        </td>
-                        <td>
-                            <img src="./img/flags/big/ukr.jpg" alt="" class="flag">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="./img/users/3.png" alt="">
-                        </td>
-                        <td>
-                            <a href="#">
-                                Дмитрий Няшкин 
-                            </a>
-                            <div class="lable">
-                                Verified
-                            </div>
-                        </td>
-                        <td>
-                            <i class="fa fa-user"></i>
-                            1 233
-                        </td>
-                        <td>
-                            <i class="fa fa-usd"></i>1223
-                        </td>
-                        <td>
-                            <img src="./img/flags/big/ukr.jpg" alt="" class="flag">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="./img/users/4.png" alt="">
-                        </td>
-                        <td>
-                            <a href="#">
-                                Alexander Koval 
-                            </a>
-                            <div class="lable">
-                                Verified
-                            </div>
-                        </td>
-                        <td>
-                            <i class="fa fa-user"></i>
-                            1 233
-                        </td>
-                        <td>
-                            <i class="fa fa-usd"></i>1223
-                        </td>
-                        <td>
-                            <img src="./img/flags/big/ukr.jpg" alt="" class="flag">
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-    </div>
+                    <div class="row clearfix">
+                        <div class="form-col full">
+                            <img src="./img/icons/file.svg" alt="" class="file-icon">
+                            <div id="file">Прикрепить файл для публикации</div>
+                            <span>формат jpeg, GIF, PNG, avi, doc - не более 5 мб.</span>
+                            <input type="file" name="file" />
+                        </div>
+                    </div>
+
+                    <div class="row clearfix">
+                        <div class="form-col full">
+                            <label for="date">Дата размещения</label>
+                            <input type="text" id="date" name="date" placeholder="" value="" class="icon-bg date">
+                        </div>
+                    </div>
+
+                    <div class="row clearfix">
+                        <div class="form-col full">
+                            <label for="users">Отметить на фото пользователей (через пробел)</label>
+                            <input type="text" id="users" name="users" placeholder="" value="" class="icon-bg users">
+                        </div>
+                    </div>
+
+                    <div class="row clearfix">
+                        <div class="form-col full select">
+                            <div class="header icon-bg after">После размещения<i class="fa fa-chevron-down"></i></div>
+                            <ul>
+                                <li><a href="#" data-after="1">Действие 1</a></li>
+                                <li><a href="#" data-after="2">Действие 2</a></li>
+                                <li><a href="#" data-after="3">Действие 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row clearfix">
+                        <div class="form-col submit">
+                            <input type="submit" class="button" value="Добавить предложение">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>   
 </div>
 
 <footer id="footer">    
@@ -238,5 +227,20 @@
     </div>
 </footer>
     
-</body>
+
+    <script src="./js/jquery-2.2.1.min.js"></script>
+    <script>
+        var wrapper = $('<div/>').css({height:0,width:0,'overflow':'hidden'});
+        var fileInput = $(':file').wrap(wrapper);
+
+        fileInput.change(function(){
+            $this = $(this);
+            $('#file').text($this.val());
+        })
+
+        $('#file').click(function(){
+            fileInput.click();
+        }).show();
+    </script>
+</body> 
 </html>

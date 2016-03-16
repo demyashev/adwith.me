@@ -239,7 +239,7 @@ form {
             margin-bottom: 33px;
         }
 
-        form .subject {
+        form .select {
             font-size: 22px;
             padding: 0;
             margin: 0;
@@ -247,25 +247,25 @@ form {
             font-family: "Bliss Pro Light";
             margin-bottom: 23px;
         }
-            form .subject:hover {
+            form .select:hover {
                 cursor: default;
             }
-            form .subject:hover .header .fa::before {
+            form .select:hover .header .fa::before {
                 content: "\f077";
             }
-            form .subject .header {
+            form .select .header {
                 padding: 18px 30px;
                 background-color: #fff;
                 border-radius: 50px;
                 border: 3px solid #e9e9e9;
                 color: #8e8c8d;
             }
-                form .subject .header .fa {
+                form .select .header .fa {
                     float: right;
                     font-size: 12px;
                     line-height: 25px;
                 }
-            form .subject ul {
+            form .select ul {
                 display: none;
                 z-index: -1;
                 position: absolute;
@@ -281,14 +281,14 @@ form {
                 border: 3px solid #e9e9e9;
                 border-top: 0;
             }
-                form .subject:hover ul {
+                form .select:hover ul {
                     display: block;
                 }
-                form .subject li {
+                form .select li {
                     display: block;
 
                 }
-                    form .subject li a {
+                    form .select li a {
                         display: inline-block;
                         color: #8e8c8d;
                         text-decoration: none;
@@ -298,7 +298,7 @@ form {
                         line-height: 21px;
                         position: relative;
                     }
-                        form .subject li a::before {
+                        form .select li a::before {
                             display: inline-block;
                             content: "\f111";
                             font-family: "FontAwesome";
@@ -308,7 +308,7 @@ form {
                             left: 0;
 
                         }
-                        form .subject li a:hover {
+                        form .select li a:hover {
                             color: #181818;
                         }
 
@@ -354,7 +354,7 @@ form {
 
     #header.page-index {
         position: absolute;
-        top: 46px;
+        top: 56px;
         box-sizing: border-box;
         z-index: 3;
     }
@@ -368,6 +368,7 @@ form {
             float: left;
             padding-top: 24px;
             display: inline-block;
+            width: 164px;
         }
             #header.page-index .logo-img {
                 padding-top: 0;
@@ -518,6 +519,8 @@ form {
             cursor: default;
         }
         .nav .userprofile img {
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
             position: absolute;
             left: 8px;
@@ -717,6 +720,7 @@ form {
                         margin: 0;
                         max-width: 660px;
                         text-align: center;
+                        background: transparent;
                     }
 
                         .intro input[type=text],
@@ -727,11 +731,15 @@ form {
                             color: #777;
                             background-color: #f5f5f5;
                             text-decoration: none;
-                            padding: 22px 35px 22px 40px;
+                            padding: 22px 35px 22px 40px !important;
                             border-top-left-radius: 50px;
                             border-bottom-left-radius: 50px;
+                            border-top-right-radius: 0;
+                            border-bottom-right-radius: 0;
                             border: 0;
                             box-sizing: border-box;
+                            width: auto;
+                            height: auto;
                         }
                             .intro input {
                                 outline: none;
@@ -1210,8 +1218,6 @@ form {
         #advertise-pluses img {
             width: 75px;
             height: 75px;
-            opacity: 0.25;
-            border-radius: 50%;
 
             position: absolute;
             left: 0;
@@ -1251,8 +1257,8 @@ form {
     padding: 42px 0 62px 0;
 }
     #advertise-top-list .header {}  
-        #advertise-top-list .sep,
-        #balance .sep {
+        #advertise-top-list .separator,
+        .page-content .separator {
             display: block;
             width: 535px;
             height: 1px;
@@ -1261,7 +1267,7 @@ form {
             background-color: #e2e6e9;
         }
         #advertise-top-list h2,
-        #balance h2 {
+        .page-content h2 {
             display: inline-block;
             float: left;
             color: #181818;
@@ -1272,7 +1278,7 @@ form {
             margin: 20px 0 0 0;
         }
         #advertise-top-list .filter,
-        #balance .filter {
+        .page-content .filter {
             display: block;
             float: right;
             list-style-type: none;
@@ -1283,7 +1289,7 @@ form {
         }
 
             #advertise-top-list .filter .title,
-            #balance .filter .title {
+            .page-content .filter .title {
                 letter-spacing: 1px;
                 display: inline-block;
                 border-radius: 50px;
@@ -1299,13 +1305,13 @@ form {
             }
 
                 #advertise-top-list .filter .title .fa,
-                #balance .filter .title .fa {
+                .page-content .filter .title .fa {
                     margin-left: 14px;
                     font-size: 12px;
                 }
 
             #advertise-top-list .filter ul,
-            #balance .filter ul {
+            .page-content .filter ul {
                 background-color: #fff;
                 position: absolute;
                 top: 35px;
@@ -1326,26 +1332,26 @@ form {
                 width: 100%;
             }
                 #advertise-top-list .filter li:hover ul,
-                #balance .filter li:hover ul {
+                .page-content .filter li:hover ul {
                     display: block;
                 }
                 #advertise-top-list .filter li {
                     display: block;
                 }
                     #advertise-top-list .filter li:hover,
-                    #balance .filter li:hover {
+                    .page-content .filter li:hover {
                         cursor: pointer;
                     }
                     #advertise-top-list .filter ul li {}
                         #advertise-top-list .filter a,
-                        #balance .filter a {
+                        .page-content .filter a {
                             display: block;
                             padding: 12px 0;
                             text-decoration: none;
                             color: #8d8b8c;
                         }
                             #advertise-top-list .filter a:hover,
-                            #balance .filter a:hover {
+                            .page-content .filter a:hover {
                                 color: #30a588;
                             }
                             #advertise-top-list .filter a img {
@@ -1443,17 +1449,17 @@ form {
     }
 
 /*** balance section ***/
-#balance {
+.page-content {
     padding-top: 30px;
     padding-bottom: 45px;
 }
-    #balance .summa {
+    .page-content .sidebar {
         width: 230px;
         float: left;
         text-align: center;
         padding-top: 18px;
     }
-        #balance .circle {
+        .page-content .circle {
             position: relative;
             display: block;
             width: 100%;
@@ -1469,7 +1475,7 @@ form {
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#51c8a2', endColorstr='#4d9fcf',GradientType=1 );
 
         } 
-            #balance .current {
+            .page-content .current {
                 display: inline-block;
                 position: absolute;
                 width: 130px;
@@ -1486,16 +1492,16 @@ form {
                 vertical-align: middle;
                 line-height: 50px;
             }
-                #balance .current .fa {
+                .page-content .current .fa {
                     font-size: 38px;
                 }
-            #balance .onbalance {
+            .page-content .onbalance {
                 font-family: "Bliss Pro Light";
                 font-size: 21px;
                 color: #1e1e1e;
             }
 
-            #balance a.button {
+            .page-content a.button {
                 letter-spacing: 1px;
                 margin-top: 18px;
                 background-color: #fff444;
@@ -1504,38 +1510,42 @@ form {
                 border: 0;
                 padding: 22px 25px;
                 display: inline-block;
+                font-family: "Bliss Pro Bold";
             }
-    #balance .sep {
+                .page-content a.button:hover {
+                    background-color: #EBE037;
+                }
+    .page-content .sep {
         width: 52px;
         height: 2px;
         background-color: #319ad1;
         margin-top: 0;
         margin-bottom: 10px;
     }
-    #balance h2 {
+    .page-content h2 {
         font-size: 28px;
         margin: 23px 0 0 0;
     }
-    #balance .schedule {
+    .page-content .schedule {
         float: right;
         width: 880px;
     }
-        #balance table {
+        .page-content table {
             width: 100%;
         }
-            #balance th {
+            .page-content th {
                 text-align: left;
                 text-transform: uppercase;
                 padding: 30px 0 23px 0;
                 border-bottom: 1px solid #e8e8e8;
             }
-            #balance th:first-child {
+            .page-content th:first-child {
                 width: 292px;
             }
-            #balance th:nth-child(2) {
+            .page-content th:nth-child(2) {
                 width: 80px;
             }
-            #balance td {
+            .page-content td {
                 border-bottom: 1px solid #e8e8e8;
                 padding: 24px 0;
                 font-size: 20px;
@@ -1543,37 +1553,40 @@ form {
                 font-family: "Bliss Pro Regular";
                 vertical-align: middle;
             }
-            #balance td:nth-child(2) {
+            .page-content td:nth-child(2) {
                 color: #a9a9a9;
                 font-size: 20px;
             }
 
             
-            #balance th:last-child,
-            #balance td:last-child {
+            .page-content th:last-child,
+            .page-content td:last-child {
                 text-align: right;
             }
 
             
 
-                #balance td .fa:first-child {
+                .page-content td .fa:first-child {
+
                     margin-right: 16px;
                     margin-left: 3px;
-                    font-size: 32px;
                     float: left;
+                    width: 32px;
+                    height: 32px;
                 }
-                #balance td a {
+
+                .page-content td a {
                     color: #3683bb;
                     text-decoration: none;
                 }
-                    #balance td a:hover {
+                    .page-content td a:hover {
                         text-decoration: underline;
                     }
 
-                #balance .positive {
+                .page-content .positive {
                     color: #30a980;
                 }
-                #balance .negative {
+                .page-content .negative {
                     color: #d75557;
                 }
 
@@ -1713,8 +1726,8 @@ form {
                         #account-stats .user-social a:hover i.fa-facebook { background-color: #246694; }
                         #account-stats .user-social a i.fa-twitter { background-color: #57a9e5; }
                         #account-stats .user-social a:hover i.fa-twitter { background-color: #499DDA; }
-                        #account-stats .user-social a i.fa-youtube { background-color: #ca2f3f; }
-                        #account-stats .user-social a:hover i.fa-youtube { background-color: #BA1E2E; }
+                        #account-stats .user-social a i.fa-youtube-play { background-color: #ca2f3f; }
+                        #account-stats .user-social a:hover i.fa-youtube-play { background-color: #BA1E2E; }
                         #account-stats .user-social a i.fa-map-marker { background-color: #40a4c4; }
                         #account-stats .user-social a:hover i.fa-map-marker { background-color: #3798B7; }
 
@@ -1792,7 +1805,8 @@ form {
                 margin-bottom: 37px;
             }
                 #account-stats .stats-item img {
-                    
+                    width: 46px;
+                    height: 46px;
                 }
                     #account-stats .stats-item .counter::before {
                         width: 90px;
@@ -1865,8 +1879,10 @@ form {
             font-size: 30px;
         }
         #account-price.no-price .price-num .fa {
-            font-size: 36px;
+            margin-bottom: -3px;
             margin-right: 10px;
+            width: 32px;
+            height: 32px;
         }
     #account-price a {
         background-color: #fff444;
@@ -1877,6 +1893,10 @@ form {
         padding: 18px 35px;
         margin-left: 16px;
     }
+        #account-price a:hover {
+            background-color: #E6DC38;
+        }
+
 
     #account-price .price-list {
         padding-top: 6px;
@@ -1996,7 +2016,10 @@ form {
     #account-activate .profile-img {
         position: absolute;
         top: 14px;
-        left: -96px;
+        left: -93px;
+        width: 123px;
+        height: 123px;
+        opacity: 0.1;
     }
     #account-activate h2 {
         color: #19171a;
@@ -2111,11 +2134,12 @@ form {
         #account-menu li:last-child {
             margin-right: 0;
         }
-        #account-menu i {
+        #account-menu img {
             position: absolute;
-            left: -41px;
-            width: 45px;
-
+            left: -52px;
+            height: 40px;
+            width: 40px;
+            
             font-size: 33px;
             color: #181818;
             line-height: 38px;
@@ -2123,6 +2147,9 @@ form {
         }
             #account-menu a.active i,
             #account-menu a:hover i {
+                color: #3fadce;
+            }
+            #account-menu a:hover img {
                 color: #3fadce;
             }
         #account-menu a {
@@ -2207,17 +2234,26 @@ form {
             #account-offers td:nth-child(5) {
                 color: #32a584;
             }
-            #account-offers td:nth-child(6) .fa {
-                color: #32a584;
-                margin-right: 8px;
-            }
-
             #account-offers td img {
+                width: 63px;
+                height: 63px;
                 border-radius: 50%;
                 position: absolute;
                 top: 20px;
                 left: 0;
             }
+
+            #account-offers td:nth-child(6) .fa {
+                position: relative;
+                margin-right: 8px;
+                width: 16px;
+                top: 4px;
+                height: 16px;
+                display: inline-block;
+                float: left;
+            }
+
+            
 
             #account-offers.list td:nth-child(4) {
                 padding-left: 0;
@@ -2338,6 +2374,136 @@ form {
                 background-color: #35C192;
             }
 
+.new-offer {}
+    .new-offer .separator {
+        width: 52px;
+        height: 2px;
+        background-color: #319ad1;
+        margin-top: 24px;
+        margin-bottom: 3px;
+    }
+
+    .new-offer form {
+        background-color: transparent;
+        padding: 30px 0 9px 0;
+    }
+
+    .new-offer .form-col.submit {
+        text-align: left;
+    }
+
+    .new-offer .sidebar .usernick {
+        color: #2fa6c6;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: "Bliss Pro Light";
+        font-size: 23px;
+        display: inline-block;
+        margin-top: 25px;
+    }
+
+    .new-offer .sidebar .username {
+        color: #181818;
+
+        font-family: "Bliss Pro Light";
+        font-size: 20px;
+        display: inline-block;
+        margin-top: 9px;
+        margin-bottom: 11px;
+    }
+
+    .new-offer .sidebar .usercountry {
+        line-height: 24px;
+        vertical-align: middle;
+        margin-left: -10px;
+    }
+        .new-offer .sidebar .usercountry img {
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            margin-right: 4px;
+        }
+        .new-offer .sidebar .usercountry span {
+            line-height: 24px;
+            font-family: "Bliss Pro Light";
+            font-size: 16px;
+            color: #181818;
+            line-height: 24px;
+            vertical-align: top;
+            color: #7f7f7f;
+        }
+        .new-offer label {
+            left: 72px;
+        }
+        .new-offer .active label {
+            left: 72px;
+        }
+        .new-offer input {
+            padding: 18px 30px 0 70px;
+        }
+        .new-offer textarea {
+            padding: 30px 30px 30px 70px;
+        }
+        .new-offer input.icon-bg,
+        .new-offer textarea.icon-bg,
+        .new-offer .select .header.icon-bg {
+            background-size: 26px;
+            background-repeat: no-repeat;
+            background-position: 24px 20px;
+        }
+
+        .new-offer input.users {
+            background-image: url("../img/icons/eye.svg");
+        }
+
+        .new-offer input.tags {
+            background-image: url("../img/icons/hash.svg");
+        }
+        .new-offer textarea.text {
+            background-image: url("../img/icons/glasses.svg");
+        }
+        .new-offer .select .header {
+            padding: 18px 30px 18px 70px;
+        }
+        .new-offer .select .header.type {
+            background-image: url("../img/icons/compass.svg");
+        }
+        .new-offer .select .header.after {
+            background-image: url("../img/icons/key.svg");
+        }
+        .new-offer input.date {
+            background-image: url("../img/icons/clock.svg");
+        }
+
+        .new-offer #file {
+            display: inline-block !important;
+            color: #2fa7ca;
+            display: none;
+            font-size: 20px;
+            font-family: "Bliss Pro Light";
+            padding: 0 0 2px 0;
+            border-bottom: 1px dotted #2fa7ca;
+            margin-right: 20px;
+            margin-bottom: 36px;
+        }
+            .new-offer #file:hover {
+                cursor: pointer;
+            }
+        .new-offer #file + span {
+            color: #404040;
+            font-size: 20px;
+            font-family: "Bliss Pro Light";
+        }
+        .new-offer .file-icon {
+            width: 25px;
+            height: 25px;
+            margin-right: 9px;
+            margin-left: 16px;
+        }
+        .new-offer .button {
+            margin-top: 38px;
+            padding: 25px 90px;
+        }
 #contacts {
     color: #171717;
     padding: 17px 0 17px 0;
@@ -2365,6 +2531,8 @@ form {
             top: 0;
             left: 0;
             border-radius: 50%;
+            width: 40px;
+            height: 40px;
         }
         #contacts .col-4 {
             margin-top: 27px;
@@ -2405,6 +2573,7 @@ form {
         float: left;
     }
         #footer .copyright {
+            display: inline-block;
             color: #868686;
             font-size: 14px;
             font-family: "Bliss Pro Extra Light";
@@ -2498,6 +2667,12 @@ form {
     #footer .design {
         float: right;
         line-height: 11px;
+    }
+
+    #footer .logo-img {
+        padding-top: 0;
+        display: block;
+        width: 200px;
     }
 
 
@@ -2606,6 +2781,7 @@ form {
         display: inline-block;
         margin-right: 35px;
     }
+
 
 }
 
@@ -2824,6 +3000,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52c9a3', end
 }
 #referal-list th:nth-child(4) {
     width: 200px;
+}
+
+#referal-list td:first-child img {
+    width: 63px;
+    height: 63px;
 }
 
 
