@@ -2506,6 +2506,121 @@ form {
             padding: 25px 90px;
         }
 
+/***  ***/
+.offer-detail {
+    background: -moz-linear-gradient(-45deg,  rgba(64,144,179,1) 0%, rgba(0,137,98,0.74) 100%);
+    background: -webkit-linear-gradient(-45deg,  rgba(64,144,179,1) 0%,rgba(0,137,98,0.74) 100%);
+    background: linear-gradient(135deg,  rgba(64,144,179,1) 0%,rgba(0,137,98,0.74) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4090b3', endColorstr='#bd008962',GradientType=1 );
+    font-size: 0;
+    overflow: hidden;
+}
+
+.offer-image {
+    float: left;
+    width: 42.37288135%;
+}
+    .offer-image img {
+        width: 100%;
+        height: auto;
+    }
+.offer-details {
+    float: right;
+    width: 57.62711864%;
+    padding-bottom: 109px;
+    position: relative;
+}
+    .offer-details .text {
+        color: #fff;
+        font-family: "Bliss Pro Light";
+        font-size: 20px;
+        padding-left: 41px;
+    }
+        .offer-details .text .title {
+            font-size: 32px;
+            text-transform: uppercase;
+            font-family: "Bliss Pro Light";
+        }
+
+        .offer-details .text .separator {
+            width: 100%;
+            height: 1px;
+            background-color: #85c7bb;
+        }
+
+        .offer-details .text .row {
+            margin-bottom: 10px;
+        }
+
+            .offer-details .text .left-side {
+                display: inline-block;
+                float: left;
+                font-size: 20px;
+            }
+
+            .offer-details .text .right-side {
+                display: inline-block;
+                float: right;
+                font-size: 20px;
+            }
+
+            .offer-details .text .free-space {
+                display: inline-block;
+                border-bottom: 1px solid #47ad97;
+                float: left;
+                width: 100%;
+            }
+
+            .offer-details .buttons {
+                display: inline-block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 1000%;
+                padding: 20px 0 20px 41px;
+                background-color: #f0f0f0;
+            }
+                .offer-details  a.up-cost {
+                    font-family: "Bliss Pro Light";
+                    border: 0;
+                    font-size: 14px;
+                    padding: 14px 33px;
+                    background-color: #fff444;
+                    color: #1d1d1d;
+                }
+                .offer-details  .buttons a {
+                    padding: 22px 39px;
+                    font-size: 18px;
+                }
+                .offer-details  .buttons a.agree {
+                    background-color: #2fa7c9;
+                    border: 0;
+                    color: #fff;
+                    margin-right: 18px;
+                }
+
+                .offer-details .buttons a.deny {
+                    background-color: #ca2f3f;
+                    border: 0;
+                    color: #fff;
+                }
+            
+
+.offer-details table td:nth-child(2) {
+    border-bottom: 1px solid #47ad97;
+    width: 100%;
+}
+.offer-details table td:nth-child(3) {
+    float: right;
+}
+.offer-details table td:nth-child(1) {
+    float: left;
+}
+
+
+ 
+
+/***  ***/
 .take-question {
     width: 100%;
     padding: 37px 0 34px 0;
