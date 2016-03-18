@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>offer detail</title>
+    <title>offer detail up price</title>
     <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=yes">
     <link rel="stylesheet" href="css/styles.css">
     <script type="text/javascript" src="js/scripts.js"></script>
@@ -154,7 +154,7 @@
 
         <form action="#" method="post">
             <input type="hidden" name="subject" value="1">
-            <div class="row clearfix">
+    
             <div class="row clearfix">
                 <div class="form-col full">
                     <label for="text">Ваше сообщение</label>
@@ -167,6 +167,43 @@
                 </div>
             </div>
         </form>
+    </div>
+</div>
+
+
+<div class="popup-bg">
+    <div class="popup-container up-price">
+        <div class="title">Поднять цену</div>
+        <a href="#" class="popup-close">
+            <img src="./img/popup-close.jpg" alt="">
+        </a>
+        <div class="text">
+            <div class="gradient">
+                <div class="row nums clearfix">
+                    <div class="col-3">
+                        <i class="fa fa-usd"></i>300
+                    </div>
+                    <div class="col-3">
+                        <img src="//placehold.it/1x1" alt="" class="icon-arrow">
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-usd"></i>
+                        <input type="text" name="new-price" class="new-price" value="450">
+                    </div>
+                </div>
+                <div class="row price-new">
+                    <img src="//placehold.it/1x1" alt="" class="icon-edit">Укажите новую цену
+                </div>
+            </div>
+            <div class="row or">или</div>
+            <div class="price-inc">
+                <a href="#" class="button price-up-1">+10%</a>
+                <a href="#" class="button price-up-2">+20%</a>
+                <a href="#" class="button price-up-3">+50%</a>
+                <a href="#" class="button price-up-4">+100%</a>
+            </div>
+            <a href="#" class="button price-up-send">Поднять</a>
+        </div>
     </div>
 </div>
 
@@ -247,6 +284,14 @@
         </div>
     </div>
 </footer>
+
+    <script src="./js/jquery-2.2.1.min.js"></script>
+    <script>
+        $('.popup-close').click(function(){
+            $('.popup-bg').hide();
+            return false;
+        });
+    </script>
     
 </body>
 </html>

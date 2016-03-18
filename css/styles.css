@@ -73,6 +73,165 @@
     display: none;
 }
 
+.popup-bg {
+    background-color: rgba(0, 0, 0, 0.95);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+    .popup-container {
+        margin: 2% auto;
+        max-width: 760px;
+        width: 100%;
+        background-color: #ebf2f8;
+        color: #1f1f1f;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 36px;
+        position: relative;
+        border-radius: 33px;
+        border-top-right-radius: 0;
+        
+    }
+        .popup-container .title {
+            font-family: "Bliss Pro Bold";
+            padding: 36px 0 32px 0;
+        }
+        .popup-close {
+            position: absolute;
+            top: 44px;
+            right: 44px;
+            font-size: 0;
+            transition: transform 150ms ease;
+        }
+            .popup-close:hover {
+                transform: rotate(90deg);
+            }
+            .popup-close img {
+                width: 28px;
+                height: 28px;
+            }
+
+    .up-price .text .or {
+        font-size: 28px;
+        color: #434343;
+        padding: 28px 0;
+    }
+
+    .up-price .gradient {
+        background: rgb(58,134,186);
+        background: -moz-linear-gradient(left,  rgba(58,134,186,1) 0%, rgba(52,183,139,1) 100%);
+        background: -webkit-linear-gradient(left,  rgba(58,134,186,1) 0%,rgba(52,183,139,1) 100%);
+        background: linear-gradient(to right,  rgba(58,134,186,1) 0%,rgba(52,183,139,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a86ba', endColorstr='#34b78b',GradientType=1 );
+    
+        padding: 63px 75px 60px 75px;
+    }
+        .up-price .nums {
+            padding: 0 22px;
+            font-size: 71px;
+            font-family: "Bliss Pro Light";
+            color: #4ef0b7;
+        }
+            .up-price .nums .col-3 .fa {
+                position: absolute;
+                top: 13px;
+                left: 0;
+            }
+
+
+        .up-price .fa {
+            font-size: 64px;
+        }
+
+        .up-price .new-price {
+            display: inline-block;
+            background-color: transparent;
+            border: 0;
+            color: #fff;
+            padding: 0 0 3px 39px;
+            border-bottom: 4px solid #fff;
+            width: 100%;
+            box-sizing: border-box;
+        }
+            .up-price .new-price:active,
+            .up-price .new-price:focus {
+                outline: none;
+            }
+
+        .up-price .icon-arrow {
+            width: 88px;
+        }
+
+        .up-price .price-new {
+            color: #e5e6e8;
+            font-size: 22px;
+            line-height: 26px;
+            vertical-align: middle;
+            text-align: right;
+            text-transform: none;
+            font-family: "Bliss Pro Extra Light";
+        }
+            .up-price .price-new img {
+                width: 26px;
+                height: 26px;
+                margin-right: 17px;
+                line-height: 26px;
+            }
+    
+    .up-price .price-inc {
+        font-size: 0;
+        padding: 26px 0;
+        border-top: 1px solid #d5dce2;
+        border-bottom: 1px solid #d5dce2;
+    }
+    .up-price .price-inc a {
+        padding: 16px 35px;
+        border: 0;
+        margin: 0 12px;
+    }
+        .up-price .price-inc .price-up-1 {
+            background-color: #3782b9;
+        }
+            .up-price .price-inc .price-up-1:hover {
+                background-color: #2D77AE;
+            }
+        .up-price .price-inc .price-up-2 {
+            background-color: #3393a3;
+        }
+            .up-price .price-inc .price-up-2:hover {
+                background-color: #207C8B;
+            }
+        .up-price .price-inc .price-up-3 {
+            background-color: #34ac90;
+        }
+            .up-price .price-inc .price-up-3:hover {
+                background-color: #249B7F;
+            }
+        .up-price .price-inc .price-up-4 {
+            background-color: #3ad19e;
+        }
+            .up-price .price-inc .price-up-4:hover {
+                background-color: #29B284;
+            }
+
+        .up-price .price-up-send {
+            background-color: #fff444;
+            border: 0;
+            margin: 33px 0;
+            color: #1e1e1e;
+            font-size: 22px;
+            font-family: "Bliss Pro Bold";
+            padding: 27px 120px
+        }
+            .up-price .price-up-send:hover {
+                background-color: #ECE131;
+            }
+    
+
 body {
     background-color: #fff;
 }
@@ -2508,10 +2667,12 @@ form {
 
 /***  ***/
 .offer-detail {
-    background: -moz-linear-gradient(-45deg,  rgba(64,144,179,1) 0%, rgba(0,137,98,0.74) 100%);
-    background: -webkit-linear-gradient(-45deg,  rgba(64,144,179,1) 0%,rgba(0,137,98,0.74) 100%);
-    background: linear-gradient(135deg,  rgba(64,144,179,1) 0%,rgba(0,137,98,0.74) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4090b3', endColorstr='#bd008962',GradientType=1 );
+    background: rgb(54,138,174);
+background: -moz-linear-gradient(-45deg,  rgba(54,138,174,1) 0%, rgba(51,156,149,1) 26%, rgba(50,162,138,1) 50%, rgba(49,170,129,1) 100%);
+background: -webkit-linear-gradient(-45deg,  rgba(54,138,174,1) 0%,rgba(51,156,149,1) 26%,rgba(50,162,138,1) 50%,rgba(49,170,129,1) 100%);
+background: linear-gradient(135deg,  rgba(54,138,174,1) 0%,rgba(51,156,149,1) 26%,rgba(50,162,138,1) 50%,rgba(49,170,129,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', endColorstr='#31aa81',GradientType=1 );
+
     font-size: 0;
     overflow: hidden;
 }
@@ -2527,25 +2688,29 @@ form {
 .offer-details {
     float: right;
     width: 57.62711864%;
-    padding-bottom: 109px;
     position: relative;
 }
     .offer-details .text {
         color: #fff;
-        font-family: "Bliss Pro Light";
+        font-family: "Bliss Pro Extra Light";
         font-size: 20px;
+        line-height: 33px;
         padding-left: 41px;
+        padding-bottom: 10px;
     }
         .offer-details .text .title {
             font-size: 32px;
             text-transform: uppercase;
             font-family: "Bliss Pro Light";
+            margin-top: 37px;
+            margin-bottom: 19px;
         }
 
         .offer-details .text .separator {
             width: 100%;
             height: 1px;
             background-color: #85c7bb;
+            margin-bottom: 26px;
         }
 
         .offer-details .text .row {
@@ -2567,27 +2732,45 @@ form {
             .offer-details .text .free-space {
                 display: inline-block;
                 border-bottom: 1px solid #47ad97;
-                float: left;
-                width: 100%;
+                
             }
 
             .offer-details .buttons {
                 display: inline-block;
-                position: absolute;
-                bottom: 0;
-                left: 0;
+                
                 width: 1000%;
-                padding: 20px 0 20px 41px;
+                padding: 22px 0 22px 41px;
                 background-color: #f0f0f0;
             }
+                .offer-details .text a.tagged {
+                    color: #92d1fd;
+                }
+
+                .offer-details .text a.ispolnitel {
+                    color: #fef343;
+                }
+                    .offer-details .text a {
+                        text-decoration: none;
+                    }
+                    .offer-details .text a:hover {
+                        text-decoration: underline;
+                    }
                 .offer-details  a.up-cost {
-                    font-family: "Bliss Pro Light";
+                    font-family: "Bliss Pro Bold";
                     border: 0;
                     font-size: 14px;
                     padding: 14px 33px;
                     background-color: #fff444;
                     color: #1d1d1d;
+                    line-height: 16px;
+                    margin-right: 10px;
+                    margin-top: -4px;
+                    text-decoration: none;
                 }
+                    .offer-details  a.up-cost:hover {
+                        text-decoration: none;
+                        background: #E8DD2F;
+                    }
                 .offer-details  .buttons a {
                     padding: 22px 39px;
                     font-size: 18px;
@@ -2598,12 +2781,18 @@ form {
                     color: #fff;
                     margin-right: 18px;
                 }
+                    .offer-details  .buttons a.agree:hover {
+                        background-color: #269CBE;
+                    }
 
                 .offer-details .buttons a.deny {
                     background-color: #ca2f3f;
                     border: 0;
                     color: #fff;
                 }
+                    .offer-details .buttons a.deny:hover {
+                        background-color: #AA1C2B;
+                    }
             
 
 .offer-details table td:nth-child(2) {
@@ -2617,7 +2806,51 @@ form {
     float: left;
 }
 
+.offer-statistics {
+    background-image: url("../img/start-bg.jpg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    padding-bottom: 43px;
+}
+    .offer-statistics .item {
+           position: relative;
+    padding: 18px 0 18px 0;
+    margin-bottom: 7px;
+    border-bottom: 1px solid #d3d3d3;
+    }
+        .offer-statistics .item:last-child {
+            border: 0;
+        } 
+        .offer-statistics .col-2:first-child .item {
+            margin-right: 13px;
+        }
+        .offer-statistics .col-2:last-child .item {
+            margin-left: 13px;
+        }
+        .offer-statistics .item img {
+            position: absolute;
+            left: 0;
+            top: 12px;
+            width: 64px;
+            height: 64px;
+        }
 
+        .offer-statistics .item .text {
+            font-family: "Bliss Pro Medium";
+            font-size: 24px;
+            padding-left: 78px;
+        }
+            .offer-statistics .item .text .title {
+                text-transform: uppercase;
+                color: #1e1e1e;
+            }
+            .offer-statistics .item .text .stats-data {
+                color: #31aa81;
+                font-size: 20px;
+            }
+                .offer-statistics .item .text .stats-data .fa {
+                    font-size: 17px;
+                }
  
 
 /***  ***/
@@ -2819,7 +3052,10 @@ form {
     .ticket.detail .button:hover {
         background-color: #2294B4;
     }
-    
+
+.ticket.detail form {
+    margin-bottom: 30px;
+}
 
 #contacts {
     color: #171717;
