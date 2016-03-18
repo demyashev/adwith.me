@@ -74,6 +74,7 @@
 }
 
 .popup-bg {
+    display: none;
     background-color: rgba(0, 0, 0, 0.95);
     position: fixed;
     top: 0;
@@ -83,7 +84,7 @@
     z-index: 2;
 }
     .popup-container {
-        margin: 2% auto;
+        margin: 10% auto;
         max-width: 760px;
         width: 100%;
         background-color: #ebf2f8;
@@ -3057,42 +3058,42 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', end
     margin-bottom: 30px;
 }
 
-#contacts {
+.page-container {
     color: #171717;
     padding: 17px 0 17px 0;
 }
-    #contacts h2 {
+    .page-container h2 {
         font-size: 36px;
         line-height: 44px;
         font-family: "Bliss Pro Regular";
         text-transform: uppercase;
         margin: 40px 0 0 0;
     }
-    #contacts h3 {
+    .page-container h3 {
         font-size: 29px;
         line-height: 44px;
         font-family: "Bliss Pro Regular";
         text-transform: uppercase;
         margin: 50px 0 0 0;
     }
-    #contacts .separator {
+    .page-container .separator {
         width: 395px;
         height: 1px;
         background-color: #e2e6e7;
         margin: 42px 0 31px 0;
     }
-    #contacts .separator.small {
+    .page-container .separator.small {
         width: 53px;
         height: 2px;
         background-color: #319cd2;
         margin: 12px 0 20px 0;
     }
-    #contacts p {
+    .page-container p {
         font-size: 22px;
         line-height: 30px;
         font-family: "Bliss Pro Extra Light";
     }
-        #contacts img {
+        .page-container img {
             position: absolute;
             top: 0;
             left: 0;
@@ -3100,27 +3101,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', end
             width: 40px;
             height: 40px;
         }
-        #contacts .col-4 {
+        .page-container .col-4 {
             margin-top: 27px;
         }
-        #contacts .text {
+        .page-container .text {
             padding-left: 60px;
         }
-            #contacts .text .title {
+            .page-container .text .title {
                 font-size: 26px;
                 line-height: 37px;
                 font-family: "Bliss Pro Bold";
                 text-transform: uppercase;
                 margin: 0;
             }
-            #contacts .text p {}
-            #contacts .text .separator {
+            .page-container .text p {}
+            .page-container .text .separator {
                 width: 52px;
                 height: 2px;
                 background-color: #319cd2;
                 margin: 27px 0 20px 0;
             }
-            #contacts .text .phonenumber {
+            .page-container .text .phonenumber {
                 font-family: "Bliss Pro Bold";
                 font-size: 24px;
             }
