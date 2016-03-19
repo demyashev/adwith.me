@@ -373,6 +373,9 @@ form {
             transition: all 1s ease;
             margin-bottom: 23px;
         }
+            form input.normal {
+                padding: 0 30px;
+            }
             form .active input {
                 line-height: 44px;
                 
@@ -491,6 +494,345 @@ form {
             form input[type=submit]:hover {
                 background-color: #2191B1;
             }
+
+form.page-user {
+    background-color: transparent;
+    padding: 0;
+}
+
+form.page-user .social-list  {
+  
+}
+    form.page-user p {
+        font-size: 17px;
+    }
+
+    form.page-user .social-list i {
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+        background-color: #ccc;
+        font-size: 16px;
+        color: #fff;
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 60px;
+        z-index: 1;
+    }
+        form.page-user .social-list i.fa-facebook {
+            background-color: #2a6c9e;
+        }
+            form.page-user .social-list a:hover i.fa-facebook {
+                background-color: #1E5782;
+            }
+
+        form.page-user .social-list i.fa-vk {
+            background-color: #417195;
+        }
+            form.page-user .social-list a:hover i.fa-vk{
+                background-color: #2C5573;
+            }
+
+        form.page-user .social-list i.fa-twitter {
+            background-color: #57a9e5;
+        }
+            form.page-user .social-list a:hover i.fa-twitter {
+                background-color: #398DCA;
+            }
+
+        form.page-user .social-list i.fa-map-marker {
+            background-color: #40a3c3;
+        }
+            form.page-user .social-list a:hover i.fa-map-marker {
+                background-color: #2D8BA9;
+            }
+
+        form.page-user .social-list i.fa-youtube-play {
+            background-color: #ca2f3f;
+        }
+            form.page-user .social-list a:hover i.fa-youtube-play {
+                background-color: #A61D2B;
+            }
+
+            form.page-user .social-attached img {
+                display: block;
+                width: 32px;
+                height: 32px;
+                position: absolute;
+                top: 5px !important;
+                left: auto;
+                background-color: #5abf3f;
+                right: 5px !important;
+                z-index: 1; 
+                border: 13px solid #58be3e;
+            }
+
+            form.page-user .social-attach {
+                background-color: #fff444;
+                font-size: 16px;
+                font-family: "Bliss Pro Regular";
+                border-top-right-radius: 50px;
+                border-bottom-right-radius: 50px;
+                padding: 24px 0;
+                text-align: center;
+                text-transform: uppercase;
+                color: #1e1e1c;
+            }
+                form.page-user .social-attach:hover {
+                    background-color: #FBEE19;
+                }
+
+        form.page-user .social-list .social-link {
+            border-radius: 50px;
+            background-color: #fff;
+            
+            text-decoration: none;
+            width: 100%;
+            display: inline-block;
+            position: relative;
+        }
+    
+    form.page-user .social-list .col-3 {
+        padding-right: 15px;
+        box-sizing: border-box;
+    }
+
+    form.page-user .social-list a {
+        padding-bottom: 22px;
+    }
+        form.page-user .social-list a .social-name {
+            display: inline-block;
+            padding-left: 76px;
+            box-sizing: border-box;
+            color: #8d8b8c;
+            font-family: "Bliss Pro Light";
+            font-size: 22px;
+            padding: 18px 0;
+            padding-left: 70px;
+            border: 3px solid #f0f0f0;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+            border-right: 0;
+        }
+            form.page-user .social-attached .social-name {
+                width: 100%;
+                border-top-right-radius: 50px;
+                border-bottom-right-radius: 50px;
+                border-right: 3px solid #f0f0f0;
+            }
+
+    form.page-user .input-checkbox,
+    form.page-user .input-radio {
+        position: relative;
+        display: inline-block;
+        margin-right: 44px;
+    }
+        form.page-user .input-checkbox input,
+        form.page-user .input-radio input {
+            font-size: 16px;
+            height: auto;
+        }
+
+        form.page-user input[type=checkbox],
+        form.page-user input[type=radio] {
+            display: none;   
+        }
+
+        form.page-user input[type=checkbox] + label,
+        form.page-user input[type=radio] + label {
+            position: relative;
+            background-image: url("../img/check-off.jpg");
+            background-repeat: no-repeat;
+            background-position: left center;
+            height: 30px;
+            width: auto;
+            display: inline-block;
+            padding: 0 0 0 45px;
+            color: #181818;
+            left: 0;
+            top:0;
+        }
+        form.page-user input[type=checkbox]:checked + label {
+            background-image: url("../img/check-on.jpg");
+        }
+
+        form.page-user input[type=checkbox] + label:hover,
+        form.page-user input[type=radio] + label:hover {
+            cursor: pointer;
+        }
+
+        form.page-user input[type=radio] + label {
+            background-image: url("../img/radio-off.jpg");
+        }
+
+        form.page-user input[type=radio]:checked + label {
+            background-image: url("../img/radio-on.jpg");
+        }
+
+form.page-user .col-2 {
+    padding-right: 16px;
+    box-sizing: border-box;
+}
+
+form.page-user .col-3 {
+    padding-right: 16px;
+    box-sizing: border-box;
+}
+
+form.page-user .costs {
+    margin-bottom: 30px;
+}
+
+form.page-user .checks {
+    padding-top: 5px;
+}
+    form.page-user .checks .check-add {
+        border: 0;
+        background-color: #2fa7c9;
+        color: #fff;
+        font-size: 18px;
+        padding: 20px 56px;
+        margin-top: -7px;
+    }   
+        form.page-user .checks .check-add:hover {
+            background-color: #2495B5;
+        }
+form.page-user .cost-text {
+    margin-top: 30px;
+    display: none;
+}
+form.page-user .check-system {
+    min-width: auto;
+}
+    form.page-user .check-system .header {
+        border-right: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        padding: 20px 30px 19px 30px;
+        font-size: 21px;
+    }
+
+    form.page-user .check-new-num {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        font-size: 21px;
+    }
+
+    form.page-user .check-delete {
+        background-color: #ff3838;
+        border: 0;
+        padding: 20px 56px;
+        margin-left: 14px;
+        font-size: 18px;
+    }
+        form.page-user .check-delete:hover {
+            background-color: #E92424;
+        }
+
+
+.page-user-settings .private-settings {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0;
+}
+
+    .page-user-settings .private-settings a {
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 20px 30px;
+        color: #181818;
+        border-color: #e8eae9;
+        text-align: center;
+    }
+        .page-user-settings .private-settings a:first-child {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-right: 0;
+        }
+        .page-user-settings .private-settings a:last-child {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            border-left: 0;
+        }
+
+        .page-user-settings .private-settings a.active {
+            background-color: #44a584;
+            color: #fff;
+            border-color: #44a584;
+        }
+
+        .page-user-settings .private-settings a:hover {
+            background-color: #2ABE8C;
+            color: #fff;
+            border-color: #2ABE8C;
+        }
+
+#check-add {
+    margin-top: 30px;
+    display: none;
+}
+
+form.page-user .check {
+    position: relative;
+    margin: 20px 0 40px 0;
+}
+    form.page-user .check .check-icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 74px;
+        height: 74px;
+        border-radius: 50%;
+        background-color: #f5f5f5;
+    }
+        form.page-user .check .check-icon img {
+            width: 22px;
+            height: 22px;
+            border-radius: 0;
+            top: 26px;
+            left: 26px;
+        }
+
+    form.page-user .check .check-text {
+        padding-left: 100px;
+        float: left;
+    }
+        form.page-user .check .title {
+            font-family: "Bliss Pro Bold";
+            color: #1e1e1e;
+            font-size: 23px;
+            text-transform: uppercase;
+        }
+        form.page-user .check .num {
+            color: #474747;
+            font-size: 26px;
+            font-family: "Bliss Pro Light";
+        }
+
+    form.page-user .check .check-edit {
+            border: 0;
+            background-color: #fff444;
+            color: #201c1d;
+            float: right;
+            padding: 18px 48px;
+    }
+        form.page-user .check .check-edit:hover {
+            background-color: #F1E413;
+        }
+
+form.page-user input[type=submit] {
+    font-size: 24px;
+    padding: 23px 105px;
+    margin-top: 24px;
+}
+    form.page-user input[type=submit]:hover {
+        background-color: #1d8ec9;
+    }
+
 
 /*** intro section ***/
 #header {
@@ -3069,6 +3411,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', end
         text-transform: uppercase;
         margin: 40px 0 0 0;
     }
+
     .page-container h3 {
         font-size: 29px;
         line-height: 44px;
@@ -3076,18 +3419,44 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', end
         text-transform: uppercase;
         margin: 50px 0 0 0;
     }
+        .page-container.page-user-settings h3 {
+            margin-top: 23px;
+        }
+        
+        
+    .page-container h4 {
+        font-size: 18px;
+        line-height: 44px;
+        font-family: "Bliss Pro Regular";
+        text-transform: uppercase;
+        margin: 50px 0 0 0;
+    }
+        .page-container.page-user-settings h4 {
+            margin: 0 0 15px 0;
+            text-transform: none;
+            font-size: 24px;
+            font-family: "Bliss Pro Light";
+        }
     .page-container .separator {
         width: 395px;
         height: 1px;
         background-color: #e2e6e7;
         margin: 42px 0 31px 0;
     }
+        .page-container.page-user-settings .separator {
+            margin: 35px 0 31px 0;
+        }
     .page-container .separator.small {
         width: 53px;
         height: 2px;
         background-color: #319cd2;
         margin: 12px 0 20px 0;
     }
+    .page-container .separator.full {
+        width: 100%;
+    }
+        
+
     .page-container p {
         font-size: 22px;
         line-height: 30px;
@@ -3125,6 +3494,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', end
                 font-family: "Bliss Pro Bold";
                 font-size: 24px;
             }
+
+
+
 
 
 /*** footer section ***/

@@ -26,7 +26,7 @@ r(function(){
     reg_link          = document.getElementById('account-isset');
     create_link       = document.getElementById('account-reg');
 
-    form_inputs       = document.getElementsByClassName('form-col');
+    form_inputs       = document.getElementsByClassName('input-animate');
 
 
     if (slider != null) {
