@@ -378,13 +378,18 @@
         });
 
         $('.price-show').click(function(){
-            $('.costs-form').slideDown();
-            $('.cost-text').slideUp();
+            
+            $('.cost-text').slideUp("500", function(){
+                $('.costs-form').slideDown();
+            });
         });
 
         $('.price-hide').click(function(){
-            $('.costs-form').slideUp();
-            $('.cost-text').slideDown();
+
+            $('.costs-form').slideUp("500", function(){
+                $('.cost-text').slideDown();
+            });
+            
         });
     </script>
     
