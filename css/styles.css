@@ -344,7 +344,7 @@ table {
             
         
             table td {
-                padding: 15px 0;
+                padding: 15px;
 
                 border-top: 1px solid #e2e6e9;
             }
@@ -472,6 +472,7 @@ form {
         }
 
         form .select {
+            display: inline-block;
             font-size: 22px;
             padding: 0;
             margin: 0;
@@ -2882,7 +2883,7 @@ font-weight: normal;
         }
         #account-offers td {
             position: relative;
-            padding: 37px 0;
+            padding: 37px 15px;
             border-bottom: 1px solid #e2e6e9;
             font-size: 18px;
             line-height: 23px;
@@ -2891,6 +2892,9 @@ font-weight: normal;
 font-weight: normal;
 
         }
+            #account-offers td:first-child {
+                padding: 0;
+            }
 
             #account-offers th:nth-child(1) {
                 width: 10px;
@@ -3519,6 +3523,11 @@ font-weight: 200;
         }
             .ticket .comment.right .author {
                 text-align: right;
+                padding-left: 14px;
+            }
+            .ticket .comment.left .author {
+                
+                padding-left: 14px;
             }
         
         .ticket .author-ava {
@@ -3552,21 +3561,24 @@ font-weight: 200;
         }
 
         .ticket .text {
+            display: inline-block;
             background: #fff;
             padding-top: 25px;
             padding: 20px 25px;
             border-radius: 25px;
-            font-size: 19px;
-            line-height: 28px;
+            font-size: 30px;
+            line-height: 40px;
             font-family: "Bliss Pro";
 font-weight: 300;
 
         }
         .ticket .comment.right .text {
             border-top-right-radius: 0;
+            margin-left: 14px;
         }
         .ticket .comment.left .text {
             border-top-left-radius: 0;
+            margin-right: 14px;
         }
 
         .ticket .button {
@@ -3575,6 +3587,10 @@ font-weight: 300;
             background: #2fa7c9;
             font-size: 18px;
             padding: 19px 55px;
+        }
+
+        .ticket .comment.right .button {
+            margin-left: 14px;
         }
 
 .ticket.detail {
@@ -3892,7 +3908,7 @@ font-weight: normal;
         position: relative;
     }
         #about-desc .sep,
-        #about-question .sep,
+        #about-question .separator,
         #about-pluses .sep {
             display: inline-block;
             width: 535px;
@@ -3939,8 +3955,10 @@ font-weight: 300;
 #about-question {
     background-image: url("../img/pluses-bg.jpg");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center right;
     background-attachment: fixed;
+    background-size: cover;
+
     color: #fff;
     text-align: center;
     padding: 43px 0 50px 0;
@@ -3948,8 +3966,9 @@ font-weight: 300;
     #about-question .title {
         width: 100%;
     }
-    #about-question .sep {
+    #about-question .separator {
         margin: 33px 0 48px 0;
+        background-color: rgba(255,255,255,0.25);
     }
     #about-question .col-2:first-child {
         padding-right: 20px;
