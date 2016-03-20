@@ -1,6 +1,62 @@
 @import url("normalize.css");
-@import url("fonts.css");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+
+@font-face {
+    font-family: 'Bliss Pro';
+    src: url('../fonts/BlissPro-Medium.eot') format('embedded-opentype');
+    src: url('../fonts/BlissPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BlissPro-Medium.woff2') format('woff2'),
+        url('../fonts/BlissPro-Medium.woff') format('woff'),
+        url('../fonts/BlissPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bliss Pro';
+    src: url('../fonts/BlissPro-ExtraLight.eot') format('embedded-opentype');
+    src: url('../fonts/BlissPro-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BlissPro-ExtraLight.woff2') format('woff2'),
+        url('../fonts/BlissPro-ExtraLight.woff') format('woff'),
+        url('../fonts/BlissPro-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bliss Pro';
+    src: url('../fonts/BlissPro-Bold.eot') format('embedded-opentype');
+    src: url('../fonts/BlissPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BlissPro-Bold.woff') format('woff'),
+        url('../fonts/BlissPro-Bold.woff2') format('woff2'),
+        url('../fonts/BlissPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bliss Pro';
+    src: url('../fonts/BlissPro.eot') format('embedded-opentype');
+    src: url('../fonts/BlissPro.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BlissPro.woff') format('woff2'),
+        url('../fonts/BlissPro.woff') format('woff'),
+        url('../fonts/BlissPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bliss Pro';
+    src: url('../fonts/BlissPro-Light.eot') format('embedded-opentype');
+    src: url('../fonts/BlissPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BlissPro-Light.woff') format('woff2'),
+        url('../fonts/BlissPro-Light.woff') format('woff'),
+        url('../fonts/BlissPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
 
 .disable-hover,
 .disable-hover * {
@@ -43,7 +99,8 @@
 
 .button {
     display: inline-block;
-    font-family: "Bliss Pro Bold";
+    font-family: "Bliss Pro";
+    font-weight: bold;
     text-transform: uppercase;
     font-size: 20px;
     color: #fff;
@@ -98,7 +155,8 @@
         
     }
         .popup-container .title {
-            font-family: "Bliss Pro Bold";
+            font-family: "Bliss Pro";
+            font-weight: bold;
             padding: 36px 0 32px 0;
         }
         .popup-close {
@@ -134,7 +192,8 @@
         .up-price .nums {
             padding: 0 22px;
             font-size: 71px;
-            font-family: "Bliss Pro Light";
+            font-family: "Bliss Pro";
+            font-weight: 300;
             color: #4ef0b7;
         }
             .up-price .nums .col-3 .fa {
@@ -174,7 +233,8 @@
             vertical-align: middle;
             text-align: right;
             text-transform: none;
-            font-family: "Bliss Pro Extra Light";
+            font-family: "Bliss Pro";
+            font-weight: 200;
         }
             .up-price .price-new img {
                 width: 26px;
@@ -225,7 +285,8 @@
             margin: 33px 0;
             color: #1e1e1e;
             font-size: 22px;
-            font-family: "Bliss Pro Bold";
+            font-family: "Bliss Pro";
+            font-weight: bold;
             padding: 27px 120px
         }
             .up-price .price-up-send:hover {
@@ -250,7 +311,8 @@ table {
         color: #181818;
         text-transform: uppercase;
         font-size: 18px;
-        font-family: "Bliss Pro Bold";
+        font-family: "Bliss Pro";
+        font-weight: bold;
         line-height: 18px;
         vertical-align: middle;
     } 
@@ -272,7 +334,8 @@ table {
     tbody {
         color: #1e1e1e;
         font-size: 18px;
-        font-family: "Bliss Pro Regular";
+        font-family: "Bliss Pro";
+        font-weight: normal;
     }
          
             table th {
@@ -290,7 +353,8 @@ table {
                     color: #30a588;
                     margin-right: 8px;
                     font-size: 18px;
-                    font-family: "Bliss Pro Bold";
+                    font-family: "Bliss Pro";
+                    font-weight: bold;
                 }
 
                 table .fa {
@@ -313,7 +377,8 @@ table {
                     padding: 10px 20px;
                     text-transform: uppercase;
                     font-size: 16px;
-                    font-family: "Bliss Pro Regular";
+                    font-family: "Bliss Pro";
+                    font-weight: normal;
                     border-radius: 50px;
                 }
 
@@ -347,7 +412,8 @@ form {
             display: inline-block;
             color: #8e8c8d;
             font-size: 23px;
-            font-family: "Bliss Pro Light";
+            font-family: "Bliss Pro";
+            font-weight: 300;
             position: absolute;
             left: 33px;
             top: 20px;
@@ -361,7 +427,8 @@ form {
         form input {
             color: #181818;
             font-size: 22px;
-            font-family: "Bliss Pro Regular";
+            font-family: "Bliss Pro";
+            font-weight: normal;
             padding: 18px 30px 0 30px;
             height: 70px;
             border-radius: 50px;
@@ -394,7 +461,8 @@ form {
             box-sizing: border-box;
             color: #181818;
             font-size: 22px;
-            font-family: "Bliss Pro Regular";
+            font-family: "Bliss Pro";
+            font-weight: normal;
             padding: 30px;
             border-radius: 25px;
             border-width: 3px;
@@ -408,7 +476,8 @@ form {
             padding: 0;
             margin: 0;
             z-index: 2;
-            font-family: "Bliss Pro Light";
+            font-family: "Bliss Pro";
+            font-weight: 300;
             margin-bottom: 23px;
         }
             form .select:hover {
@@ -457,7 +526,8 @@ form {
                         color: #8e8c8d;
                         text-decoration: none;
                         padding: 10px 0 0 20px;
-                        font-family: "Bliss Pro Light";
+                        font-family: "Bliss Pro";
+                        font-weight: 300;
                         font-size: 18px;
                         line-height: 21px;
                         position: relative;
@@ -489,7 +559,8 @@ form {
             padding: 20px 90px;
             height: auto;
             text-transform: uppercase;
-            font-family: "Bliss Pro Light";
+            font-family: "Bliss Pro";
+            font-weight: 300;
         }
             form input[type=submit]:hover {
                 background-color: #2191B1;
@@ -573,7 +644,8 @@ form.page-user .social-list  {
             form.page-user .social-attach {
                 background-color: #fff444;
                 font-size: 16px;
-                font-family: "Bliss Pro Regular";
+                font-family: "Bliss Pro";
+                font-weight: normal;
                 border-top-right-radius: 50px;
                 border-bottom-right-radius: 50px;
                 padding: 24px 0;
@@ -608,7 +680,8 @@ form.page-user .social-list  {
             padding-left: 76px;
             box-sizing: border-box;
             color: #8d8b8c;
-            font-family: "Bliss Pro Light";
+            font-family: "Bliss Pro";
+            font-weight: 300;
             font-size: 22px;
             padding: 18px 0;
             padding-left: 70px;
@@ -802,7 +875,8 @@ form.page-user .check {
         float: left;
     }
         form.page-user .check .title {
-            font-family: "Bliss Pro Bold";
+            font-family: "Bliss Pro";
+            font-weight: bold;
             color: #1e1e1e;
             font-size: 23px;
             text-transform: uppercase;
@@ -810,7 +884,8 @@ form.page-user .check {
         form.page-user .check .num {
             color: #474747;
             font-size: 26px;
-            font-family: "Bliss Pro Light";
+            font-family: "Bliss Pro";
+            font-weight: 300;
         }
 
     form.page-user .check .check-edit {
@@ -884,11 +959,11 @@ form.page-user input[type=submit] {
         #close-menu {
             display: none;
             position: absolute;
-            right: 30px;
-            top: 28px;
+            right: 37px;
+            top: 72px;
             z-index: 3;
-            width: 28px;
-            height: 28px;
+            width: 53px;
+            height: 53px;
         }
             #close-menu img {
                 width: inherit;
@@ -921,7 +996,8 @@ form.page-user input[type=submit] {
             display: inline-block;
         }
         .nav > ul > li > a {
-            font-family: "Bliss Pro Medium";
+            font-family: "Bliss Pro";
+            font-weight: 500;
             padding: 11px 0;
             margin-right: 56px;
             font-size: 18px;
@@ -995,7 +1071,8 @@ form.page-user input[type=submit] {
             text-transform: uppercase;
             text-decoration: none;
             font-size: 16px;
-            font-family: "Bliss Pro Regular";
+            font-family: "Bliss Pro";
+            font-weight: normal;
             color: #fff;
             margin-right: 0;
         }
@@ -1007,7 +1084,8 @@ form.page-user input[type=submit] {
         }
 
     .nav .userprofile {
-        font-family: "Bliss Pro Regular";
+        font-family: "Bliss Pro";
+        font-weight: normal;
         font-size: 16px;
         text-transform: uppercase;
         color: #fff;
@@ -1072,7 +1150,8 @@ form.page-user input[type=submit] {
             }
             .nav .userprofile ul a {
                 letter-spacing: normal;
-                font-family: "Bliss Pro Light";
+                font-family: "Bliss Pro";
+                font-weight: 300;
                 font-size: 16px;
                 box-sizing: border-box;
                 padding: 5px 0;
@@ -1104,6 +1183,7 @@ form.page-user input[type=submit] {
 #slider {
     width: 100%;
     height: 100%;
+    min-height: 972px;
     position: relative;
     overflow: hidden;
     background-color: #000;
@@ -1161,11 +1241,13 @@ form.page-user input[type=submit] {
             left: 0;
             top: 0;
             transition: all 1s;
+            min-height: 972px;
+            /*width: 100%;*/
         }
             
             .intro {
                 font-size: 16px;
-                font-family: 'Arial';
+                /*font-family: 'Arial';*/
                 z-index: 2;
                 position: absolute;
                 top: 0;
@@ -1207,7 +1289,8 @@ form.page-user input[type=submit] {
                     .intro h2 {
                         margin: 66px 0 37px 0;
                         color: #fff;
-                        font-family: "Bliss Pro Extra Light";
+                        font-family: "Bliss Pro";
+                        font-weight: 200;
                         font-size: 50px;
                         letter-spacing: 1px;
                     }
@@ -1228,7 +1311,8 @@ form.page-user input[type=submit] {
 
                         .intro input[type=text],
                         .intro input[type=password] {
-                            font-family: "Bliss Pro Light";
+                            font-family: "Bliss Pro";
+                            font-weight: 300;
                             text-transform: uppercase;
                             font-size: 16px;
                             color: #777;
@@ -1271,7 +1355,8 @@ form.page-user input[type=submit] {
                         display: inline-block;
                         color: #50b190;
                         font-size: 16px;
-                        font-family: "Bliss Pro Medium";
+                        font-family: "Bliss Pro";
+                        font-weight: 500;
                         text-decoration: none;
                         border-bottom: 1px dotted #50b190;
                         padding: 15px 0 2px 0;
@@ -1307,7 +1392,8 @@ form.page-user input[type=submit] {
                     }
                         .intro li {
                             font-size: 24px;
-                            font-family: "Bliss Pro Extra Light";
+                            font-family: "Bliss Pro";
+                            font-weight: 200;
                             line-height: 1.5em;
                             color: #fff;
                             list-style-type: none;
@@ -1339,13 +1425,15 @@ form.page-user input[type=submit] {
                 display: inline-block;
                 float: left;
                 height: 100%;
+                width: 100%;
+                min-height: 972px;
                 box-sizing: border-box;
                 padding: 240px 0 220px 0;
                 position: relative;
                 overflow: hidden;
 
                 background-repeat: no-repeat;
-                background-position: center center;
+                background-position: center right;
                 background-size: cover;
 
                 z-index: 0;
@@ -1373,13 +1461,15 @@ form.page-user input[type=submit] {
         color: #707070;
         font-size: 26px;
         line-height: 26px;
-        font-family: "Bliss Pro Extra Light";
+        font-family: "Bliss Pro";
+        font-weight: 200;
         margin: 60px 0 15px 0;
     }
     #about h2 {
         margin: 0 0 0 -4px;
         padding: 0;
-        font-family: "Bliss Pro Bold";
+        font-family: "Bliss Pro";
+        font-weight: bold;
         font-size: 60px;
         line-height: 55px;
         text-transform: uppercase;
@@ -1392,7 +1482,8 @@ form.page-user input[type=submit] {
         font-size: 19px;
         line-height: 1.55em;
         margin: 0 0 34px 0;
-        font-family: "Bliss Pro Light";
+        font-family: "Bliss Pro";
+        font-weight: 300;
     }
         #about p:last-child {
             color: #545454;
@@ -1423,13 +1514,15 @@ form.page-user input[type=submit] {
         margin: 22px 0 -3px 0;
         color: #fff;
         font-size: 26px;
-        font-family: "Bliss Pro Bold";
+        font-family: "Bliss Pro";
+        font-weight: bold;
         text-transform: uppercase;
     }
     #pluses p {
         color: #fff;
         font-size: 20px;
-        font-family: "Bliss Pro Extra Light";
+        font-family: "Bliss Pro";
+        font-weight: 200;
         padding-right: 35px;
     }
         #pluses p:last-child {
@@ -1480,14 +1573,16 @@ form.page-user input[type=submit] {
     }
         #start .subtitle {
             color: #707070;
-            font-family: "Bliss Pro Extra Light";
+            font-family: "Bliss Pro";
+            font-weight: 200;
             font-size: 26px;
             margin: 16px 0 0 0;
         }
         #start h2 {
             margin: 16px 0 39px 0;
             color: #181818;
-            font-family: "Bliss Pro Bold";
+            font-family: "Bliss Pro";
+            font-weight: bold;
             font-size: 60px;
             text-transform: uppercase;
             line-height: 55px;
@@ -1529,7 +1624,8 @@ form.page-user input[type=submit] {
                         color: #181818;
                         background-color: #fff444;
                         font-size: 20px;
-                        font-family: "Bliss Pro Bold";
+                        font-family: "Bliss Pro";
+                        font-weight: bold;
                     }
                         #start .counter::after {
                             display: inline-block;
@@ -1541,7 +1637,9 @@ form.page-user input[type=submit] {
                         padding-left: 70px;
                     }
                         #start h3 {
-                            font-family: "Bliss Pro Bold";
+                            font-family: "Bliss Pro";
+font-weight: bold;
+
                             font-size: 24px;
                             text-transform: uppercase;
                             color: #181818;
@@ -1550,7 +1648,9 @@ form.page-user input[type=submit] {
                         }
                         #start p {
                             font-size: 20px;
-                            font-family: "Bliss Pro Light";
+                            font-family: "Bliss Pro";
+font-weight: 300;
+
                             color: #181818;
                             margin: 0;
                         }
@@ -1558,7 +1658,9 @@ form.page-user input[type=submit] {
             #start .complete {
                 color: #535353;
                 font-size: 18px;
-                font-family: "Bliss Pro Light";
+                font-family: "Bliss Pro";
+font-weight: 300;
+
             }
                 #start .complete::before {
                     display: block;
@@ -1577,7 +1679,9 @@ form.page-user input[type=submit] {
     #multicassa h3 {
         color: #717171;
         font-size: 24px;
-        font-family: "Bliss Pro Light";
+        font-family: "Bliss Pro";
+font-weight: 300;
+
         line-height: 24px;
         margin: 0;
     }
@@ -1585,7 +1689,9 @@ form.page-user input[type=submit] {
         margin: 14px 0 50px 0;
         color: #171717;
         font-size: 60px;
-        font-family: "Bliss Pro Bold";
+        font-family: "Bliss Pro";
+        font-weight: bold;
+
         line-height: 55px;
         text-transform: uppercase;
     }
@@ -1619,7 +1725,9 @@ form.page-user input[type=submit] {
         #download h2 {
             margin: 0 0 37px 0;
             font-size: 26px;
-            font-family: "Bliss Pro Extra Light";
+            font-family: "Bliss Pro";
+font-weight: 200;
+
             color: #fff;
         }
         #download a {
@@ -1673,7 +1781,9 @@ form.page-user input[type=submit] {
     #advertise-wish h2 {
         margin: 54px 0 42px 0;
         color: #fff;
-        font-family: "Bliss Pro Bold";
+        font-family: "Bliss Pro";
+font-weight: bold;
+
         font-size: 60px;
         line-height: 50px;
         text-transform: uppercase;
@@ -1693,7 +1803,9 @@ form.page-user input[type=submit] {
     #advertise-appeal h3 {
         margin: 29px 0 15px 0;
         color: #181818;
-        font-family: "Bliss Pro Bold";
+        font-family: "Bliss Pro";
+font-weight: bold;
+
         font-size: 35px;
         line-height: 35px;
         text-transform: uppercase
@@ -1701,7 +1813,9 @@ form.page-user input[type=submit] {
     #advertise-appeal span {
         color: #181818;
         font-size: 20px;
-        font-family: "Bliss Pro Light";
+        font-family: "Bliss Pro";
+font-weight: 300;
+
     }
 
 #advertise-pluses {
@@ -1731,14 +1845,18 @@ form.page-user input[type=submit] {
         }
             #advertise-pluses h3 {
                 color: #fff;
-                font-family: "Bliss Pro Medium";
+                font-family: "Bliss Pro";
+font-weight: 500;
+
                 font-size: 24px;
                 line-height: 20px;
                 text-transform: uppercase;
                 margin: 0 0 23px 0;
             }
             #advertise-pluses .counters h3 {
-                font-family: "Bliss Pro Light";
+                font-family: "Bliss Pro";
+font-weight: 300;
+
                 font-size: 56px;
                 line-height: 40px;
                 margin: 0 0 18px 0;
@@ -1746,7 +1864,9 @@ form.page-user input[type=submit] {
             }
             #advertise-pluses p {
                 color: #fff;
-                font-family: "Bliss Pro Light";
+                font-family: "Bliss Pro";
+font-weight: 300;
+
                 font-size: 18px;
                 line-height: 28px;
             }
@@ -1774,7 +1894,9 @@ form.page-user input[type=submit] {
             display: inline-block;
             float: left;
             color: #181818;
-            font-family: "Bliss Pro Medium";
+            font-family: "Bliss Pro";
+font-weight: 500;
+
             font-size: 35px;
             line-height: 20px;
             text-transform: uppercase;
@@ -1804,7 +1926,9 @@ form.page-user input[type=submit] {
                 position: relative;
                 z-index: 1;
                 font-size: 20px;
-                font-family: "Bliss Pro Light";
+                font-family: "Bliss Pro";
+font-weight: 300;
+
             }
 
                 #advertise-top-list .filter .title .fa,
@@ -1903,7 +2027,9 @@ form.page-user input[type=submit] {
         font-size: 45px;
         line-height: 46px;
         margin: 50px 0;
-        font-family: "Bliss Pro Light";
+        font-family: "Bliss Pro";
+font-weight: 300;
+
     }
     #advertise-wish .button {
         display: inline-block;
@@ -1928,7 +2054,9 @@ form.page-user input[type=submit] {
 }
     .breadcrumbs .route {
         position: absolute;
-        font-family: "Bliss Pro Regular";
+        font-family: "Bliss Pro";
+font-weight: normal;
+
         font-size: 20px;
         line-height: 38px;
         text-decoration: none;
@@ -1946,7 +2074,9 @@ form.page-user input[type=submit] {
         font-size: 37px;
         line-height: 37px;
         margin: 0;
-        font-family: "Bliss Pro Bold";
+        font-family: "Bliss Pro";
+font-weight: bold;
+
         text-transform: uppercase;
         color: #1e1e1e;
     }
@@ -1990,7 +2120,9 @@ form.page-user input[type=submit] {
                 margin: auto auto;
                 text-align: center;
                 color: #fff;
-                font-family: "Bliss Pro Regular";
+                font-family: "Bliss Pro";
+font-weight: normal;
+
                 font-size: 43px;
                 vertical-align: middle;
                 line-height: 50px;
@@ -1999,7 +2131,9 @@ form.page-user input[type=submit] {
                     font-size: 38px;
                 }
             .page-content .onbalance {
-                font-family: "Bliss Pro Light";
+                font-family: "Bliss Pro";
+font-weight: 300;
+
                 font-size: 21px;
                 color: #1e1e1e;
             }
@@ -2013,7 +2147,9 @@ form.page-user input[type=submit] {
                 border: 0;
                 padding: 22px 25px;
                 display: inline-block;
-                font-family: "Bliss Pro Bold";
+                font-family: "Bliss Pro";
+font-weight: bold;
+
             }
                 .page-content a.button:hover {
                     background-color: #EBE037;
@@ -2053,7 +2189,9 @@ form.page-user input[type=submit] {
                 padding: 24px 0;
                 font-size: 20px;
                 line-height: 32px;
-                font-family: "Bliss Pro Regular";
+                font-family: "Bliss Pro";
+font-weight: normal;
+
                 vertical-align: middle;
             }
             .page-content td:nth-child(2) {
@@ -2145,7 +2283,9 @@ form.page-user input[type=submit] {
                 text-transform: uppercase;
                 font-size: 30px;
                 line-height: 32px;
-                font-family: "Bliss Pro Extra Light";
+                font-family: "Bliss Pro";
+font-weight: 200;
+
                 color: #fff344;
                 margin: 0;
                 letter-spacing: 1px;
@@ -2154,7 +2294,9 @@ form.page-user input[type=submit] {
                 text-align: center;
                 font-size: 26px;
                 line-height: 32px;
-                font-family: "Bliss Pro Extra Light";
+                font-family: "Bliss Pro";
+font-weight: 200;
+
                 color: #fff;
                 margin: 15px;
             }
@@ -2173,14 +2315,18 @@ form.page-user input[type=submit] {
                     margin-top: -4px;
                     font-size: 20px;
                     line-height: 32px;
-                    font-family: "Bliss Pro Extra Light";
+                    font-family: "Bliss Pro";
+font-weight: 200;
+
                     color: #fff;
                 }
 
             #account-stats .user-info .counter-num {
                     font-size: 28px;
                     line-height: 32px;
-                    font-family: "Bliss Pro Extra Light";
+                    font-family: "Bliss Pro";
+font-weight: 200;
+
                     color: #fff;
                     text-align: center;
                     padding-top: 19px;
@@ -2192,7 +2338,9 @@ form.page-user input[type=submit] {
                 display: inline-block;
                 font-size: 18px;
                 line-height: 32px;
-                font-family: "Bliss Pro Extra Light";
+                font-family: "Bliss Pro";
+font-weight: 200;
+
                 color: #e1e1e1;
                 text-align: center;
                 width: 100%;
@@ -2237,7 +2385,9 @@ form.page-user input[type=submit] {
                     #account-stats .user-social span {
                         font-size: 16px;
                         line-height: 32px;
-                        font-family: "Bliss Pro Regular";
+                        font-family: "Bliss Pro";
+font-weight: normal;
+
                         color: #1e1e1e;
                     }
                         #account-stats .user-social span i {
@@ -2250,7 +2400,8 @@ form.page-user input[type=submit] {
                         border: 0;
                         padding: 22px 43px;
                         font-size: 18px;
-                        font-family: "Bliss Pro Regular"
+                        font-family: "Bliss Pro";
+                        font-weight: normal;
                     }
                         #account-stats .user-social a.button:first-child {
                             background-color: #2fa7c9;
@@ -2282,7 +2433,9 @@ form.page-user input[type=submit] {
             display: block;
             font-size: 37px;
             line-height: 32px;
-            font-family: "Bliss Pro Light";
+            font-family: "Bliss Pro";
+font-weight: 300;
+
             color: #1e1e1e;
             margin: 40px 0;
             text-transform: uppercase;
@@ -2326,7 +2479,9 @@ form.page-user input[type=submit] {
                 #account-stats .stats-item .counter {
                     position: relative;
                     line-height: 32px;
-                    font-family: "Bliss Pro Light";
+                    font-family: "Bliss Pro";
+font-weight: 300;
+
                     color: #1e1e1e;
                     padding-top: 25px;
                     text-transform: uppercase;
@@ -2335,12 +2490,16 @@ form.page-user input[type=submit] {
                         display: block;
                         color: #1d1d1d;
                         font-size: 17px;
-                        font-family: "Bliss Pro Medium";
+                        font-family: "Bliss Pro";
+font-weight: 500;
+
                     }
                     #account-stats .stats-item  .counter-num {
                         color: #31aa81;
                         font-size: 29px;
-                        font-family: "Bliss Pro Medium";
+                        font-family: "Bliss Pro";
+font-weight: 500;
+
                     }
 
 #account-price {
@@ -2352,7 +2511,9 @@ form.page-user input[type=submit] {
 }
     #account-price h2 {
         color: #fff;
-        font-family: "Bliss Pro Medium";
+        font-family: "Bliss Pro";
+font-weight: 500;
+
         font-size: 34px;
         margin: 0 0 32px 0;
         line-height: 40px;
@@ -2368,12 +2529,16 @@ form.page-user input[type=submit] {
     }
     #account-price .price {
         color: #fff;
-        font-family: "Bliss Pro Light";
+        font-family: "Bliss Pro";
+font-weight: 300;
+
         font-size: 20px;
     }
     #account-price .price-num {
         color: #51c8a0;
-        font-family: "Bliss Pro Medium";
+        font-family: "Bliss Pro";
+font-weight: 500;
+
         font-size: 34px;
         line-height: 46px;
         vertical-align: middle;
@@ -2390,7 +2555,9 @@ form.page-user input[type=submit] {
     #account-price a {
         background-color: #fff444;
         border: 0;
-        font-family: "Bliss Pro Medium";
+        font-family: "Bliss Pro";
+font-weight: 500;
+
         color: #161a19;
         font-size: 16px;
         padding: 18px 35px;
@@ -2421,7 +2588,9 @@ form.page-user input[type=submit] {
     }
     #account-price.no-price .price-list p {
         color: #fff;
-        font-family: "Bliss Pro Regular";
+        font-family: "Bliss Pro";
+font-weight: normal;
+
         font-size: 20px;
         line-height: 30px;
         margin: 15px 36px;
@@ -2430,7 +2599,9 @@ form.page-user input[type=submit] {
     }
     #account-price .price-item {
         color: #fff;
-        font-family: "Bliss Pro Medium";
+        font-family: "Bliss Pro";
+font-weight: 500;
+
         font-size: 20px;
         margin-left: 35px;
         padding: 12px 0;
@@ -2455,7 +2626,9 @@ form.page-user input[type=submit] {
 
     #account-countries h2 {
         color: #373737;
-        font-family: "Bliss Pro Light";
+        font-family: "Bliss Pro";
+font-weight: 300;
+
         font-size: 20px;
         margin: 34px 0 32px 0;
         line-height: 30px;
@@ -2495,14 +2668,18 @@ form.page-user input[type=submit] {
             margin-right: 14px;
         }
         #account-countries .country-name {
-            font-family: "Bliss Pro Medium";
+            font-family: "Bliss Pro";
+font-weight: 500;
+
             font-size: 19px;
             color: #1e1e1e;
             float: left;
         }
         #account-countries .percent {
             float: right;
-            font-family: "Bliss Pro Light";
+            font-family: "Bliss Pro";
+font-weight: 300;
+
             font-size: 22px;
             color: #31aa81;
         }
@@ -2528,7 +2705,9 @@ form.page-user input[type=submit] {
         color: #19171a;
         font-size: 35px;
         text-transform: uppercase;
-        font-family: "Bliss Pro Medium";
+        font-family: "Bliss Pro";
+font-weight: 500;
+
         margin: 0 0 -4px 0;
     }
     #account-activate.activated h2 {
@@ -2539,7 +2718,9 @@ form.page-user input[type=submit] {
     }
         #account-activate .form span {
             float: left;
-            font-family: "Bliss Pro Regular";
+            font-family: "Bliss Pro";
+font-weight: normal;
+
             font-size: 18px;
             line-height: 24px;
             padding-top: 20px;
@@ -2560,7 +2741,9 @@ form.page-user input[type=submit] {
             
             margin-left: 9px;
             margin-right: 10px;
-            font-family: "Bliss Pro Medium";
+            font-family: "Bliss Pro";
+font-weight: 500;
+
             font-size: 18px;
         }
         #account-activate.activated #url {
@@ -2580,7 +2763,9 @@ form.page-user input[type=submit] {
         }
         #account-activate .form a.button {
 
-            font-family: "Bliss Pro Medium";
+            font-family: "Bliss Pro";
+font-weight: 500;
+
             font-size: 16px;
             border: 0;
             padding: 18px 34px;
@@ -2619,7 +2804,9 @@ form.page-user input[type=submit] {
 
 #account-menu-title {
     line-height: 35px;
-    font-family: "Bliss Pro Bold";
+    font-family: "Bliss Pro";
+font-weight: bold;
+
     font-size: 35px;
     text-transform: uppercase;
     color: #171717;
@@ -2664,7 +2851,9 @@ form.page-user input[type=submit] {
             font-size: 18px;
             line-height: 38px;
 
-            font-family: "Bliss Pro Regular";
+            font-family: "Bliss Pro";
+font-weight: normal;
+
             padding: 12px 0;
         }
             #account-menu a.active,
@@ -2683,7 +2872,9 @@ form.page-user input[type=submit] {
         color: #181818;
         text-transform: uppercase;
         font-size: 18px;
-        font-family: "Bliss Pro Regular";
+        font-family: "Bliss Pro";
+font-weight: normal;
+
     }*/
         #account-offers th {
             padding: 25px 0;
@@ -2696,7 +2887,9 @@ form.page-user input[type=submit] {
             font-size: 18px;
             line-height: 23px;
             vertical-align: top;
-            font-family: "Bliss Pro Regular";
+            font-family: "Bliss Pro";
+font-weight: normal;
+
         }
 
             #account-offers th:nth-child(1) {
@@ -2776,7 +2969,9 @@ form.page-user input[type=submit] {
     #account-offers tbody {
         color: #181818;
         font-size: 18px;
-        font-family: "Bliss Pro Regular";
+        font-family: "Bliss Pro";
+font-weight: normal;
+
     }
         #account-offers tr.finished td:first-child {
             background-color: #44b28d;
@@ -2802,7 +2997,9 @@ form.page-user input[type=submit] {
             border-color: #f2f2f2;
             color: #181818;
             font-size: 16px;
-            font-family: "Bliss Pro Regular";
+            font-family: "Bliss Pro";
+font-weight: normal;
+
             padding: 16px 26px;
         }
             #account-offers a.button:hover {
@@ -2852,7 +3049,9 @@ form.page-user input[type=submit] {
             }
             #client-offers  .summa .count {
                 color: #3caf88;
-                font-family: "Bliss Pro Regular";
+                font-family: "Bliss Pro";
+font-weight: normal;
+
                     font-size: 45px;
             }
         #client-offers .desc {
@@ -2860,7 +3059,9 @@ form.page-user input[type=submit] {
             color: #171717;
             font-size: 20px;
             line-height: 13px;
-            font-family: "Bliss Pro Regular";
+            font-family: "Bliss Pro";
+font-weight: normal;
+
         }
         #client-offers a.button {
             display: inline-block;
@@ -2870,7 +3071,9 @@ form.page-user input[type=submit] {
             text-transform: uppercase;
             color: #fff;
             border: 0;
-            font-family: "Bliss Pro Light";
+            font-family: "Bliss Pro";
+font-weight: 300;
+
             margin-top: 24px;
         }
             #client-offers a.button:hover {
@@ -2899,7 +3102,9 @@ form.page-user input[type=submit] {
         color: #2fa6c6;
         text-decoration: none;
         text-transform: uppercase;
-        font-family: "Bliss Pro Light";
+        font-family: "Bliss Pro";
+font-weight: 300;
+
         font-size: 23px;
         display: inline-block;
         margin-top: 25px;
@@ -2908,7 +3113,9 @@ form.page-user input[type=submit] {
     .new-offer .sidebar .username {
         color: #181818;
 
-        font-family: "Bliss Pro Light";
+        font-family: "Bliss Pro";
+font-weight: 300;
+
         font-size: 20px;
         display: inline-block;
         margin-top: 9px;
@@ -2928,7 +3135,9 @@ form.page-user input[type=submit] {
         }
         .new-offer .sidebar .usercountry span {
             line-height: 24px;
-            font-family: "Bliss Pro Light";
+            font-family: "Bliss Pro";
+font-weight: 300;
+
             font-size: 16px;
             color: #181818;
             line-height: 24px;
@@ -2983,7 +3192,9 @@ form.page-user input[type=submit] {
             color: #2fa7ca;
             display: none;
             font-size: 20px;
-            font-family: "Bliss Pro Light";
+            font-family: "Bliss Pro";
+font-weight: 300;
+
             padding: 0 0 2px 0;
             border-bottom: 1px dotted #2fa7ca;
             margin-right: 20px;
@@ -2995,7 +3206,9 @@ form.page-user input[type=submit] {
         .new-offer #file + span {
             color: #404040;
             font-size: 20px;
-            font-family: "Bliss Pro Light";
+            font-family: "Bliss Pro";
+font-weight: 300;
+
         }
         .new-offer .file-icon {
             width: 25px;
@@ -3035,7 +3248,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', end
 }
     .offer-details .text {
         color: #fff;
-        font-family: "Bliss Pro Extra Light";
+        font-family: "Bliss Pro";
+font-weight: 200;
+
         font-size: 20px;
         line-height: 33px;
         padding-left: 41px;
@@ -3044,7 +3259,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', end
         .offer-details .text .title {
             font-size: 32px;
             text-transform: uppercase;
-            font-family: "Bliss Pro Light";
+            font-family: "Bliss Pro";
+            font-weight: bold;
+
             margin-top: 37px;
             margin-bottom: 19px;
         }
@@ -3099,7 +3316,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', end
                         text-decoration: underline;
                     }
                 .offer-details  a.up-cost {
-                    font-family: "Bliss Pro Bold";
+                    font-family: "Bliss Pro";
+font-weight: bold;
+
                     border: 0;
                     font-size: 14px;
                     padding: 14px 33px;
@@ -3179,7 +3398,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', end
         }
 
         .offer-statistics .item .text {
-            font-family: "Bliss Pro Medium";
+            font-family: "Bliss Pro";
+font-weight: 500;
+
             font-size: 24px;
             padding-left: 78px;
         }
@@ -3250,7 +3471,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', end
         padding: 30px 68px 52px 68px;
     }
         .ticket h4 {
-            font-family: "Bliss Pro Bold";
+            font-family: "Bliss Pro";
+font-weight: bold;
+
             font-size: 21px;
             text-transform: uppercase;
             margin: 0;
@@ -3266,7 +3489,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', end
         .ticket .desc {
             font-size: 18px;
             line-height: 32px;
-            font-family: "Bliss Pro Regular";
+            font-family: "Bliss Pro";
+font-weight: normal;
+
 
             margin: 11px 0 0 0;
             color: #b8b8ba;
@@ -3286,7 +3511,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', end
         .ticket .author {
             font-size: 20px;
             line-height: 32px;
-            font-family: "Bliss Pro Extra Light";
+            font-family: "Bliss Pro";
+font-weight: 200;
+
             margin: 11px 0 13px 0;
             color: #b8b8ba;
         }
@@ -3331,7 +3558,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', end
             border-radius: 25px;
             font-size: 19px;
             line-height: 28px;
-            font-family: "Bliss Pro Light";
+            font-family: "Bliss Pro";
+font-weight: 300;
+
         }
         .ticket .comment.right .text {
             border-top-right-radius: 0;
@@ -3407,7 +3636,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', end
     .page-container h2 {
         font-size: 36px;
         line-height: 44px;
-        font-family: "Bliss Pro Regular";
+        font-family: "Bliss Pro";
+font-weight: normal;
+
         text-transform: uppercase;
         margin: 40px 0 0 0;
     }
@@ -3415,7 +3646,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', end
     .page-container h3 {
         font-size: 29px;
         line-height: 44px;
-        font-family: "Bliss Pro Regular";
+        font-family: "Bliss Pro";
+font-weight: normal;
+
         text-transform: uppercase;
         margin: 50px 0 0 0;
     }
@@ -3427,7 +3660,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', end
     .page-container h4 {
         font-size: 18px;
         line-height: 44px;
-        font-family: "Bliss Pro Regular";
+        font-family: "Bliss Pro";
+font-weight: normal;
+
         text-transform: uppercase;
         margin: 50px 0 0 0;
     }
@@ -3435,7 +3670,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', end
             margin: 0 0 15px 0;
             text-transform: none;
             font-size: 24px;
-            font-family: "Bliss Pro Light";
+            font-family: "Bliss Pro";
+font-weight: 300;
+
         }
     .page-container .separator {
         width: 395px;
@@ -3460,7 +3697,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', end
     .page-container p {
         font-size: 22px;
         line-height: 30px;
-        font-family: "Bliss Pro Extra Light";
+        font-family: "Bliss Pro";
+font-weight: 200;
+
     }
         .page-container img {
             position: absolute;
@@ -3479,7 +3718,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', end
             .page-container .text .title {
                 font-size: 26px;
                 line-height: 37px;
-                font-family: "Bliss Pro Bold";
+                font-family: "Bliss Pro";
+font-weight: bold;
+
                 text-transform: uppercase;
                 margin: 0;
             }
@@ -3491,7 +3732,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', end
                 margin: 27px 0 20px 0;
             }
             .page-container .text .phonenumber {
-                font-family: "Bliss Pro Bold";
+                font-family: "Bliss Pro";
+font-weight: bold;
+
                 font-size: 24px;
             }
 
@@ -3515,13 +3758,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', end
             display: inline-block;
             color: #868686;
             font-size: 14px;
-            font-family: "Bliss Pro Extra Light";
+            font-family: "Bliss Pro";
+font-weight: 200;
+
             margin: 13px 0 29px 0;
         }
         #footer .download-link {
             color: #868686;
             font-size: 18px;
-            font-family: "Bliss Pro Medium";
+            font-family: "Bliss Pro";
+font-weight: 500;
+
             text-transform: uppercase;
             text-decoration: none;
             display: block;
@@ -3547,7 +3794,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', end
         #footer .menues .title {
             color: #fff;
             font-size: 20px;
-            font-family: "Bliss Pro Light";
+            font-family: "Bliss Pro";
+font-weight: 300;
+
             text-transform: uppercase;
             margin: 0;
         }
@@ -3580,7 +3829,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', end
                 #footer li a {
                     color: #868686;
                     font-size: 18px;
-                    font-family: "Bliss Pro Extra Light";
+                    font-family: "Bliss Pro";
+font-weight: 200;
+
                     text-decoration: none;
                 }
                     #footer li a:hover {
@@ -3591,7 +3842,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', end
     padding: 40px 0 60px 0;
     color: #868686;
     font-size: 15px;
-    font-family: "Bliss Pro Extra Light";
+    font-family: "Bliss Pro";
+font-weight: 200;
+
     vertical-align: middle;
 }
     #footer .about {
@@ -3616,113 +3869,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', end
 
 
 
-@media screen and (max-width: 1010px) {
-    
-    #slider .mouse-scroll-down {
-        display: none;
-    }
 
-    #slider .arrow {
-        display: none;
-    }
-
-    .intro .row {
-        padding: 0 30px;
-        text-align: center;
-    }
-
-    .intro {
-        padding-top: 190px;
-    }
-
-    .intro h2 {
-        margin: 70px 0 35px 0;
-        font-size: 42px;
-        text-align: left;
-    }
-    
-    .intro .select-link {
-        font-size: 18px;
-    }
-
-    .intro ul {
-        text-align: left;
-        margin-bottom: 75px;
-        padding: 0;
-    }
-        .intro li {
-            font-size: 22px;
-        }
-
-    .intro .button.login {
-        font-size: 16px;
-    }
-
-    .col-2, .col-3 {
-        float: none;
-        width: 100%;
-    }
-
-    #pluses p:last-child {
-        color: #d5d1d0;
-        font-size: 18px;
-        margin-bottom: 70px;
-    }
-
-    #start .phone {
-        width: 100%;
-        float: none;
-        text-align: center;
-        padding: 0;
-    }
-
-    #start .preview {
-        display: none;
-    }
-    
-    #start .description {
-        width: 100%;
-        float: none;
-        padding-left: 0;
-    }
-        #start .list {
-            padding-left: 100px;
-        }
-        #start .arrows {
-            left: 0;
-        }
-
-    #download a {
-        font-size: 16px;
-
-    }
-    #download a:first-child .fa {
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-    #download a:last-child .fa {
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-
-    #footer .site,
-    #footer .menues,
-    #footer .menues ul {
-        float: none;
-        width: 100%;
-    }
-
-    #footer .menues ul {
-        padding: 20px 0;
-    }
-
-    #footer .download-link {
-        display: inline-block;
-        margin-right: 35px;
-    }
-
-
-}
 
 /*** about ***/
 #about-desc {
@@ -3735,7 +3882,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', end
     #about-pluses .title {
         display: inline-block;
         max-width: 1000px;
-        font-family: "Bliss Pro Regular";
+        font-family: "Bliss Pro";
+font-weight: normal;
+
         text-transform: uppercase;
         font-size: 36px;
         margin: 0;
@@ -3753,13 +3902,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', end
             content: "";
         }
     #about-desc p {
-        font-family: "Bliss Pro Light";
+        font-family: "Bliss Pro";
+font-weight: 300;
+
         font-size: 19px;
         line-height: 28px;
         text-align: left;
     }
     #about-desc h3 {
-        font-family: "Bliss Pro Light";
+        font-family: "Bliss Pro";
+font-weight: 300;
+
         font-size: 28px;
         line-height: 46px;
         text-align: left;
@@ -3772,7 +3925,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', end
         text-align: left;
     }
         #about-desc li {
-            font-family: "Bliss Pro Light";
+            font-family: "Bliss Pro";
+font-weight: 300;
+
             font-size: 20px;
             line-height: 40px;
         }
@@ -3805,7 +3960,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', end
     #about-question .col-3 {
         
         text-align: left;
-        font-family: "Bliss Pro Light";
+        font-family: "Bliss Pro";
+font-weight: 300;
+
         font-size: 18px;
         line-height: 28px;
     }
@@ -3831,7 +3988,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', end
             padding-left: 90px;
         }
             #about-question .col-3 .title {
-                font-family: "Bliss Pro Bold";
+                font-family: "Bliss Pro";
+font-weight: bold;
+
                 font-size: 25px;
                 line-height: 38px;
             }
@@ -3868,7 +4027,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', end
         }
 
     #about-pluses h3 {
-        font-family: "Bliss Pro Light";
+        font-family: "Bliss Pro";
+font-weight: 300;
+
         font-size: 26px;
         line-height: 24px;
         text-transform: uppercase;
@@ -3883,7 +4044,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', end
             margin: 20px 0 0 0;
         }
         #about-pluses li {
-            font-family: "Bliss Pro Light";
+            font-family: "Bliss Pro";
+font-weight: 300;
+
             font-size: 20px;
             line-height: 40px;
             position: relative;
@@ -3909,7 +4072,9 @@ background: linear-gradient(135deg,  rgba(82,201,163,1) 0%,rgba(46,164,166,1) 24
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52c9a3', endColorstr='#1a5c7e',GradientType=1 );
 
     color: #fff;
-    font-family: "Bliss Pro Extra Light";
+    font-family: "Bliss Pro";
+font-weight: 200;
+
     font-size: 34px;
     line-height: 34px;
     text-align: center;
@@ -3925,7 +4090,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52c9a3', end
     .header-gradient .select {
         font-size: 30px;
         line-height: 40px;
-        font-family: "Bliss Pro Regular";
+        font-family: "Bliss Pro";
+font-weight: normal;
+
     }
 
 #referal-list {
@@ -3953,7 +4120,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52c9a3', end
 .ticket-title {
     font-size: 25px;
     line-height: 44px;
-    font-family: "Bliss Pro Light";
+    font-family: "Bliss Pro";
+font-weight: 300;
+
     text-transform: uppercase;
     padding: 10px 0 10px 0;
 }
@@ -3962,248 +4131,4 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52c9a3', end
         font-size: 76px;
     display: inline-block;
     padding: 56px 0 0 0;
-}
-
-
-/*** mobile ***/
-@media screen and (max-width: 768px) {
-    #header.page-index {
-        top: 0;
-    }
-
-    .nav ul {
-        display: none;
-    }
-    .mobile-menu-showed .nav {
-        float: none;
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: rgba(26,26,26,0.98);
-    }
-        .mobile-menu-showed #close-menu {
-            display: block;
-        }
-        .mobile-menu-showed .mobile-menu-icon {
-            display: none;
-        }
-
-    .mobile-menu-showed .nav ul {
-        padding: 86px 0 0 0;
-        position: relative;
-        display: block;
-    }
-        .nav ul a.logo-link {
-            display: inline-block;
-            position: absolute;
-            top: 35px;
-            left: 30px;
-        }
-    .nav > ul > li {
-        display: block;
-        border-top: 1px solid #484848;
-    }
-        .nav > ul > li > a {
-            display: block;
-            text-align: center;
-            font-family: "Bliss Pro Medium";
-            padding: 30px 0;
-            margin: 0;
-            font-size: 20px;
-            text-decoration: none;
-            text-transform: uppercase;
-            color: #fff;
-            letter-spacing: 0px;
-        }
-        .nav > ul > li > a.active,
-        .nav > ul > li > a:active,
-        .nav > ul > li > a:hover {
-            color: #fff344;
-            border-bottom: 0;
-        }
-            .nav .language > a {
-                display: none;
-            }
-            
-            .nav .language .fa {
-                font-size: 10px;
-                line-height: 16px;
-                vertical-align: middle;
-                margin-left: 10px;
-            }
-        .nav .language {
-            font-size: 0;
-        }
-        .nav .language ul {
-            display: block;
-            text-align: center;
-        }
-            .nav .language ul,
-            .nav .language:hover ul {
-                display: block;
-                position: relative;
-                width: auto;
-                top: 0;
-                left: 0;
-                padding: 0;
-                margin: 0;
-                box-sizing: border-box;
-                /*background-color: #fff;*/
-                /*background-color: rgba(222,55,11,0.5);*/
-                border-bottom-left-radius: 0;
-                border-bottom-right-radius: 0;
-                /*border-radius: 50px;*/
-                border-left:0;
-                border-bottom:0;
-                border-right:0;
-            }
-            .nav .language:hover > a {
-                color: #fff;
-                border-width: 0;
-
-            }
-        .nav .language ul li {
-            display: inline-block;
-            margin-top: 60px;
-        }
-        .nav .language ul > li > a {
-            padding: 15px 30px;
-            margin: 0 12px;
-            display: block;
-        }
-            .nav .language ul > li > a:hover {
-                color: #fff;
-                background-color: #52c9a1;
-            }
-                .nav .language ul > li > a img {
-                    display: none;
-                }
-
-        .nav .language a {
-            text-transform: uppercase;
-            text-decoration: none;
-            font-size: 16px;
-            font-family: "Bliss Pro Regular";
-            color: #fff;
-            margin-right: 0;
-            background-color: #464646;
-            border-radius: 50px;
-        }
-            .nav .language a.active {
-                background-color: #52c9a1;
-            }        
-
-
-    .mobile-menu-icon {
-        display: block;
-    }
-    .intro {
-        padding-top: 87px;
-    }
-        .intro input[type=text], .intro input[type=password],.intro input[type=submit] {
-            padding: 14px 14px 14px 24px;
-            font-size: 12px;
-        }
-        #form-create-account input[type=text] {
-            width: 50%;
-            float: left;
-        }
-        #form-create-account input[type=submit] {
-            width: 50%;
-            float: right;
-            padding: 14px 35px 14px 16px;
-        }
-        #form-reg-account input[type=text], #form-reg-account input[type=password], #form-reg-account input[type=submit] {
-            width: 33.33333333%;
-            float: left;
-            font-size: 12px;
-            padding: 14px 0px 14px 24px;
-        }
-        #form-reg-account input[type=submit] {
-            padding: 14px 21px 14px 16px;
-        }
-
-        .intro #account-isset, .intro #account-reg {
-            padding: 10px 0 2px 0;
-        }
-        
-    .intro h2 {
-        margin: 15px 0 15px 0;
-        font-size: 24px;
-        line-height: 27px;
-    }
-    .intro ul {
-        margin-bottom: 20px;
-    }
-        .intro li {
-            font-size: 18px;
-            line-height: 1.25em;
-        }
-            .intro li::before {
-                font-size: 5px;
-                line-height: 1.5em;
-            }
-        .intro .button.login {
-            display: inline-block;
-            margin-left: 0;
-            font-size: 14px;
-            padding: 18px 35px 18px 15px;
-        }
-    #about h2,
-    #start h2,
-    #multicassa h2 {
-        font-size: 36px;
-    }
-    
-    #start .list {
-        padding-left: 0;
-    }
-    #start .arrows {
-        display: none;
-    }
-    
-    .intro .select-link:first-child,
-    .intro .select-link:last-child {
-        width: 100%;
-        border-radius: 50px;
-        font-size: 14px;
-        padding: 10px 35px 8px 15px;
-    }
-    .intro .select-link:first-child {
-        margin-bottom: 20px;
-    }
-
-    #download a:first-child,
-    #download a:last-child {
-        border-radius: 50px;
-        width: 100%;
-
-
-    }
-    
-    
-    #download a:first-child {
-        margin-bottom: 20px;
-    }
-    /*
-        #download a:first-child .fa {
-            margin-left: 40px;
-        }
-        #download a:last-child .fa {
-            margin-left: 33px;
-        }
-
-    */
-
-    #footer .about,
-    #footer .design,
-    #footer .about img {
-        float: none;
-    }
-
-    #footer .about {
-        margin-bottom: 20px;
-    }
 }

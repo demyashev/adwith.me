@@ -1,0 +1,755 @@
+@media screen and (max-width: 1010px) {
+    
+    #slider .mouse-scroll-down {
+        display: none;
+    }
+
+    #slider .arrow {
+        display: none;
+    }
+
+    .intro .row {
+        padding: 0 30px;
+        text-align: center;
+    }
+
+    .intro {
+        padding-top: 190px;
+    }
+
+    .intro h2 {
+        margin: 70px 0 35px 0;
+        font-size: 42px;
+        text-align: left;
+    }
+    
+    .intro .select-link {
+        font-size: 18px;
+    }
+
+    .intro ul {
+        text-align: left;
+        margin-bottom: 75px;
+        padding: 0;
+    }
+        .intro li {
+            font-size: 22px;
+        }
+
+    .intro .button.login {
+        font-size: 16px;
+    }
+
+    .col-2, .col-3 {
+        float: none;
+        width: 100%;
+    }
+
+    #pluses p:last-child {
+        color: #d5d1d0;
+        font-size: 18px;
+        margin-bottom: 70px;
+    }
+
+    #start .phone {
+        width: 100%;
+        float: none;
+        text-align: center;
+        padding: 0;
+    }
+
+    #start .preview {
+        display: none;
+    }
+    
+    #start .description {
+        width: 100%;
+        float: none;
+        padding-left: 0;
+    }
+        #start .list {
+            padding-left: 69px;
+        }
+        #start .arrows {
+            left: 0;
+        }
+
+    #download a {
+        font-size: 16px;
+
+    }
+    #download a:first-child .fa {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    #download a:last-child .fa {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    #footer .site,
+    #footer .menues,
+    #footer .menues ul {
+        float: none;
+        width: 100%;
+    }
+
+    #footer .logo-img {
+        width: 153px;
+    }
+
+    #footer .site {
+        padding: 62px 0 0 0;
+    }
+    #footer .copyright {
+        width: 100%;
+        font-size: 24px;
+    }
+    #footer .menues ul {
+        padding: 20px 0;
+    }
+
+    #footer .download-link {
+        display: inline-block;
+        margin-right: 35px;
+        font-size: 28px;
+        padding: 0;
+    }
+
+    #footer .download-link .fa {
+        font-size: 38px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+    #header.page-index {
+        top: 57px;
+    }
+        #header {
+            top: 41px;
+        }
+
+    #header .logo-img {
+        width: 200px;
+        padding-top: 3px;
+    }
+
+    #header-background {
+        height: 175px; 
+    }
+
+
+        .mobile-menu-icon .icon-line {
+            margin: 16px 0;
+        }
+
+    .nav ul {
+        display: none;
+    }
+    .mobile-menu-showed .nav {
+        z-index: 3;
+        float: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(26,26,26,0.98);
+    }
+        .mobile-menu-showed #close-menu {
+            display: block;
+        }
+        .mobile-menu-showed .mobile-menu-icon {
+            display: none;
+        }
+
+    .mobile-menu-showed .nav ul {
+        padding: 202px 0 0 0;
+        position: relative;
+        display: block;
+    }
+        .nav ul a.logo-link {
+            display: inline-block;
+            position: absolute;
+            top: 91px;
+            left: 30px;
+        }
+    .nav > ul > li {
+        display: block;
+        border-top: 1px solid #484848;
+    }
+        .nav > ul > li > a {
+            display: block;
+            text-align: center;
+            font-family: "Bliss Pro";
+font-weight: 500;
+            padding: 50px 0;
+            margin: 0;
+            font-size: 40px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #fff;
+            letter-spacing: 0px;
+        }
+        .nav > ul > li > a.active,
+        .nav > ul > li > a:active,
+        .nav > ul > li > a:hover {
+            color: #fff344;
+            border-bottom: 0;
+        }
+            .nav .language > a {
+                display: none;
+            }
+            
+            .nav .language .fa {
+                font-size: 10px;
+                line-height: 16px;
+                vertical-align: middle;
+                margin-left: 10px;
+            }
+        .nav .language {
+            font-size: 0;
+        }
+        .nav .language ul {
+            display: block;
+            text-align: center;
+        }
+            .nav .language ul,
+            .nav .language:hover ul {
+                display: block;
+                position: relative;
+                width: auto;
+                top: 0;
+                left: 0;
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                /*background-color: #fff;*/
+                /*background-color: rgba(222,55,11,0.5);*/
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                /*border-radius: 50px;*/
+                border-left:0;
+                border-bottom:0;
+                border-right:0;
+            }
+            .nav .language:hover > a {
+                color: #fff;
+                border-width: 0;
+
+            }
+        .nav .language ul li {
+            display: inline-block;
+            margin-top: 60px;
+        }
+        .nav .language ul > li > a {
+            padding: 22px 40px;
+            margin: 0 12px;
+            display: block;
+        }
+            .nav .language ul > li > a:hover {
+                color: #fff;
+                background-color: #52c9a1;
+            }
+                .nav .language ul > li > a img {
+                    display: none;
+                }
+
+        .nav .language a {
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 37px;
+            font-family: "Bliss Pro";
+font-weight: normal;
+            color: #fff;
+            margin-right: 0;
+            background-color: #464646;
+            border-radius: 50px;
+        }
+            .nav .language a.active {
+                background-color: #52c9a1;
+            }        
+
+
+    .mobile-menu-icon {
+        display: block;
+        width: 67px;
+        top: -22px;
+    }
+    .intro {
+        padding-top: 223px;
+        background-color: rgba(0,0,0,0.75);
+    }
+        .intro input[type=text], .intro input[type=password], .intro input[type=submit] {
+            padding: 22px 35px 22px 40px;
+            font-size: 16px;
+        }
+        #form-create-account,
+        #form-reg-account {
+            margin-top: 30px;
+        }
+
+        #form-create-account input[type=text] {
+            width: 50%;
+            float: left;
+        }
+        #form-create-account input[type=submit] {
+            width: 50%;
+            float: right;
+            padding: 22px 40px 22px 40px;
+        }
+        #form-reg-account input[type=text], #form-reg-account input[type=password], #form-reg-account input[type=submit] {
+            width: 33.33333333%;
+            float: left;
+            font-size: 16px;
+            padding: 22px 0px 22px 24px;
+        }
+        #form-reg-account input[type=submit] {
+            padding: 22px 21px 22px 16px;
+        }
+
+        .intro #account-isset, .intro #account-reg {
+            padding: 0;
+        }
+        
+    .intro h2 {
+        margin: 50px 0 15px 0;
+        font-size: 54px;
+        line-height: 80px;
+    }
+    .intro ul {
+        margin-bottom: 20px;
+    }
+        .intro li {
+            font-size: 28px;
+            line-height: 38px;
+        }
+            .intro li::before {
+                font-size: 7px;
+                line-height: 24px;
+            }
+        .intro .button.login {
+            display: inline-block;
+            margin-left: 0;
+            font-size: 22px;
+            padding: 31px 69px 31px 69px;
+            margin-top: 38px;
+        }
+    #about h2,
+    #start h2,
+    #multicassa h2 {
+        font-size: 64px;
+        line-height: 59px;
+    }
+        #about {
+            padding: 90px 0 66px 0;
+        }
+        #about p {
+            font-size: 26px;
+            line-height: 37px;
+            margin: 49px 0 34px 0;
+        }
+        #about p:last-child {
+            font-size: 24px;
+        }
+    
+    #start h3 {
+        font-size: 30px;
+    }
+    #start .complete {
+        font-size: 22px;
+    }
+    
+    #multicassa {
+
+        padding: 65px 0 40px 0;
+    }
+    #multicassa h2 br {
+        display: inline;
+    }
+    
+    #pluses {
+        /*position: static;*/
+        background-attachment: scroll;
+        background-size: 100% auto;
+        /*-webkit-transform: translate3d(0,0,0);*/
+    }
+    #pluses img {
+        width: 110px;
+        margin-top: 12px;
+    }
+    #pluses h2 {
+        font-size: 30px;
+        margin: 16px 0 0 0;
+    }
+    #pluses p:last-child {
+        margin-bottom: 54px;
+    }
+
+    #start .description {
+        padding-top: 62px;
+    }
+    
+    .intro .select-link:first-child,
+    .intro .select-link:last-child {
+        width: 50%;
+        padding: 26px 50px 26px 15px;
+        font-size: 22px;
+    }
+    .intro .select-link:first-child {
+        margin-bottom: 20px;
+    }
+    
+    #download {
+        padding: 122px 0 102px 0;
+    }
+    #download h2 {
+        font-size: 30px;
+    }
+    #download a:first-child,
+    #download a:last-child {
+        font-size: 22px;
+        width: 50%;
+        max-width: none;
+        margin-bottom: 20px;
+    }
+
+    #download a:first-child {
+        padding: 22px 81px 22px 78px;
+    }
+    #download a:last-child {
+        padding: 22px 82px 22px 51px;
+    }
+    /*
+        #download a:first-child .fa {
+            margin-left: 40px;
+        }
+        #download a:last-child .fa {
+            margin-left: 33px;
+        }
+
+    */
+    #footer .body {
+        padding: 36px 0 40px;
+    }
+    #footer .menues ul {
+        border-bottom: 1px solid #2e2c2d;
+        padding: 21px 0 17px 0;
+    }
+    #footer .menues .title {
+        font-size: 31px;
+        margin: 11px 0 0 0;
+    }
+        #footer .menues .title::after {
+            margin: 13px 0 15px 0;
+        }
+    #footer li a {
+        font-size: 25px;
+    }
+    
+    #footer .menues li {
+        padding-bottom: 25px;
+    }
+        #footer .menues li::before {
+            font-size: 4px;
+            line-height: 19px;
+            left: 0;
+        }
+
+    
+
+    
+    #footer .about,
+    #footer .design,
+    #footer .about img {
+        float: none;
+    }
+
+    #footer .about {
+        margin-bottom: 20px;
+    }
+
+
+    .breadcrumbs {
+        padding: 41px 0; 
+    }
+        .breadcrumbs a span {
+            display: none;
+        }
+
+    .offer-detail .wrapper {
+        padding: 0;
+    }
+    .offer-image,
+    .offer-details {
+        width: 100%;
+    }
+
+    .offer-image {
+        height: 420px;
+        overflow: hidden;
+        position: relative;
+    }
+        .offer-image img {
+            position: absolute;
+            top: -165px;
+            left: 0;
+
+        }
+
+    .offer-details .text {
+        padding-left: 29px;
+        padding-right: 29px;
+    }
+
+    .offer-details .text .title {
+        font-size: 35px;
+        margin-bottom: 25px;
+    }
+
+    .offer-details .text .left-side,
+    .offer-details .text .right-side {
+        font-size: 24px;
+    }
+
+    .offer-details a.up-cost {
+        padding: 20px 51px;
+    }
+
+    .offer-details .text .row {
+        margin-bottom: 22px;
+    }
+
+    .offer-details .buttons {
+        width: 100%;
+        padding: 38px 30px;
+        box-sizing: border-box;
+        background-color: #ffffff;
+    }
+
+    .offer-details .buttons a {
+        font-size: 20px;
+    }
+    .offer-details .buttons a:last-child {
+        float: right;
+    }
+
+    .page-container h3 {
+        font-weight: bold;
+        font-size: 36px;
+    }
+
+    .ticket.detail .comment {
+        margin-bottom: 50px;
+    }
+
+    .ticket.detail .button {
+        font-size: 24px;
+        padding: 23px 108px;
+        transition: none;
+    }
+
+    .ticket.detail .wrapper {
+        padding: 0;
+    }
+   
+        .ticket.detail .content {
+            margin: 0 30px;
+        }
+
+    .ticket.detail form {
+        margin-bottom: 0;
+        padding: 30px;
+    }
+
+    #account-stats .content {
+        padding: 0;
+    }
+
+    #account-stats .user-info {
+        padding-top: 29px;
+        padding-right: 0;
+        padding-bottom: 52px;
+    }
+
+    #account-stats .user-info .avatar {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    #account-stats .avatar img {
+        width: 150px;
+    }
+
+    #account-stats .user-info h3 {
+        margin: 24px 0 0 0;
+        font-weight: 300;
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    #account-stats .bg {
+        background-image: none;
+    }
+
+    #account-stats .user-info .counter-num {
+        font-size: 32px;
+        padding-top: 0;
+    }
+
+    #account-stats .user-info .counter-views {
+        font-size: 23px;
+    }
+
+    #account-stats .country {
+        padding: 10px 0 21px 0;
+        border-bottom: 0;
+    }
+
+    #account-stats .bg .gradient {
+        height: 487px;
+    }
+
+    #account-stats .user-social {
+        padding: 0;
+        background-color: #f7f7f7;
+        
+    }
+        #account-stats .user-social > .row:first-child {
+            padding: 39px 27px 52px 27px;
+            background-color: #fff;
+        }
+        #account-stats .user-social > .row:last-child {
+            text-align: center;
+        }
+    
+    #account-stats .user-social li {
+        margin: 0 20px 0 0;
+    }
+        #account-stats .user-social li:last-child {
+            margin: 0;
+        }
+    #account-stats .user-social li > a > i {
+        width: 115px;
+        height: 115px;
+        line-height: 115px;
+        font-size: 44px;
+    }
+
+    #account-stats .user-social a {
+        margin-bottom: 25px;
+    }
+
+    #account-stats .user-social a.button {
+        margin: 48px 0;
+        padding: 30px 40px;
+        font-size: 26px;
+    }
+
+    #account-stats .user-social span {
+        font-size: 29px;
+    }
+
+    #account-stats .stats-title {
+        font-weight: bold;
+        text-align: center;
+        margin: 54px 0 23px 0px;
+        font-size: 39px;
+    }
+        #account-stats .stats-title::after {
+            display: none;
+        }
+    #account-stats .right {
+        padding-left: 0;
+    }
+
+    #account-stats .stats-list {
+        padding-top: 46px;
+    }
+
+    #account-stats .stats-item img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #account-stats .stats-item .counter-title {
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+
+    #account-stats .stats-item .counter-num {
+        font-size: 48px;
+        line-height: 48px;
+
+    }
+
+    #account-stats .stats-item {
+       margin-bottom: 57px;
+    }
+
+    #account-stats .stats-item .counter {
+        /*line-height: 51px;*/
+    }
+
+    #account-price.no-price .price-list p {
+        margin: 15px 0;
+    }
+
+    #account-activate {
+        height: auto;
+    }
+
+    #account-activate .form #url,
+    #account-activate .form .buttons {
+        float: none;
+        box-sizing: border-box;
+        width: 100%;
+
+    }
+    #account-activate .form #url {
+        margin: 20px 0 0 0;
+    }
+    #account-activate .form .buttons {
+        margin-top: 0;
+    }
+    #account-activate .form a.check, #account-activate .form a.edit {
+        margin-top: 20px;
+    }
+
+    #account-menu {
+        text-align: center;
+
+    }
+    #account-menu li {
+        float: none;
+    }
+
+    #account-menu a span {
+        display: none;
+    }
+
+    table th {
+        width: auto !important;
+    }
+
+    #account-price .price-item {
+        margin-left: 0;
+    }
+
+    #account-offers {
+        padding: 0;
+    }
+
+    #account-activate .profile-img {
+        bottom: 0;
+        left: 0;
+        top: auto;
+    }
+
+    #account-offers table {
+        margin: 0;
+    }
+}

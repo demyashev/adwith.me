@@ -6,6 +6,13 @@ window.onresize = function(event) {
 };
 
 r(function(){
+
+    w = window,
+    d = document,
+    e = d.documentElement,
+    g = d.getElementsByTagName('body')[0],
+    x = g.clientWidth || w.innerWidth || e.clientWidth,
+    y = w.innerHeight|| e.clientHeight|| g.clientHeight;
     
     document.documentElement.className = document.documentElement.className.replace("no-js", "js");
     
@@ -31,7 +38,11 @@ r(function(){
 
     if (slider != null) {
         sliderPlay();
-        sliderResize();
+
+        // if (window.screen > 750) {
+            sliderResize();
+        // }
+        
         iconMouseStart(); 
     }
     
@@ -202,12 +213,9 @@ function sliderShowSlideByClick() {
 
 function sliderResize() {
 
-    w = window,
-    d = document,
-    e = d.documentElement,
-    g = d.getElementsByTagName('body')[0],
-    x = g.clientWidth || w.innerWidth || e.clientWidth,
-    y = w.innerHeight|| e.clientHeight|| g.clientHeight;
+    if (screen.width < 800) {
+        y = 972;
+    }
 
     window.slider.style.height = y + 'px';
     window.slider_container.style.width = x * window.slides.length + 'px';
