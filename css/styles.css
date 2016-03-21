@@ -103,16 +103,22 @@
     font-weight: bold;
     text-transform: uppercase;
     font-size: 20px;
+    line-height: 20px;
     color: #fff;
     text-decoration: none;
     padding: 22px;
     border-radius: 50px;
     border: 3px solid #4d4845;
     box-sizing: border-box;
+    vertical-align: middle;
 }
 
-.button .fa {
-    margin: 0 15px;
+.button img {
+    display: inline-block;
+    margin: 0 10px 0 28px;
+    width: 28px;
+    height: 28px;
+    float: left;
 }
 
 .clearfix::after {
@@ -382,6 +388,26 @@ table {
                     border-radius: 50px;
                 }
 
+                table .user {
+                    border-radius: 0;
+                    width: 14px !important;
+                    position: relative !important;
+                    height: 13px !important;
+                    top: auto !important;
+                    left: auto !important;
+                }
+
+                table .icon {
+                    border-radius: 0 !important;
+                    width: 16px !important;
+                    height: 16px !important;
+                    position: relative !important;
+                    top: auto !important;
+                    left: auto !important;
+                    margin-right: 5px;
+                    margin-bottom: -2px;
+                }
+
 form {
     width: 100%;
     background-color: #f7f7f7;
@@ -631,15 +657,14 @@ form.page-user .social-list  {
 
             form.page-user .social-attached img {
                 display: block;
-                width: 32px;
-                height: 32px;
+                width: 58px;
+    height: 58px;
                 position: absolute;
                 top: 5px !important;
                 left: auto;
                 background-color: #5abf3f;
                 right: 5px !important;
                 z-index: 1; 
-                border: 13px solid #58be3e;
             }
 
             form.page-user .social-attach {
@@ -1270,12 +1295,12 @@ form.page-user input[type=submit] {
                     }
                         
                         .intro .select-link:first-child {
-                            padding: 20px 35px 22px 15px;
+                            padding: 20px 0px 22px 15px;
                             border-top-right-radius: 0;
                             border-bottom-right-radius: 0;
                         }
                         .intro .select-link:last-child {
-                            padding: 20px 50px 22px 15px;
+                            padding: 20px 50px 22px 0px;
                             border-top-left-radius: 0;
                             border-bottom-left-radius: 0;
                         }
@@ -1286,6 +1311,21 @@ form.page-user input[type=submit] {
                             background-color: #fff444;
                             color: #000;
                         }
+                            .intro .select-link .black {
+                                display: none;
+                            }
+
+                            .intro .select-link.active .black {
+                                display: inline-block;
+                            }
+
+                            .intro .select-link .yellow {
+                                display: inline-block;
+                            }
+
+                            .intro .select-link.active .yellow {
+                                display: none;
+                            } 
 
                     .intro h2 {
                         margin: 66px 0 37px 0;
@@ -1421,6 +1461,10 @@ form.page-user input[type=submit] {
                     }
                         .intro .button.login:hover {
                             background-color: #3AAC86;
+                        }
+                        .intro .button.login img {
+                            width: 20px;
+                            height: 20px;
                         }
             .slide {
                 display: inline-block;
@@ -1786,7 +1830,7 @@ font-weight: 200;
 font-weight: bold;
 
         font-size: 60px;
-        line-height: 50px;
+        line-height: 60px;
         text-transform: uppercase;
     }
 
@@ -2040,6 +2084,11 @@ font-weight: 300;
         background-color: #fff444;
         border-width: 0;
     }
+        #advertise-wish .button img {
+            float: left;
+            width: 20px;
+            height: 20px;
+        }
         #advertise-wish .button:hover {
             background-color: #EADF33;
         }
@@ -2113,7 +2162,7 @@ font-weight: bold;
                 display: inline-block;
                 position: absolute;
                 width: 130px;
-                height: 100px;
+                height: 111px;
                 top: 0;
                 right: 0;
                 bottom: 0;
@@ -2128,8 +2177,9 @@ font-weight: normal;
                 vertical-align: middle;
                 line-height: 50px;
             }
-                .page-content .current .fa {
-                    font-size: 38px;
+                .page-content .current img {
+                    width: 44px;
+                    height: 44px;
                 }
             .page-content .onbalance {
                 font-family: "Bliss Pro";
@@ -2332,8 +2382,11 @@ font-weight: 200;
                     text-align: center;
                     padding-top: 19px;
             }
-                #account-stats .user-info .counter-num i {
+                #account-stats .user-info .counter-num img {
                     margin-right: 6px;
+                    width: 40px;
+                    height: 40px;
+                    margin-bottom: -8px;
                 }
             #account-stats .user-info .counter-views {
                 display: inline-block;
@@ -2391,8 +2444,9 @@ font-weight: normal;
 
                         color: #1e1e1e;
                     }
-                        #account-stats .user-social span i {
+                        #account-stats .user-social span img {
                             margin-right: 5px;
+                            width: 11px;
                         }
                     #account-stats .user-social a.button {
                         width: auto;
@@ -2757,7 +2811,7 @@ font-weight: 500;
             }
         #account-activate .form .buttons {
             float: right;
-            margin-top: 20px;
+            
         }
         #account-activate.activated .form .buttons {
             margin-top: 4px;
@@ -2825,7 +2879,7 @@ font-weight: bold;
         #account-menu li:last-child {
             margin-right: 0;
         }
-        #account-menu img {
+        #account-menu .icon {
             position: absolute;
             left: -52px;
             height: 40px;
@@ -2836,13 +2890,43 @@ font-weight: bold;
             line-height: 38px;
             vertical-align: middle;
         }
-            #account-menu a.active i,
-            #account-menu a:hover i {
-                color: #3fadce;
+            #account-menu .icon.offer { background: url('../img/icons/bag_black.svg'); }
+            #account-menu a:hover .icon.offer,
+            #account-menu a.active .icon.offer {
+                background: url('../img/icons/bag_blue.svg');
             }
-            #account-menu a:hover img {
-                color: #3fadce;
+
+            #account-menu .icon.referal { background: url('../img/icons/user_add.svg'); }
+            #account-menu a:hover .icon.referal,
+            #account-menu a.active .icon.referal {
+                background: url('../img/icons/user_add_blue.svg');
             }
+
+            #account-menu .icon.likes { background: url('../img/icons/heart_black.svg'); }
+            #account-menu a:hover .icon.likes,
+            #account-menu a.active .icon.likes {
+                background: url('../img/icons/heart_blue.svg');
+            }
+
+            #account-menu .icon.comments { background: url('../img/icons/comments_black.svg'); }
+            #account-menu a:hover .icon.comments,
+            #account-menu a.active .icon.comments {
+                background: url('../img/icons/comments_blue.svg');
+            }
+
+            #account-menu .icon.subscribes { background: url('../img/icons/users_black.svg'); }
+            #account-menu a:hover .icon.subscribes,
+            #account-menu a.active .icon.subscribes {
+                background: url('../img/icons/users_blue.svg');
+            }
+
+            #account-menu .icon.countries { background: url('../img/icons/circle_web_black.svg'); }
+            #account-menu a:hover .icon.countries,
+            #account-menu a.active .icon.countries {
+                background: url('../img/icons/circle_web_blue.svg');
+            }
+
+         
         #account-menu a {
             position: relative;
             margin-left: 45px;
@@ -2859,8 +2943,8 @@ font-weight: normal;
         }
             #account-menu a.active,
             #account-menu a:hover {
-                color: #31a5ca;
-                border-bottom: 2px solid #2fa7ca;
+                color: #00afd1;
+                border-bottom: 2px solid #00afd1;
             }
 
 #account-offers {}
@@ -3035,9 +3119,10 @@ font-weight: normal;
         background: linear-gradient(135deg,  rgba(82,201,163,1) 0%,rgba(76,160,204,1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52c9a3', endColorstr='#4ca0cc',GradientType=1 );
     }
-        #client-offers .icon .fa {
-            color: #fff;
-            font-size: 24px;
+        #client-offers .icon img {
+            width: 36px;
+            margin-top: 17px;
+            height: 36px;
         }
     #client-offers .text {
         padding-left: 87px;
@@ -4094,7 +4179,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52c9a3', end
     font-family: "Bliss Pro";
 font-weight: 200;
 
-    font-size: 34px;
+    font-size: 26px;
     line-height: 34px;
     text-align: center;
 
@@ -4107,7 +4192,7 @@ font-weight: 200;
         max-width: 1100px;
     }
     .header-gradient .select {
-        font-size: 30px;
+        font-size: 34px;
         line-height: 40px;
         font-family: "Bliss Pro";
 font-weight: normal;

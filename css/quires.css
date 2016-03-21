@@ -400,7 +400,7 @@ font-weight: normal;
         font-size: 22px;
     }
     .intro .select-link:first-child {
-        margin-bottom: 20px;
+        /*margin-bottom: 20px;*/
     }
     
     #download {
@@ -653,6 +653,10 @@ font-weight: normal;
     #account-stats .user-social span {
         font-size: 29px;
     }
+        #account-stats .user-social img {
+            width: 19px !important;
+            margin-right: 3px !important;
+        }
 
     #account-stats .stats-title {
         font-weight: bold;
@@ -716,16 +720,22 @@ font-weight: normal;
     #account-activate .form .buttons {
         margin-top: 0;
     }
-    #account-activate .form a.check, #account-activate .form a.edit {
+    #account-activate .form a.check, #account-activate .form a.edit, #account-activate .form a.profile {
         margin-top: 20px;
     }
 
     #account-menu {
         text-align: center;
-
+        padding: 0px 0 70px 0;
     }
     #account-menu li {
         float: none;
+    }
+
+    #account-menu a {
+        font-size: 0;
+        line-height: 0;
+        padding: 0;
     }
 
     #account-menu a span {
@@ -958,6 +968,7 @@ font-weight: normal;
 
     .header-gradient {
         line-height: 48px;
+        font-size: 34px;
     }
 
     .ticket .desc {
@@ -1016,5 +1027,9 @@ font-weight: normal;
 
     form .form-col.submit {
         padding-bottom: 30px;
+    }
+
+    #account-stats .user-social a.balance i {
+        font-size: 22px;
     }
 }
