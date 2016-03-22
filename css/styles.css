@@ -1758,6 +1758,7 @@ font-weight: 300;
         }
     #multicassa ul {
         padding: 0;
+        text-align: center;
     }
     #multicassa li {
         display: inline-block;
@@ -1768,8 +1769,7 @@ font-weight: 300;
             margin-right: 0;
         }
         #multicassa img {
-            height: 85px;
-            width: 100px;
+            height: 60px;
         }
 
 /*** download section  ***/
@@ -2141,9 +2141,17 @@ font-weight: normal;
             color: #47BEA4;
         }
 
-        .breadcrumbs .route .fa {
+        .breadcrumbs .route .arrow-back {
+            display: inline-block;
             margin-right: 20px;
+            width: 30px;
+            height: 30px;
+            margin-bottom: -8px;
+            background: url("../img/icons/arrow_left_black.svg") no-repeat;
         }
+            .breadcrumbs .route:hover .arrow-back {
+                background: url("../img/icons/arrow_left_green.svg") no-repeat;
+            }
     .breadcrumbs h2 {
         text-align: center;
         font-size: 37px;
@@ -2829,7 +2837,7 @@ font-weight: normal;
         #account-activate .form .url-container {
             float: left;
             
-            background-color: #fff;
+            
             
             position: relative;
             
@@ -2843,6 +2851,7 @@ font-weight: normal;
             font-size: 18px;
         }
         #account-activate .form #url {
+            background-color: #fff;
             display: inline-block;
             padding: 18px 40px 18px 54px;
             border-radius: 50px;
@@ -2988,25 +2997,25 @@ font-weight: bold;
             #account-menu .icon.target { background: url('../img/icons/target.svg'); }
             #account-menu a:hover .icon.target,
             #account-menu a.active .icon.target {
-                background: url('../img/icons/target.svg');
+                background: url('../img/icons/target_blue.svg');
             }
 
             #account-menu .icon.canseled { background: url('../img/icons/times.svg'); }
             #account-menu a:hover .icon.canseled,
             #account-menu a.active .icon.canseled {
-                background: url('../img/icons/times.svg');
+                background: url('../img/icons/circle_times_blue.svg');
             }
 
             #account-menu .icon.need_money { background: url('../img/icons/hand_with_money.svg'); }
             #account-menu a:hover .icon.need_money,
             #account-menu a.active .icon.need_money {
-                background: url('../img/icons/hand_with_money.svg');
+                background: url('../img/icons/hand_with_money_blue.svg');
             }
 
             #account-menu .icon.finished { background: url('../img/icons/checked_black.svg'); }
             #account-menu a:hover .icon.finished,
             #account-menu a.active .icon.finished {
-                background: url('../img/icons/checked_black.svg');
+                background: url('../img/icons/circle_check_blue.svg');
             }
 
             

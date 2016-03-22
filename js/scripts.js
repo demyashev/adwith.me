@@ -59,10 +59,6 @@ r(function(){
         create_link.addEventListener('click', showCreateForm, false);
     }
 
-
-
-    
-        
     window.addEventListener('scroll', fps_increase, false);
     document.getElementById('close-menu').addEventListener('click', hideMobileMenu, false);
     document.getElementById('show-menu-icon').addEventListener('click', showMobileMenu, false);

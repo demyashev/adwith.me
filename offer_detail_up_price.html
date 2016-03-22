@@ -55,7 +55,7 @@
 <div class="breadcrumbs">
     <div class="wrapper">
         <a class="route" href="#">
-            <i class="fa fa-arrow-left"></i>
+            <div class="arrow-back"></div>
             <span>Назад в профиль</span>
         </a>
         <h2>Раскрутка в инстаграм</h2>
@@ -287,11 +287,29 @@
 </footer>
 
     <script src="./js/jquery-2.2.1.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
     <script>
         $('.popup-bg').fadeIn();
 
         $('.popup-close').click(function(){
             $('.popup-bg').fadeOut();
+            return false;
+        });
+
+        $('.price-inc a').click(function(){
+            var input = $('.new-price');
+            var current_cost = parseInt( input.val() );
+            var el = $(this);
+
+            if ( el.hasClass('price-up-1') ) { k = 0.1; }
+            if ( el.hasClass('price-up-2') ) { k = 0.2; }
+            if ( el.hasClass('price-up-3') ) { k = 0.5; }
+            if ( el.hasClass('price-up-4') ) { k = 1; }
+
+            var new_price = Math.round( current_cost + ( k * current_cost) );
+                
+            input.val( new_price ); 
+
             return false;
         });
     </script>

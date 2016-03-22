@@ -55,7 +55,7 @@
 <div class="breadcrumbs">
     <div class="wrapper">
         <a class="route" href="#">
-            <i class="fa fa-arrow-left"></i>
+            <div class="arrow-back"></div>
             <span>Назад в профиль</span>
         </a>
         <h2>Создание предложения</h2>
@@ -82,6 +82,7 @@
                 <form action="#" enctype="multipart/form-data" method="post" class="offer">
                     <div class="row clearfix">
                         <div class="form-col full select">
+                            <input type="hidden" name="type" value="" class="type">
                             <div class="header icon-bg type">Укажите тип рекламы<i class="fa fa-chevron-down"></i></div>
                             <ul>
                                 <li><a href="#" data-type="1">Тип 1</a></li>
@@ -130,6 +131,7 @@
 
                     <div class="row clearfix">
                         <div class="form-col full select">
+                            <input type="hidden" value="" class="after">
                             <div class="header icon-bg after">После размещения<i class="fa fa-chevron-down"></i></div>
                             <ul>
                                 <li><a href="#" data-after="1">Действие 1</a></li>

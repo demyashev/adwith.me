@@ -75,13 +75,11 @@
         font-size: 16px;
 
     }
-    #download a:first-child .fa {
-        margin-right: 10px;
-        margin-left: 10px;
+    #download a:first-child .icon {
+        top: 21px;
     }
-    #download a:last-child .fa {
-        margin-right: 10px;
-        margin-left: 10px;
+    #download a:last-child .icon{
+        top: 24px;
     }
 
     #footer .site,
@@ -632,6 +630,7 @@ font-weight: normal;
         }
         #account-stats .user-social > .row:last-child {
             text-align: center;
+            padding: 0;
         }
     
     #account-stats .user-social li {
@@ -722,15 +721,37 @@ font-weight: normal;
 
     }
     #account-activate .form #url {
-        margin: 20px 0 0 0;
+        margin: 0;
     }
     #account-activate .form .buttons {
         margin-top: 0;
+        text-align: center;
     }
     #account-activate .form a.check, #account-activate .form a.edit, #account-activate .form a.profile {
         margin-top: 20px;
     }
+    #account-activate .form span {
+        text-align: center;
+    }
+    #account-activate .form span,
+    #account-activate .form .url-container {
+        width: 100%;
+        margin: 0;
+    }
+    #account-activate .form .url-container {
+        margin-top: 20px;
+        width: 60%;
+        margin-left: 20%;
+    }
 
+    #account-activate.activated .form a.edit {
+        /*width: auto;*/
+        float: left;
+        margin-right: 14px;
+    }
+    #account-activate.activated .form .buttons {
+        margin-left: 0;
+    }
     #account-menu {
         text-align: center;
         padding: 0px 0 70px 0;
@@ -766,6 +787,10 @@ font-weight: normal;
         bottom: 0;
         left: 0;
         top: auto;
+    }
+
+    #account-activate h2 {
+        text-align: center;
     }
 
     #account-offers table {
@@ -865,7 +890,10 @@ font-weight: normal;
  
         font-size: 20px;
     }
-
+    
+    #advertise-pluses {
+        padding: 55px 0 0 0;
+    }
     #advertise-pluses .desc {
         padding-bottom: 40px
     }
@@ -873,6 +901,13 @@ font-weight: normal;
     #advertise-pluses .line.counters {
             padding-top: 50px;
     }
+        #advertise-pluses .line.counters .col-3 {
+            width: 33.33333333%;
+        }
+        #advertise-pluses .counters p {
+            margin-top: -4px;
+            line-height: 30px;
+        }
     thead {
         font-size: 12px;
     }
@@ -927,6 +962,7 @@ font-weight: normal;
     
     .page-container .col-4 {
         padding-bottom: 27px;
+        width: 50%;
     }
 
     .new-offer form {
