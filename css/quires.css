@@ -40,10 +40,7 @@
         font-size: 16px;
     }
 
-    .col-2, .col-3, .col-4 {
-        float: none;
-        width: 100%;
-    }
+    
 
     #pluses p:last-child {
         color: #d5d1d0;
@@ -113,7 +110,7 @@
         display: inline-block;
         margin-right: 35px;
         font-size: 28px;
-        padding: 0;
+        padding: 6px 0 0 36px;
     }
 
     #footer .download-link .fa {
@@ -124,6 +121,10 @@
 }
 
 @media screen and (max-width: 768px) {
+
+    .col-2, .col-3 {
+        width: 100%;
+    }
 
     #header.page-index {
         top: 57px;
@@ -438,6 +439,8 @@ font-weight: normal;
     #footer .menues ul {
         border-bottom: 1px solid #2e2c2d;
         padding: 21px 0 17px 0;
+        float: left;
+        width: 50%;
     }
     #footer .menues .title {
         font-size: 31px;
@@ -532,6 +535,10 @@ font-weight: normal;
 
     .offer-details .buttons a {
         font-size: 20px;
+       
+    }
+    .offer-details .buttons a.agree {
+         margin-right: 0;
     }
     .offer-details .buttons a:last-child {
         float: right;
@@ -950,7 +957,7 @@ font-weight: normal;
     }
 
     .offer-statistics .item img {
-        top: 22px;
+        top: 14px;
     }
 
     .offer-statistics .item .text .stats-data .fa {
@@ -982,6 +989,8 @@ font-weight: normal;
         position: relative;
         width: 100%;
         padding-bottom: 25px;
+        top: 0;
+        right: 0;
     }
     .page-user-settings .private-settings a {
         width: 50%;
@@ -991,10 +1000,8 @@ font-weight: normal;
         padding: 0 30px;
     }
 
-    form.page-user .social-list .col-3 {
-        width: 100%;
-        float: left;
-    }
+   
+
     form.page-user .social-list a .social-name,
     form.page-user .social-attach {
         width: 50%;
@@ -1020,10 +1027,24 @@ font-weight: normal;
         border-top-left-radius: 50px;
     }
 
-    form.page-user .col-2,
-    form.page-user .social-list .col-3 {
-        padding-right: 0;
+    form.page-user .col-2 {
+        width: 50%;
+        /*padding-right: 0;*/
     }
+
+    form.page-user .social-list .col-3 {
+        width: 50%;
+    }
+
+    form.page-user .costs-form .col-3 {
+        width: 33.33333333%;
+    }
+
+    #check-add .col-2 {
+        width: 100%;
+    }
+
+    
 
     form .form-col.submit {
         padding-bottom: 30px;

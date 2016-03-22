@@ -83,7 +83,9 @@
             <div class="comment right">
                 <div class="author">29 декабря Администратор отвечает:</div>
                 <img src="./img/users/4.png" alt="" class="author-ava">
-                <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime accusantium veritatis, fuga porro? Magnam, sit. Veniam eligendi labore placeat explicabo, odit cumque nulla iusto alias, debitis ullam libero sint.  Veniam eligendi labore placeat explicabo</div>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime accusantium veritatis, fuga porro? Magnam, sit. Veniam eligendi labore placeat explicabo, odit cumque nulla iusto alias, debitis ullam libero sint.  Veniam eligendi labore placeat explicabo</p>
+                </div>
                 <a href="#" class="button">Детали тикета</a>
             </div>
         </div>
@@ -101,7 +103,9 @@
             <div class="comment right">
                 <div class="author">29 декабря Администратор отвечает:</div>
                 <img src="./img/users/2.png" alt="" class="author-ava">
-                <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime accusantium veritatis, fuga porro? Magnam, sit. Veniam eligendi labore placeat explicabo, odit cumque nulla iusto alias, debitis ullam libero sint.</div>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime accusantium veritatis, fuga porro? Magnam, sit. Veniam eligendi labore placeat explicabo, odit cumque nulla iusto alias, debitis ullam libero sint.</p>
+                </div>
                 <a href="#" class="button">Детали тикета</a>
             </div>
         </div>
@@ -119,7 +123,9 @@
             <div class="comment right">
                 <div class="author">29 декабря Администратор отвечает:</div>
                 <img src="./img/users/2.png" alt="" class="author-ava">
-                <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime accusantium veritatis, fuga porro? Magnam, sit. Veniam eligendi labore placeat explicabo, odit cumque nulla iusto alias, debitis ullam libero sint.</div>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime accusantium veritatis, fuga porro? Magnam, sit. Veniam eligendi labore placeat explicabo, odit cumque nulla iusto alias, debitis ullam libero sint.</p>
+                </div>
                 <a href="#" class="button">Детали тикета</a>
             </div>
         </div>
@@ -180,11 +186,11 @@
                 <img src="./img/icons/logo_color.svg" alt="" class="logo-img">
                 <p class="copyright">Copyright &copy; 2015. All rights reserved.</p>
                 <a href="#" class="download-link">
-                    <i class="fa fa-apple"></i>
+                    <div class="icon apple"></div>
                     App Store
                 </a>
                 <a href="#" class="download-link">
-                    <i class="fa fa-google"></i>
+                    <div class="icon google"></div>
                     Google Play
                 </a>
             </div>
@@ -201,7 +207,27 @@
             </div>
         </div>
     </div>
+    
 </footer>
+    
+    <script src="./js/jquery-2.2.1.min.js"></script>
+    <script>
+        
+        $('.toggle-icon').click(function(){
+            var parent = $(this).parent().parent().parent();
+            
+            if (parent.hasClass('closed')) {
+                parent.find('.comment').slideDown(700, function(){
+                    parent.addClass('opened').removeClass('closed');
+                });
+            } else {
+                parent.find('.comment').slideUp(700, function(){
+                    parent.addClass('closed').removeClass('opened');
+                });
+            }
+            return false;
+        });
+    </script>
     
 </body>
 </html>

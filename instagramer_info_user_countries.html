@@ -124,7 +124,7 @@
                         </span>
                     </li>
                 </ul>
-                <div class="row">
+                <div class="row buttons balance">
                     <a href="#" class="button edit">Редактировать</a>
                     <a href="#" class="button balance">Ваш баланс: <i class="fa fa-usd"></i>0.00</a>
                 </div>
@@ -216,12 +216,16 @@
 <div id="account-activate">
     
     <div class="wrapper">
-        <img src="./img/user-profile-bg.png" alt="" class="profile-img">
+        <img src="./img/icons/user_favorite.svg" alt="" class="profile-img">
         <h2 id="activate-title">Активируй аккаунт</h2>
         <div class="form clearfix">
             <span id="status-text">Укажите ссылку в поле Веб-сайт в вашем профиле Instagram:</span>
-           
-            <div id="url"><i class="fa fa-clipboard"></i>https://adwith.me/voodooslab</div>
+            
+            <div class="url-container">
+                <input type="text" name="url" id="url" value="https://adwith.me/voodooslab" />
+                <i class="fa fa-clipboard"></i>
+            </div>
+                
             <div class="buttons">
                 <a href="#" id="edit-link" class="button edit">Редактировать ссылку</a>
                 <a href="#" id="check-profile" class="button check">Проверить</a>
@@ -247,7 +251,7 @@
 <div class="wrapper">  
     <ul id="account-menu" class="wrapper clearfix">
         <li>
-            <a href="#" class="active">
+            <a href="#">
                 <div class="icon offer"></div>
                 <span>Предложения</span>
             </a>
@@ -277,7 +281,7 @@
             </a>
         </li>
         <li>
-            <a href="#">
+            <a href="#" class="active">
                 <div class="icon countries"></div>
                 <span>Страны</span>
             </a>
@@ -371,7 +375,8 @@
     </div>
 </div>
 
-<footer id="footer">    
+<footer id="footer">
+    
     <div class="body row clearfix">
         <div class="wrapper">
             <div class="menues clearfix">
@@ -424,11 +429,11 @@
                 <img src="./img/icons/logo_color.svg" alt="" class="logo-img">
                 <p class="copyright">Copyright &copy; 2015. All rights reserved.</p>
                 <a href="#" class="download-link">
-                    <i class="fa fa-apple"></i>
+                    <div class="icon apple"></div>
                     App Store
                 </a>
                 <a href="#" class="download-link">
-                    <i class="fa fa-google"></i>
+                    <div class="icon google"></div>
                     Google Play
                 </a>
             </div>
@@ -445,6 +450,7 @@
             </div>
         </div>
     </div>
+    
 </footer>
     
 </body>

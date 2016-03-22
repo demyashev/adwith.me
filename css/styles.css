@@ -222,6 +222,7 @@
             border-bottom: 4px solid #fff;
             width: 100%;
             box-sizing: border-box;
+            text-align: center;
         }
             .up-price .new-price:active,
             .up-price .new-price:focus {
@@ -437,7 +438,7 @@ form {
         form label {
             display: inline-block;
             color: #8e8c8d;
-            font-size: 23px;
+            font-size: 21px;
             font-family: "Bliss Pro";
             font-weight: 300;
             position: absolute;
@@ -599,7 +600,7 @@ form.page-user {
 }
 
 form.page-user .social-list  {
-  
+    margin-top: 37px;
 }
     form.page-user p {
         font-size: 17px;
@@ -770,11 +771,14 @@ form.page-user .social-list  {
         form.page-user input[type=radio]:checked + label {
             background-image: url("../img/radio-on.jpg");
         }
-
+.page-user > .row > .col-2:nth-child(2){
+    padding-right: 0;
+}
 form.page-user .col-2 {
     padding-right: 16px;
     box-sizing: border-box;
 }
+  
 
 form.page-user .col-3 {
     padding-right: 16px;
@@ -834,15 +838,16 @@ form.page-user .check-system {
 
 .page-user-settings .private-settings {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -17px;
+    right: 30px;
     font-size: 0;
+    width: 38%;
 }
 
     .page-user-settings .private-settings a {
-        font-size: 18px;
+        font-size: 22px;
         text-transform: uppercase;
-        padding: 20px 30px;
+        padding: 24px 0;
         color: #181818;
         border-color: #e8eae9;
         text-align: center;
@@ -976,6 +981,8 @@ form.page-user input[type=submit] {
         }
             #header.page-index .logo-img {
                 padding-top: 0;
+                width: 200px;
+                margin-top: -10px;
             }
         
     .nav {
@@ -1315,7 +1322,8 @@ form.page-user input[type=submit] {
                                 display: none;
                             }
 
-                            .intro .select-link.active .black {
+                            .intro .select-link.active .black,
+                            .intro .select-link:hover .black {
                                 display: inline-block;
                             }
 
@@ -1323,7 +1331,8 @@ form.page-user input[type=submit] {
                                 display: inline-block;
                             }
 
-                            .intro .select-link.active .yellow {
+                            .intro .select-link.active .yellow,
+                            .intro .select-link:hover .yellow {
                                 display: none;
                             } 
 
@@ -1359,7 +1368,7 @@ form.page-user input[type=submit] {
                             color: #777;
                             background-color: #f5f5f5;
                             text-decoration: none;
-                            padding: 22px 35px 22px 40px !important;
+                            padding: 22px 35px 23px 40px !important;
                             border-top-left-radius: 50px;
                             border-bottom-left-radius: 50px;
                             border-top-right-radius: 0;
@@ -1368,6 +1377,7 @@ form.page-user input[type=submit] {
                             box-sizing: border-box;
                             width: auto;
                             height: auto;
+                            vertical-align: middle;
                         }
                             .intro input {
                                 outline: none;
@@ -1428,7 +1438,7 @@ form.page-user input[type=submit] {
 
                     .intro ul {
                         padding: 0 520px 0 0;
-                        margin-bottom: 77px;
+                        margin-bottom: 56px;
                         display: block;
                     }
                         .intro li {
@@ -1458,13 +1468,16 @@ form.page-user input[type=submit] {
                        border: 0;
                        padding: 22px 42px 22px 20px;
                        margin-left: 150px;
+                       font-size: 18px;
+                       font-weight: normal;
                     }
                         .intro .button.login:hover {
                             background-color: #3AAC86;
                         }
                         .intro .button.login img {
-                            width: 20px;
-                            height: 20px;
+                            width: 21px;
+                            height: 21px;
+                            margin: 0 18px 0 13px;
                         }
             .slide {
                 display: inline-block;
@@ -1754,7 +1767,10 @@ font-weight: 300;
         #multicassa li:last-child{
             margin-right: 0;
         }
-        #multicassa img {}
+        #multicassa img {
+            height: 85px;
+            width: 100px;
+        }
 
 /*** download section  ***/
 #download {
@@ -1782,29 +1798,41 @@ font-weight: 200;
             box-sizing: border-box;
             line-height: 36px;
             vertical-align: top;
+            position: relative;
         }
         #download a:first-child {
-            padding: 18px 75px 15px 6px;
+            padding: 18px 75px 15px 117px;
             border-top-right-radius: 0;
             border-bottom-right-radius: 0;
             border-right-width: 2px;
         }
         #download a:last-child {
-            padding: 18px 67px 15px 15px;
+            padding: 18px 67px 15px 88px;
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
             border-left-width: 1px;
         }
-            #download a .fa {
-                font-size: 36px;
-                float: left;
+       
+            
+            #download a .icon {
+                background-repeat: no-repeat;
+                width: 33px;
+                height: 33px;
+                display: inline-block;
+                position: absolute;
+                
             }
-            #download a:first-child .fa {
-                margin-left: 70px;
+            #download a:first-child .icon {
+                background-image: url("../img/icons/icon_apple.svg");
+                left: 72px;
+                top: 16px;
             }
-            #download a:last-child .fa {
-                margin-left: 30px;
+            #download a:last-child .icon {
+                background-image: url("../img/icons/icon_google_play.svg");
+                left: 50px;
+                top: 19px;
             }
+           
 
             #download a:hover {
                 background-color: #fff;
@@ -1819,15 +1847,15 @@ font-weight: 200;
     background-size: cover;
     background-image: url("../img/slider/slide-1.jpg");
 
-    padding: 150px 0 89px;
+    padding: 152px 0 89px;
     text-align: center;
 }
     #page-header .title,
     #advertise-wish h2 {
-        margin: 54px 0 42px 0;
+        margin: 50px 0 37px 0;
         color: #fff;
         font-family: "Bliss Pro";
-font-weight: bold;
+        font-weight: bold;
 
         font-size: 60px;
         line-height: 60px;
@@ -1878,8 +1906,8 @@ font-weight: 300;
         padding-top: 31px;
     }
         #advertise-pluses img {
-            width: 75px;
-            height: 75px;
+            width: 72px;
+            height: 72px;
 
             position: absolute;
             left: 0;
@@ -2065,20 +2093,19 @@ font-weight: 300;
     background-size: cover;
     background-image: url("../img/slider/slide-2.jpg");
 
-    padding: 70px 0 61px;
+    padding: 70px 0 62px;
 }
     #advertise-wish h2 {
-        letter-spacing: 3px;
-        font-size: 45px;
-        line-height: 46px;
-        margin: 50px 0;
+        font-size: 48px;
+        line-height: 61px;
+        margin: 43px 0;
         font-family: "Bliss Pro";
-font-weight: 300;
+        font-weight: 500;
 
     }
     #advertise-wish .button {
         display: inline-block;
-        padding: 20px 45px 20px 50px;
+        padding: 21px 45px 21px 50px;
         margin-top: 35px;
         color: #1f1f1f;
         background-color: #fff444;
@@ -2088,14 +2115,12 @@ font-weight: 300;
             float: left;
             width: 20px;
             height: 20px;
+            margin: 0 9px 0 0;
         }
         #advertise-wish .button:hover {
             background-color: #EADF33;
         }
-        #advertise-wish .button .fa {
-            font-size: 24px;
-            margin: 0 9px 0 0;
-        }
+
 
 /*** breadcrumbs section ***/
 .breadcrumbs {
@@ -2181,6 +2206,9 @@ font-weight: normal;
                     width: 44px;
                     height: 44px;
                 }
+                .page-content .current .fa {
+                    font-size: 38px;
+                }
             .page-content .onbalance {
                 font-family: "Bliss Pro";
 font-weight: 300;
@@ -2190,16 +2218,16 @@ font-weight: 300;
             }
 
             .page-content a.button {
-                letter-spacing: 1px;
+                
                 margin-top: 18px;
                 background-color: #fff444;
-                font-size: 17px;
+                font-size: 18px;
                 color: #1b1f20;
                 border: 0;
-                padding: 22px 25px;
+                padding: 22px 30px;
                 display: inline-block;
                 font-family: "Bliss Pro";
-font-weight: bold;
+                font-weight: bold;
 
             }
                 .page-content a.button:hover {
@@ -2360,6 +2388,8 @@ font-weight: 200;
                     display: inline-block;
                     margin-bottom: -8px;
                     margin-right: 12px;
+                    width: 30px;
+                    height: 30px;
                 }
                 #account-stats .country span {
                     display: inline-block;
@@ -2386,7 +2416,7 @@ font-weight: 200;
                     margin-right: 6px;
                     width: 40px;
                     height: 40px;
-                    margin-bottom: -8px;
+                    margin-bottom: -11px;
                 }
             #account-stats .user-info .counter-views {
                 display: inline-block;
@@ -2400,16 +2430,17 @@ font-weight: 200;
                 width: 100%;
             }
         #account-stats .user-social {
-            padding: 32px 27px 0 27px;
+            padding: 32px 0 0 0px;
         }
             #account-stats .user-social ul {
-                padding: 0;
+                padding: 0 72px 0 0;
                 margin: 0;
-                text-align: center;
+                text-align: right;
             }
                 #account-stats .user-social li {
                     display: inline-block;
                     margin: 0 17px;
+                    text-align: center;
                 }
                     #account-stats .user-social a {
                         display: block;
@@ -2419,7 +2450,7 @@ font-weight: 200;
                             width: 60px;
                             height: 60px; 
                             color: #fff;
-                            font-size: 15px;
+                            font-size: 22px;
                             line-height: 60px;
                             vertical-align: middle;
                             text-align: center;
@@ -2445,13 +2476,22 @@ font-weight: normal;
                         color: #1e1e1e;
                     }
                         #account-stats .user-social span img {
-                            margin-right: 5px;
-                            width: 11px;
+                            margin-bottom: -2px;
+                            width: 15px;
+                        }
+                    #account-stats .user-social .buttons {
+                        text-align: right;
+                        padding-top: 21px;
+                        padding-right: 30px;
+
+                    }
+                        #account-stats .user-social .buttons.balance {
+                            padding-right: 66px;
                         }
                     #account-stats .user-social a.button {
                         width: auto;
                         display: inline-block;
-                        margin-top: 21px;
+                        
                         border: 0;
                         padding: 22px 43px;
                         font-size: 18px;
@@ -2460,7 +2500,7 @@ font-weight: normal;
                     }
                         #account-stats .user-social a.button:first-child {
                             background-color: #2fa7c9;
-                            margin-right: 18px;
+                            margin-right: 14px;
                         }
                             #account-stats .user-social a.button:first-child:hover {
                                 background-color: #1C92B4;
@@ -2546,7 +2586,7 @@ font-weight: 300;
                         color: #1d1d1d;
                         font-size: 17px;
                         font-family: "Bliss Pro";
-font-weight: 500;
+                        font-weight: bold;
 
                     }
                     #account-stats .stats-item  .counter-num {
@@ -2750,7 +2790,7 @@ font-weight: 300;
     }
     #account-activate .profile-img {
         position: absolute;
-        top: 14px;
+        top: 16px;
         left: -93px;
         width: 123px;
         height: 123px;
@@ -2786,25 +2826,39 @@ font-weight: normal;
             width: 620px;
             color: #fff;
         }
-        #account-activate .form #url {
+        #account-activate .form .url-container {
             float: left;
-            display: inline-block;
-            padding: 20px 40px 20px 54px;
+            
             background-color: #fff;
-            border-radius: 50px;
+            
             position: relative;
             
             margin-left: 9px;
             margin-right: 10px;
             font-family: "Bliss Pro";
-font-weight: 500;
+            font-weight: 500;
+            border: 0;
+            border-radius: 50px;
 
             font-size: 18px;
         }
-        #account-activate.activated #url {
+        #account-activate .form #url {
+            display: inline-block;
+            padding: 18px 40px 18px 54px;
+            border-radius: 50px;
+            border: 0;
+            min-width: 235px;
+        }
+            #account-activate .form #url:focus {
+                outline: none;
+            }
+            #account-activate .url-container {
+                position: relative;
+            }
+        #account-activate.activated .url-container {
             display: none;
         }
-            #account-activate .form #url i {
+            #account-activate .form  .url-container i {
                 position: absolute;
                 left: 22px;
                 top: 22px;
@@ -2815,6 +2869,8 @@ font-weight: 500;
         }
         #account-activate.activated .form .buttons {
             margin-top: 4px;
+            float: left;
+            margin-left: 21px;
         }
         #account-activate .form a.button {
 
@@ -2854,6 +2910,9 @@ font-weight: 500;
                 background-color: #fff444;
                 color: #181816;
             }
+                #account-activate.activated .form a.profile:hover {
+                    background-color: #F1E525;
+                }
 
             
 
@@ -2881,10 +2940,10 @@ font-weight: bold;
         }
         #account-menu .icon {
             position: absolute;
-            left: -52px;
-            height: 40px;
-            width: 40px;
-            
+            left: -50px;
+            top: 3px;
+            height: 37px;
+            width: 37px;
             font-size: 33px;
             color: #181818;
             line-height: 38px;
@@ -2926,10 +2985,36 @@ font-weight: bold;
                 background: url('../img/icons/circle_web_blue.svg');
             }
 
+            #account-menu .icon.target { background: url('../img/icons/target.svg'); }
+            #account-menu a:hover .icon.target,
+            #account-menu a.active .icon.target {
+                background: url('../img/icons/target.svg');
+            }
+
+            #account-menu .icon.canseled { background: url('../img/icons/times.svg'); }
+            #account-menu a:hover .icon.canseled,
+            #account-menu a.active .icon.canseled {
+                background: url('../img/icons/times.svg');
+            }
+
+            #account-menu .icon.need_money { background: url('../img/icons/hand_with_money.svg'); }
+            #account-menu a:hover .icon.need_money,
+            #account-menu a.active .icon.need_money {
+                background: url('../img/icons/hand_with_money.svg');
+            }
+
+            #account-menu .icon.finished { background: url('../img/icons/checked_black.svg'); }
+            #account-menu a:hover .icon.finished,
+            #account-menu a.active .icon.finished {
+                background: url('../img/icons/checked_black.svg');
+            }
+
+            
+
          
         #account-menu a {
             position: relative;
-            margin-left: 45px;
+            margin-left: 47px;
             text-decoration: none;
             text-transform: uppercase;
             color: #181818;
@@ -2947,10 +3032,12 @@ font-weight: normal;
                 border-bottom: 2px solid #00afd1;
             }
 
-#account-offers {}
+#account-offers {
+    margin-top: 20px;
+}
     #account-offers table {
         width: 100%;
-        margin: 3px 0 40px 0;
+        margin: 3px 0 66px 0;
     }
     /*#account-offers thead {
         text-align: left;
@@ -2967,13 +3054,13 @@ font-weight: normal;
         }
         #account-offers td {
             position: relative;
-            padding: 37px 15px;
+            padding: 38px 15px 38px 0;
             border-bottom: 1px solid #e2e6e9;
             font-size: 18px;
-            line-height: 23px;
+            line-height: 24px;
             vertical-align: top;
             font-family: "Bliss Pro";
-font-weight: normal;
+            font-weight: normal;
 
         }
             #account-offers td:first-child {
@@ -3016,7 +3103,10 @@ font-weight: normal;
                 padding-left: 75px;
             }
             #account-offers td:nth-child(5) {
-                color: #32a584;
+                /*color: #44b28d;*/
+            }
+            #account-offers td:last-child {
+                padding: 24px 0;
             }
             #account-offers td img {
                 width: 63px;
@@ -3041,6 +3131,7 @@ font-weight: normal;
 
             #account-offers.list td:nth-child(4) {
                 padding-left: 0;
+                color: #44b28d;
             }
 
             #account-offers.list th:nth-child(4) {
@@ -3088,7 +3179,7 @@ font-weight: normal;
             font-family: "Bliss Pro";
 font-weight: normal;
 
-            padding: 16px 26px;
+            padding: 14px 26px;
         }
             #account-offers a.button:hover {
                 border-color: #E8E8E8;
@@ -3106,7 +3197,7 @@ font-weight: normal;
     #client-offers .icon {
         position: absolute;
         top: 37px;
-        left: 0;
+        left: 31px;
         width: 74px;
         height: 74px;
         border-radius: 50%;
@@ -3120,12 +3211,12 @@ font-weight: normal;
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52c9a3', endColorstr='#4ca0cc',GradientType=1 );
     }
         #client-offers .icon img {
-            width: 36px;
+            width: 44px;
             margin-top: 17px;
-            height: 36px;
+            height: 44px;
         }
     #client-offers .text {
-        padding-left: 87px;
+        padding-left: 117px;
     }
         #client-offers .summa {
             line-height: 46px;
@@ -3156,7 +3247,7 @@ font-weight: normal;
             display: inline-block;
             background-color: #3caf88;
             padding: 10px 24px;;
-            font-size: 16px;
+            font-size: 15px;
             text-transform: uppercase;
             color: #fff;
             border: 0;
@@ -3338,12 +3429,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#368aae', end
     .offer-details .text {
         color: #fff;
         font-family: "Bliss Pro";
-font-weight: 200;
+        font-weight: 200;
 
         font-size: 20px;
         line-height: 33px;
         padding-left: 41px;
-        padding-bottom: 10px;
+        padding-bottom: 11px;
     }
         .offer-details .text .title {
             font-size: 32px;
@@ -3608,11 +3699,11 @@ font-weight: 200;
         }
             .ticket .comment.right .author {
                 text-align: right;
-                padding-left: 14px;
+                
             }
             .ticket .comment.left .author {
                 
-                padding-left: 14px;
+                
             }
         
         .ticket .author-ava {
@@ -3651,12 +3742,18 @@ font-weight: 200;
             padding-top: 25px;
             padding: 20px 25px;
             border-radius: 25px;
-            font-size: 30px;
-            line-height: 40px;
+            font-size: 20px;
+            line-height: 30px;
             font-family: "Bliss Pro";
 font-weight: 300;
 
         }
+            .ticket .text p {
+                margin: 0 0 20px 0;
+            }
+            .ticket .text p:last-child {
+                margin: 0;
+            }
         .ticket .comment.right .text {
             border-top-right-radius: 0;
             margin-left: 14px;
@@ -3674,9 +3771,12 @@ font-weight: 300;
             padding: 19px 55px;
         }
 
-        .ticket .comment.right .button {
+        .ticket .comment .button {
             margin-left: 14px;
         }
+            .ticket .comment .button:hover {
+                background: #2398B9;
+            }
 
 .ticket.detail {
     background-color: transparent;
@@ -3688,6 +3788,10 @@ font-weight: 300;
 }
 .ticket.detail .comment {
     margin-bottom: 32px;
+}
+
+.ticket.detail .comment.template {
+    display: none;
 }
 
 .ticket.detail .comment.right .text {
@@ -3784,11 +3888,12 @@ font-weight: 300;
         .page-container.page-user-settings .separator {
             margin: 35px 0 31px 0;
         }
+    .page-content .separator.small,
     .page-container .separator.small {
         width: 53px;
         height: 2px;
         background-color: #319cd2;
-        margin: 12px 0 20px 0;
+        margin: 0 0 10px 0;
     }
     .page-container .separator.full {
         width: 100%;
@@ -3796,10 +3901,10 @@ font-weight: 300;
         
 
     .page-container p {
-        font-size: 22px;
+        font-size: 20px;
         line-height: 30px;
         font-family: "Bliss Pro";
-font-weight: 200;
+        font-weight: 300;
 
     }
         .page-container img {
@@ -3873,15 +3978,34 @@ font-weight: 500;
             text-transform: uppercase;
             text-decoration: none;
             display: block;
-            padding: 10px 0 13px 0;
+            padding: 10px 0 13px 40px;
+            position: relative;
+
         }
             #footer .download-link:hover {
                 color: #fff;
             }
-            #footer .download-link .fa {
+            #footer .download-link .icon {
+                display: inline-block;
+                background-repeat: no-repeat;
+                width: 25px;
+                height: 25px;
                 margin-right: 9px;
-                font-size: 24px;
+                position: absolute;
+                left: 0;
+                top: 9px;
             }
+
+            #footer .download-link .icon.apple {
+                background-image: url("../img/icons/icon_apple.svg");
+                top: 7px;
+            }
+
+            #footer .download-link .icon.google {
+                background-image: url("../img/icons/icon_google_play.svg");
+                left: 2px;
+            }
+
     #footer .menues {
         width: 880px;
         float: right;
@@ -3963,9 +4087,9 @@ font-weight: 200;
     }
 
     #footer .logo-img {
-        padding-top: 0;
+        padding-top: 5px;
         display: block;
-        width: 200px;
+        width: 152px;
     }
 
 
@@ -3992,9 +4116,9 @@ font-weight: normal;
         line-height: 56px;
         position: relative;
     }
-        #about-desc .sep,
+        #about-desc .separator,
         #about-question .separator,
-        #about-pluses .sep {
+        #about-pluses .separator {
             display: inline-block;
             width: 535px;
             height: 1px;
@@ -4004,9 +4128,8 @@ font-weight: normal;
         }
     #about-desc p {
         font-family: "Bliss Pro";
-font-weight: 300;
-
-        font-size: 19px;
+        font-weight: 300;
+        font-size: 20px;
         line-height: 28px;
         text-align: left;
     }
@@ -4034,7 +4157,7 @@ font-weight: 300;
         }
             #about-desc li::before {
                 content: "––";
-                margin-right: 20px;
+                margin-right: 8px;
             }
 
 #about-question {
@@ -4117,7 +4240,7 @@ font-weight: bold;
             margin: 63px 0 0 0;
             line-height: 45px;
         }
-        #about-pluses .sep {
+        #about-pluses .separator {
             margin: 30px 0 0 0;
         }
     #about-pluses .phone {
@@ -4132,16 +4255,15 @@ font-weight: bold;
 
     #about-pluses h3 {
         font-family: "Bliss Pro";
-font-weight: 300;
-
-        font-size: 26px;
+        font-weight: 500;
+        font-size: 25px;
         line-height: 24px;
         text-transform: uppercase;
         margin: 28px 0 0 0;
     }
     #about-pluses ul {
         padding: 0;
-        margin: 20px 0 55px 0;
+        margin: 22px 0 62px 0;
         list-style-type: none;
     }
         #about-pluses ul:last-child {
@@ -4149,13 +4271,14 @@ font-weight: 300;
         }
         #about-pluses li {
             font-family: "Bliss Pro";
-font-weight: 300;
+            font-weight: 300;
 
             font-size: 20px;
-            line-height: 40px;
+            line-height: 30px;
             position: relative;
             padding-left: 28px;
-        }
+            margin-bottom: 10px;        
+}
             #about-pluses li::before {
                 position: absolute;
                 top: 0;
@@ -4228,11 +4351,13 @@ font-weight: normal;
 font-weight: 300;
 
     text-transform: uppercase;
-    padding: 10px 0 10px 0;
+    padding: 30px 0 10px 0;
 }
 
-.ticket-title .select {
-        font-size: 76px;
+.ticket-title .quote {
     display: inline-block;
-    padding: 56px 0 0 0;
+
+
+    width: 20px;
+    padding: 34px 0;
 }

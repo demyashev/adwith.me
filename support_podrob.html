@@ -64,9 +64,9 @@
 
 <div class="header-gradient ticket-title">
     <div class="wrapper">
-        <span class="select">"</span><br>
+        <img class="quote" src="./img/icons/quote_up.svg" alt=""><br>
         Как вы проверяете пользователей которые предлагают подарки или услуги?<br>
-        <span class="select">"</span>
+        <img class="quote" src="./img/icons/quote_down.svg" alt="">
     </div>
 </div>
 
@@ -84,14 +84,21 @@
             <div class="comment right">
                 <div class="author">29 декабря Администратор отвечает:</div>
                 <img src="./img/users/4.png" alt="" class="author-ava">
-                <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime accusantium veritatis, fuga porro? Magnam, sit. Veniam eligendi labore placeat explicabo, odit cumque nulla iusto alias, debitis ullam libero sint.  Veniam eligendi labore placeat explicabo Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem doloribus nam, sed, temporibus excepturi modi mollitia odit, fugiat .</div>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime accusantium veritatis, fuga porro? Magnam, sit. Veniam eligendi labore placeat explicabo, odit cumque nulla iusto alias, debitis ullam libero sint.</p>
+                    <p>Veniam eligendi labore placeat explicabo Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem doloribus nam, sed, temporibus excepturi modi mollitia odit, fugiat.</p>
+                </div>
             </div>
 
             <div class="comment left">
                 <div class="author">29 декабря Вы отвечаете:</div>
                 <img src="./img/users/1.png" alt="" class="author-ava">
-                <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime accusantium veritatis, fuga porro? Magnam, sit. Veniam eligendi labore placeat explicabo, odit cumque nulla iusto alias, debitis ullam libero sint.  Veniam eligendi labore placeat explicabo</div>
+                <div class="text">
+                    <p>Хорошо, сделаем!</p>
+                </div>
             </div>
+
+
         </div>
 
         <form action="#" method="post">
@@ -105,7 +112,7 @@
             </div>
             <div class="row clearfix">
                 <div class="form-col submit">
-                    <input type="submit" class="button" value="Отправить">
+                    <input type="submit" class="button send" value="Отправить">
                 </div>
             </div>
         </form>
@@ -114,7 +121,8 @@
 
 
 
-<footer id="footer">    
+<footer id="footer">
+    
     <div class="body row clearfix">
         <div class="wrapper">
             <div class="menues clearfix">
@@ -167,11 +175,11 @@
                 <img src="./img/icons/logo_color.svg" alt="" class="logo-img">
                 <p class="copyright">Copyright &copy; 2015. All rights reserved.</p>
                 <a href="#" class="download-link">
-                    <i class="fa fa-apple"></i>
+                    <div class="icon apple"></div>
                     App Store
                 </a>
                 <a href="#" class="download-link">
-                    <i class="fa fa-google"></i>
+                    <div class="icon google"></div>
                     Google Play
                 </a>
             </div>
@@ -188,7 +196,33 @@
             </div>
         </div>
     </div>
+    
 </footer>
+
+    <script src="./js/jquery-2.2.1.min.js"></script>
+    <script>
+        $('.send').click(function(){
+
+            var date = new Date().toLocaleString('ru', {
+                month: 'long',
+                day: 'numeric'
+              });
+            var uid = 1;
+            var breakTag = '</p><p>';
+            var text = $('textarea').val().replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1'+ breakTag +'$2');
+
+            var template = '<div class="comment left template"><div class="author">' + date + ' Вы отвечаете:</div><img src="./img/users/' + uid + '.png" alt="" class="author-ava"><div class="text"><p>' + text + '</p></div></div>';
+
+            $('.content').append(template);
+
+            $('.template').fadeIn();
+
+            // template.slideDown();
+
+
+            return false;
+        });
+    </script>
     
 </body>
 </html>
