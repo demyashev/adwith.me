@@ -58,6 +58,163 @@
 
 
 
+.mobile-table {
+    display: none;
+    position: relative;
+}
+    .mobile-table.finished {
+        -webkit-box-shadow: inset 6px 0px 0px 0px rgba(70,176,140,1);
+        -moz-box-shadow: inset 6px 0px 0px 0px rgba(70,176,140,1);
+        box-shadow: inset 6px 0px 0px 0px rgba(70,176,140,1);
+    }
+    .mobile-table.waiting {
+        -webkit-box-shadow: inset 6px 0px 0px 0px rgba(253,183,51,1);
+        -moz-box-shadow: inset 6px 0px 0px 0px rgba(253,183,51,1);
+        box-shadow: inset 6px 0px 0px 0px rgba(253,183,51,1);
+    }
+    .mobile-table.canseled {
+        -webkit-box-shadow: inset 6px 0px 0px 0px rgba(233,60,60,1);
+        -moz-box-shadow: inset 6px 0px 0px 0px rgba(233,60,60,1);
+        box-shadow: inset 6px 0px 0px 0px rgba(233,60,60,1);
+    }
+    .mobile-table .col {
+        display: inline-block;
+    }
+    .mobile-table .avatar {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 20px;
+        left: 45px;
+        border-radius: 50%;
+    }
+
+    .mobile-table .content {
+        width: 100%;
+        padding: 22px 0 0 164px;
+        box-sizing: border-box;
+    }
+        .mobile-table .header {
+            
+        }
+            .mobile-table .header a {
+                color: #62b194;
+                font-family: 'Bliss Pro';
+                font-weight: normal;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 24px;
+            }
+
+            .mobile-table .header .count {
+                font-size: 28px;
+            }
+
+            .mobile-table .header .icon-user {
+                    
+                width: 23px;
+                margin-bottom: -3px;
+                margin-left: 20px;
+            }
+
+            .mobile-table .header .lable-container {
+                display: block;
+            }
+                .mobile-table .header .lable {
+                    display: inline-block;
+                    background-color: #fff444;
+                    color: #181818;
+                    padding: 10px 20px;
+                    text-transform: uppercase;
+                    font-size: 21px;
+                    font-family: "Bliss Pro";
+                    font-weight: normal;
+                    border-radius: 50px;
+                    margin-top: 12px;
+                }
+
+        .mobile-table .body {
+            margin-top: 26px;
+        }
+            .mobile-table .row {
+                margin-bottom: 32px;
+            }
+            .mobile-table .col-2 {
+                width: 50%;
+            }
+
+                .mobile-table h6 {
+                    display: block;
+                    color: #0c0c0c;
+                    text-transform: uppercase;
+                    font-family: 'Bliss Pro';
+                    font-weight: bold;
+                    font-size: 24px;
+                    margin: 0;
+                    line-height: 32px;
+                }
+                .mobile-table span {
+                    color: #141414;
+                    font-size: 22px;
+                    font-family: 'Bliss Pro';
+                    font-weight: normal;
+                    line-height: 32px;
+                }
+                    .mobile-table .type {
+                        width: 25px;
+                        height: 25px;
+                        margin-bottom: -6px;
+                        margin-right: 10px;
+                    }
+
+                    .mobile-table .summma {
+                        color: rgba(70,176,140,1);
+                    }
+                        .mobile-table .summma .fa {
+                            font-size: 18px;
+                            line-height: 32px;
+                            vertical-align: baseline;
+                            margin-right: 3px;
+                        }
+
+                .mobile-table .text {
+                    padding-right: 44px;
+                }
+                    .mobile-table .text p {
+                        font-size: 22px;
+                        font-family: 'Bliss Pro';
+                        font-weight: normal;
+                        margin-top: 0;
+                    }
+
+                .mobile-table.finished .status {
+                    color: rgba(70,176,140,1);
+                }
+
+                .mobile-table.waiting .status {
+                    color: rgba(253,183,51,1);
+                }
+
+                .mobile-table.canseled .status {
+                    color: rgba(233,60,60,1);
+                }
+
+            .mobile-table .footer {
+                text-align: center;
+                padding-bottom: 22px;
+            }
+
+                .mobile-table a.button {
+                    display: inline-block;
+                    background-color: #fff;
+                    border-color: #f2f2f2;
+                    color: #181818;
+                    font-size: 26px !important;
+                    font-family: "Bliss Pro";
+                    font-weight: normal;
+                    padding: 30px 60px !important;
+                }
+
 .disable-hover,
 .disable-hover * {
     pointer-events: none !important;
@@ -414,6 +571,9 @@ form {
     background-color: #f7f7f7;
     padding: 30px 20px 40px 20px;
     box-sizing: border-box;
+}
+form.nobg {
+    background-color: transparent;
 }
     .form-col {
         position: relative;
@@ -1832,6 +1992,13 @@ font-weight: 200;
                 left: 50px;
                 top: 19px;
             }
+                #download a:first-child:hover .icon {
+                    background-image: url("../img/icons/icon_apple_white.svg");
+                }
+
+                #download a:last-child:hover .icon {
+                    background-image: url("../img/icons/icon_google_play_white.svg");
+                }
            
 
             #download a:hover {
@@ -2928,21 +3095,48 @@ font-weight: 500;
 #account-menu-title {
     line-height: 35px;
     font-family: "Bliss Pro";
-font-weight: bold;
-
+    font-weight: bold;
     font-size: 35px;
     text-transform: uppercase;
     color: #171717;
     margin: 42px 0 -4px 0;
 }
+.menu-subtitle {
+    display: none;
+}
+.submenu-title {
+    display: block;
+    text-align: center;
+    font-family: 'Bliss Pro';
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 36px;
+    margin: 40px 0 6px 0;
+}
+.menu-subtitle .select .header {
+    font-size: 36px;
+    padding: 25px 40px;
+}
+.menu-subtitle .select {
+    margin-bottom: 50px;
+}
+
+.menu-subtitle .header .fa {
+    line-height: 47px;
+}
+
+
 #account-menu {
     padding: 36px 0 34px 0;
     border-bottom: 1px solid #e2e6e9;
+    text-align: center;
+    max-width: 1180px;
+
 }
     #account-menu li {
         display: inline-block;
         margin-right: 50px;
-        float: left;
+        /*float: left;*/
     }
         #account-menu li:last-child {
             margin-right: 0;
@@ -4009,11 +4203,17 @@ font-weight: 500;
                 background-image: url("../img/icons/icon_apple.svg");
                 top: 7px;
             }
+                #footer .download-link:hover .icon.apple {
+                    background-image: url("../img/icons/icon_apple_white.svg");
+                }
 
             #footer .download-link .icon.google {
                 background-image: url("../img/icons/icon_google_play.svg");
                 left: 2px;
             }
+                #footer .download-link:hover .icon.google {
+                    background-image: url("../img/icons/icon_google_play_white.svg");
+                }
 
     #footer .menues {
         width: 880px;

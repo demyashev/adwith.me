@@ -1,11 +1,12 @@
-function r(f){/in/.test(document.readyState)?setTimeout(r,9,f):f();}
-
-window.onresize = function(event) {
-
+$(window).resize(function(){
     sliderResize();
-};
+});
 
-r(function(){
+$(window).scroll(function(){
+    fps_increase();
+});
+
+$(document).ready(function(){
 
     w = window,
     d = document,
@@ -13,60 +14,52 @@ r(function(){
     g = d.getElementsByTagName('body')[0],
     x = g.clientWidth || w.innerWidth || e.clientWidth,
     y = w.innerHeight|| e.clientHeight|| g.clientHeight;
-    
-    document.documentElement.className = document.documentElement.className.replace("no-js", "js");
-    
-    
-    //console.log(x + ' - ' + y);
-    //
-    header            = document.getElementById('header');
 
-    slider            = document.getElementById('slider');
-    slider_arrows     = document.getElementsByClassName("arrow");
-    slider_container  = document.getElementById('slider-container');
-    slides            = document.getElementsByClassName("slide");
-    slides_backgrounds= document.getElementsByClassName("background");
-    mouse             = document.getElementById('mouse-scroll');
+    console.log('dom loaded');
 
-    tab_links         = document.getElementsByClassName('select-link');
-
-    reg_link          = document.getElementById('account-isset');
-    create_link       = document.getElementById('account-reg');
-
-    form_inputs       = document.getElementsByClassName('input-animate');
-
-
-    if (slider != null) {
-        sliderPlay();
-
-        // if (window.screen > 750) {
-            sliderResize();
-        // }
-        
-        iconMouseStart(); 
-    }
-    
-
-    // listeners
-    toggleTabs();
+    // slider
+    sliderResize();
+    sliderPlay();
     sliderArrowEvent();
+    iconMouseStart();
+    toggleTabs();
+    
+    $('#account-isset').click(function(){
+        showRegForm();
+        return false;
+    });
 
-    if (reg_link != null) {
-        reg_link.addEventListener('click', showRegForm, false);
-    }
+    $('#account-reg').click(function(){
+        showCreateForm();
+        return false;
+    });
 
-    if (create_link != null) {
-        create_link.addEventListener('click', showCreateForm, false);
-    }
+    $('.input-animate').each(function(){
+        $(this).click(function(){
+            inputAnimate(this);
+            return false;
+        });
+    });
 
-    window.addEventListener('scroll', fps_increase, false);
-    document.getElementById('close-menu').addEventListener('click', hideMobileMenu, false);
-    document.getElementById('show-menu-icon').addEventListener('click', showMobileMenu, false);
+    $('#show-menu-icon').click(function(){
+        showMobileMenu();
+        return false;
+    });
 
-    for (var i = window.form_inputs.length - 1; i >= 0; i--) {
-        window.form_inputs[i].addEventListener('click', inputAnimate, false);
-    }
+    $('#close-menu').click(function(){
+        hideMobileMenu();
+        return false;
+    });
+
+    $('#check-profile').click(function(){
+
+        checkProfile();
+        return false;
+    }); 
+
+
 });
+
 
 /*----------------------------------------------------------------------------*/
 var body = document.getElementsByTagName('body');
@@ -83,66 +76,86 @@ var fps_increase = function() {
     }, 250);
 }
 /*----------------------------------------------------------------------------*/
+function checkProfile() {
+    $('#account-activate').fadeOut(500, function(){
+        $(this).addClass('activated');
+        $('#activate-title').html('Ваш аккаунт подтвержден!');
+        $('#status-text').html('Спасибо, что установили ссылку на наш ресурс. Теперь вы можете использовать весь функционал нашего проекта!');
 
-function inputAnimate() {
-   
-    console.log(event.target.parentNode);
+        $(this).fadeIn();
+    });
 
-
-   event.target.parentNode.classList.add('active');
+    return false;
+}
+function inputAnimate(el) {
+    $(el).addClass('active');
 }
 
 function showMobileMenu() {
-    window.header.classList.add('mobile-menu-showed');
+    $('#header').addClass('mobile-menu-showed');
+    return false;
 }
 function hideMobileMenu() {
-    window.header.classList.remove('mobile-menu-showed');
+    $('#header').removeClass('mobile-menu-showed');
 }
 function showRegForm() {
-    // event.classList.add('hidden');
-    document.getElementById('form-create-account').classList.add('hidden');
-    document.getElementById('form-reg-account').classList.remove('hidden');
-    event.preventDefault();
+    $('#form-reg-account').removeClass('hidden');
+    $('#form-create-account').addClass('hidden');
+    
+    return false;
 }
 
 function showCreateForm() {
-    document.getElementById('form-reg-account').classList.add('hidden');
-    document.getElementById('form-create-account').classList.remove('hidden');
-    event.preventDefault();
+    $('#form-reg-account').addClass('hidden');
+    $('#form-create-account').removeClass('hidden');
+
+    return false;
 }
 
 function toggleTabs() {
-    for (var i = window.tab_links.length - 1; i >= 0; i--) {
-        window.tab_links[i].addEventListener('click', toggleTabsSwitch, false);
-    }
+
+     $('.select-link').each(function(){
+
+        $(this).click(function(){
+            toggleTabsSwitch(this);
+            return false;
+        });
+
+    });
+
 }
 
-function toggleTabsSwitch() {
-    for (var i = window.tab_links.length - 1; i >= 0; i--) {
-        window.tab_links[i].classList.remove('active');
-    }
-    event.target.classList.add('active');
+function toggleTabsSwitch(el) {
 
-    if (event.target.classList.contains('reklamodatel')) {
-        document.getElementById('im-reklamodatel').classList.remove('hidden');
-        document.getElementById('im-instagrammer').classList.add('hidden');
+    $('.select-link').each(function(){
+
+        $(this).removeClass('active');
+
+    });
+
+    $(el).addClass('active');
+
+    if ( $(el).hasClass('reklamodatel')) {
+        $('#im-reklamodatel').removeClass('hidden');
+        $('#im-instagrammer').addClass('hidden');
     } else {
-        document.getElementById('im-reklamodatel').classList.add('hidden');
-        document.getElementById('im-instagrammer').classList.remove('hidden');
+        $('#im-reklamodatel').addClass('hidden');
+        $('#im-instagrammer').removeClass('hidden');
     }
-
-    event.preventDefault();
-
+    
+    return false;
 }
 
 function iconMouseStart() {
     var i = 20;
     setInterval(function() {
-        
-        window.mouse.style.top = i + 'px';
-        window.mouse.style.height = i/2 + 'px';
-        window.mouse.style.opacity = (i/20 - 1)*(-1);
 
+        $('#mouse-scroll').css({
+            'top' : i + 'px',
+            'height' : i/2 + 'px',
+            'opacity' : (i/20 - 1)*(-1)
+        });
+        
         if (i==20) {i=10;} else {i = 20;}
         
     }, 1500);
@@ -164,12 +177,12 @@ function sliderRotate() {
     var i = 0;
     player = setInterval(function(){
              
-        if (i != window.slides.length - 1) {
+        if (i != $('.slide').length - 1) {
             i++;
-            window.slider_container.style.left = - x * i + 'px';
+            $('#slider-container').css('left', - $('#slider').width() * i + 'px');
             
         } else {
-            window.slider_container.style.left = 0 + 'px';
+            $('#slider-container').css('left', 0 + 'px');
             i = 0;
         }
   
@@ -177,31 +190,39 @@ function sliderRotate() {
 }
 
 function sliderArrowEvent() {
-    for (var i = window.slider_arrows.length - 1; i >= 0; i--) {
-        window.slider_arrows[i].addEventListener('click', sliderShowSlideByClick, false);
-    }
+    $('.arrow').each(function(){
+
+        $(this).click(function(){
+            sliderShowSlideByClick(this);
+            return false;
+        });
+
+    });
+
 }
 
-function sliderShowSlideByClick() {
+function sliderShowSlideByClick(el) {
+
+    var slider = $('#slider-container');
+
+    slider.clearQueue();
     
-    clearTimeout(player);
+    var curpos = parseInt( slider.css('left').replace("px", "") );
 
-    var curpos = parseInt( window.slider_container.style.left.replace("px", "") );
-
-    if ( event.target.classList.contains("left") ) {
-        var newpos = curpos + x;
+    if ( $(el).hasClass("left") ) {
+        var newpos = curpos + $('#slider').width();
     } else {
-        var newpos = curpos - x;
+        var newpos = curpos - $('#slider').width();
     }
 
-    if (newpos <= - window.slider_container.offsetWidth) {
+    if (newpos <= - slider.width() ) {
         newpos = 0;
     }
     if (newpos > 0) {
-        newpos = - (window.slides.length - 1) * x;
+        newpos = - ( $('.slide').length - 1 ) * $('#slider').width();
     }
 
-    window.slider_container.style.left = newpos + 'px';
+    slider.css('left', newpos + 'px');
 
 
     sliderPlay();
@@ -209,17 +230,27 @@ function sliderShowSlideByClick() {
 
 function sliderResize() {
 
+    console.log('resized');
+    // for mobile version
     if (screen.width < 800) {
         y = 972;
     }
 
-    window.slider.style.height = y + 'px';
-    window.slider_container.style.width = x * window.slides.length + 'px';
-    window.slider_container.style.height = y + 'px';
+    $('#slider').css({
+        'height' : y + 'px'
+    });
 
-    for (var i = window.slides.length - 1; i >= 0; i--) {
-        window.slides[i].style.width = x + 'px';
-        window.slides[i].style.height = y + 'px';
-    }
+    $('.slide').each(function(){
+
+        $(this).animate({
+            'width' : $('#slider').width() + 'px',
+            'height' : y + 'px'
+        }, 100);
+    });
+
+    $('#slider-container').animate({
+        'width'  : $('#slider').width() * $('.slide').length + 'px',
+        'height' : y + 'px'
+    }, 100);
 
 }

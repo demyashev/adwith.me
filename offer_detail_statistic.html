@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>offer detail statistic</title>
-    <meta name="viewport" content="width=750, maximum-scale=1.0, user-scalable=yes">
+    <meta name="viewport" content="width=750, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/quires.css">
-    <script type="text/javascript" src="js/scripts.js"></script>
 </head>
 <body>
 
@@ -237,7 +236,7 @@
             </div>
             <div class="row clearfix">
                 <div class="form-col submit">
-                    <input type="submit" class="button" value="Отправить">
+                    <input type="submit" class="button send" value="Отправить">
                 </div>
             </div>
         </form>
@@ -323,6 +322,29 @@
     </div>
     
 </footer>
-    
+    <script src="./js/jquery-2.2.1.min.js"></script>
+    <script src="./js/scripts.js"></script>
+    <script>
+        $('.send').click(function(){
+
+            var date = new Date().toLocaleString('ru', {
+                month: 'long',
+                day: 'numeric'
+            });
+            var uid = 1;
+
+            // new line to new paragraph
+            var breakTag = '</p><p>';
+            var text = $('textarea').val().replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1'+ breakTag +'$2');
+
+            var template = '<div class="comment left template"><div class="author">' + date + ' Вы отвечаете:</div><img src="./img/users/' + uid + '.png" alt="" class="author-ava"><div class="text"><p>' + text + '</p></div></div>';
+
+            $('.content').append(template);
+
+            $('.template').fadeIn();
+
+            return false;
+        });
+    </script>
 </body>
 </html>

@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>instagramer info user countries</title>
-    <meta name="viewport" content="width=750, maximum-scale=1.0, user-scalable=yes">
+    <meta name="viewport" content="width=750, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/quires.css">
-    <script type="text/javascript" src="js/scripts.js"></script>
 </head>
 <body>
 
@@ -233,19 +232,6 @@
             </div>
         </div>
     </div>
-
-    <script>
-        document.getElementById('check-profile').addEventListener('click', checkProfile, false);
-
-        function checkProfile() {
-            document.getElementById('account-activate').classList.add('activated');
-
-            document.getElementById('activate-title').innerHTML = 'Ваш аккаунт подтвержден!';
-            document.getElementById('status-text').innerHTML = 'Спасибо, что установили ссылку на наш ресурс. Теперь вы можете использовать весь функционал нашего проекта!';
-
-            event.preventDefault();
-        }
-    </script>
 </div>
 
 <div class="wrapper">  
@@ -452,6 +438,8 @@
     </div>
     
 </footer>
+    <script src="./js/jquery-2.2.1.min.js"></script>
+    <script src="./js/scripts.js"></script>
     
 </body>
 </html>

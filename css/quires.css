@@ -120,6 +120,21 @@
 
 @media screen and (max-width: 768px) {
 
+    thead a > .fa {
+        display: none;
+    }
+
+    .menu-subtitle {
+        display:block;
+    }
+    #account-offers table {
+        display: none;
+    }
+
+    .mobile-table {
+        display: block;
+    }
+
     .col-2, .col-3 {
         width: 100%;
     }
@@ -712,6 +727,12 @@ font-weight: normal;
     #account-activate {
         height: auto;
     }
+    
+    #account-activate .form .url-container i {
+        position: absolute;
+        left: 28px;
+        top: 36px;
+    }
 
     #account-activate .form #url,
     #account-activate .form .buttons {
@@ -722,6 +743,9 @@ font-weight: normal;
     }
     #account-activate .form #url {
         margin: 0;
+        padding: 30px 60px;
+        width: 100%;
+        font-size: 22px;
     }
     #account-activate .form .buttons {
         margin-top: 0;
@@ -743,10 +767,13 @@ font-weight: normal;
         width: 60%;
         margin-left: 20%;
     }
-
+    #account-activate .form a.button {
+        padding: 30px 44px;
+        font-size: 25px;
+    }
     #account-activate.activated .form a.edit {
         /*width: auto;*/
-        float: left;
+        /*float: left;*/
         margin-right: 14px;
     }
     #account-activate.activated .form .buttons {
@@ -754,17 +781,37 @@ font-weight: normal;
     }
     #account-menu {
         text-align: center;
-        padding: 0px 0 70px 0;
+        padding: 56px 0;
     }
     #account-menu li {
         float: none;
+        margin: 0;
+        padding: 0 50px 0 0;
     }
+        #account-menu li:last-child {
+            padding: 0;
+        }
+    #account-menu .icon {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 64px;
+        height: 64px;
+   }
 
     #account-menu a {
         font-size: 0;
         line-height: 0;
         padding: 0;
+        width: auto;
+        height: auto;
+        display: inline-block;
+        border-bottom: 0;
+        margin: 0;
     }
+        #account-menu a.active, #account-menu a:hover {
+            border: 0;
+        }
 
     #account-menu a span {
         display: none;
