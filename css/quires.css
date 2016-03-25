@@ -77,9 +77,11 @@
     }
     #download a:first-child .icon {
         top: 21px;
+        left: 85px;
     }
     #download a:last-child .icon{
         top: 24px;
+        left: 60px;
     }
 
     #footer .site,
@@ -106,19 +108,35 @@
 
     #footer .download-link {
         display: inline-block;
-        margin-right: 35px;
-        font-size: 28px;
-        padding: 6px 0 0 36px;
+        margin-right: 53px;
+        padding: 6px 0 0 55px;
+        font-size: 26px;
     }
 
-    #footer .download-link .fa {
-        font-size: 38px;
+    #footer .download-link .icon {
+        width: 35px;
+        height: 35px;
     }
 
+    #footer .download-link .icon.apple {
+        top: 1px;
+    }
+    #footer .download-link .icon.google {
+        top: 4px;
+    }
+    
 
 }
 
 @media screen and (max-width: 768px) {
+
+    .mobile-table-header {
+        display: block;
+    }
+
+    .text-center {
+        text-align: center;
+    }
 
     thead a > .fa {
         display: none;
@@ -127,10 +145,27 @@
     .menu-subtitle {
         display:block;
     }
-    #account-offers table {
+    #account-offers table,
+    #advertise-top-list table {
         display: none;
     }
+    #advertise-top-list {
+        padding: 0;
+    }
+    #advertise-top-list .wrapper {
+        border-bottom: 1px solid #e2e6e9;
+        padding: 30px;
 
+    }
+        #advertise-top-list  h2 {
+            margin: 24px 0 0 0;
+        }
+    #advertise-top-list .separator {
+        display: none;
+    }
+    #advertise-top-list .separator, .page-content .separator {
+        width: 100%;
+    }
     .mobile-table {
         display: block;
     }
@@ -432,10 +467,10 @@ font-weight: normal;
     }
 
     #download a:first-child {
-        padding: 22px 81px 22px 78px;
+        padding: 22px 81px 22px 122px;
     }
     #download a:last-child {
-        padding: 22px 82px 22px 51px;
+        padding: 22px 82px 22px 95px;
     }
     /*
         #download a:first-child .fa {

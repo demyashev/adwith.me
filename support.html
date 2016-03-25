@@ -78,7 +78,7 @@
         <div class="content">
             <a href="#" class="toggle-icon"></a>
             <h4>Зачем мне указывать ссылку на страницу в вашей системе в своем инстаграм аккаунте?</h4>
-            <div class="desc">22.12.16 / Текущий статус: <span class="status">Открыт</span></div>
+            <div class="desc">22.12.16 / Текущий статус: <span class="status opened">Открыт</span></div>
             <div class="comment right">
                 <div class="author">29 декабря Администратор отвечает:</div>
                 <img src="./img/users/4.png" alt="" class="author-ava">
@@ -98,7 +98,7 @@
                 <i class="fa"></i>
             </a>
             <h4>Как мне получить свои деньги?</h4>
-            <div class="desc">22.12.16 / Текущий статус: <span class="status">Закрыт</span></div>
+            <div class="desc">22.12.16 / Текущий статус: <span class="status closed">Закрыт</span></div>
             <div class="comment right">
                 <div class="author">29 декабря Администратор отвечает:</div>
                 <img src="./img/users/2.png" alt="" class="author-ava">
@@ -118,7 +118,7 @@
                 <i class="fa"></i>
             </a>
             <h4>Как вы проверяете пользователей которые предлагают подарки или услуги?</h4>
-            <div class="desc">22.12.16 / Текущий статус: <span class="status">Закрыт</span></div>
+            <div class="desc">22.12.16 / Текущий статус: <span class="status closed">Закрыт</span></div>
             <div class="comment right">
                 <div class="author">29 декабря Администратор отвечает:</div>
                 <img src="./img/users/2.png" alt="" class="author-ava">
@@ -210,24 +210,6 @@
 </footer>
     
     <script src="./js/jquery-2.2.1.min.js"></script>
-    <script src="./js/scripts.js"></script>
-    <script>
-        
-        $('.toggle-icon').click(function(){
-            var parent = $(this).parent().parent().parent();
-            
-            if (parent.hasClass('closed')) {
-                parent.find('.comment').slideDown(700, function(){
-                    parent.addClass('opened').removeClass('closed');
-                });
-            } else {
-                parent.find('.comment').slideUp(700, function(){
-                    parent.addClass('closed').removeClass('opened');
-                });
-            }
-            return false;
-        });
-    </script>
-    
+    <script src="./js/scripts.js"></script>   
 </body>
 </html>

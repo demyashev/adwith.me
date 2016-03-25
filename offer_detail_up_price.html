@@ -188,11 +188,11 @@
                     </div>
                     <div class="col-3">
                         <i class="fa fa-usd"></i>
-                        <input type="text" name="new-price" class="new-price" value="450">
+                        <input type="number" name="new-price" class="new-price" value="450">
                     </div>
                 </div>
                 <div class="row price-new">
-                    <img src="./img/icons/write.svg" alt="" class="icon-edit">Укажите новую цену
+                    <img src="./img/icons/pensil.svg" alt="" class="icon-edit">Укажите новую цену
                 </div>
             </div>
             <div class="row or">или</div>
@@ -288,52 +288,5 @@
     <script src="./js/jquery-2.2.1.min.js"></script>
     <script src="./js/jquery-ui.min.js"></script>
     <script src="./js/scripts.js"></script>
-    <script>
-        $('.popup-bg').fadeIn();
-
-        $('.popup-close').click(function(){
-            $('.popup-bg').fadeOut();
-            return false;
-        });
-
-        $('.price-inc a').click(function(){
-            var input = $('.new-price');
-            var current_cost = parseInt( input.val() );
-            var el = $(this);
-
-            if ( el.hasClass('price-up-1') ) { k = 0.1; }
-            if ( el.hasClass('price-up-2') ) { k = 0.2; }
-            if ( el.hasClass('price-up-3') ) { k = 0.5; }
-            if ( el.hasClass('price-up-4') ) { k = 1; }
-
-            var new_price = Math.round( current_cost + ( k * current_cost) );
-                
-            input.val( new_price ); 
-
-            return false;
-        });
-    </script>
-    <script>
-        $('.send').click(function(){
-
-            var date = new Date().toLocaleString('ru', {
-                month: 'long',
-                day: 'numeric'
-            });
-            var uid = 1;
-
-            // new line to new paragraph
-            var breakTag = '</p><p>';
-            var text = $('textarea').val().replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1'+ breakTag +'$2');
-
-            var template = '<div class="comment left template"><div class="author">' + date + ' Вы отвечаете:</div><img src="./img/users/' + uid + '.png" alt="" class="author-ava"><div class="text"><p>' + text + '</p></div></div>';
-
-            $('.content').append(template);
-
-            $('.template').fadeIn();
-
-            return false;
-        });
-    </script>
 </body>
 </html>
