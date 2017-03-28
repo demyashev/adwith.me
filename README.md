@@ -5,4 +5,4 @@
 
 [https://adwith.me](https://adwith.me)
 
-![adwith.me](https://raw.githubusercontent.com/demyashev/adwith.me/img/preview.png)
+![adwith.me](https://github.com/demyashev/adwith.me/raw/master/img/preview.png)
